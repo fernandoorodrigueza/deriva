@@ -1,0 +1,24 @@
+name: Test Deriva feeds
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/sources.json"
+      - "ingest/test_feeds.py"
+
+jobs:
+  test-feeds:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Probar los feeds
+        run: python ingest/test_feeds.py
