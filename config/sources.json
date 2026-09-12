@@ -63,19 +63,30 @@
       "status": "confirmed"
     },
     {
-      "id": "larb",
-      "name": "Los Angeles Review of Books",
-      "site_url": "https://lareviewofbooks.org/",
-      "adapter": "rss",
-      "language": "en",
-      "endpoints": [
-        "https://lareviewofbooks.org/feed/?ver=2"
-      ],
-      "fallback_endpoints": [
-        "https://lareviewofbooks.org/"
-      ],
-      "status": "runtime_test_required"
-    },
+  "id": "aeon",
+  "name": "Aeon",
+  "site_url": "https://aeon.co/",
+  "adapter": "rss",
+  "language": "en",
+  "endpoints": [
+    "https://aeon.co/feed.rss"
+  ],
+  "status": "confirmed"
+},
+{
+  "id": "quanta",
+  "name": "Quanta Magazine",
+  "site_url": "https://www.quantamagazine.org/",
+  "adapter": "rss",
+  "language": "en",
+  "endpoints": [
+    "https://quantamagazine.org/feed/"
+  ],
+  "fallback_endpoints": [
+    "https://www.quantamagazine.org/"
+  ],
+  "status": "runtime_test_required"
+},,
     {
       "id": "quanta",
       "name": "Quanta Magazine",
