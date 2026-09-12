@@ -1,0 +1,119 @@
+{
+  "version": "0.1.0",
+  "checked_at": "2026-09-11",
+  "defaults": {
+    "enabled": true,
+    "store_full_text": false,
+    "max_items_per_run": 100
+  },
+  "sources": [
+    {
+      "id": "new_yorker",
+      "name": "The New Yorker",
+      "site_url": "https://www.newyorker.com/",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://www.newyorker.com/feed/latest/rss"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "jot_down",
+      "name": "Jot Down",
+      "site_url": "https://www.jotdown.es/",
+      "adapter": "rss",
+      "language": "es",
+      "endpoints": [
+        "https://www.jotdown.es/feed/"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "paris_review",
+      "name": "The Paris Review",
+      "site_url": "https://www.theparisreview.org/",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://www.theparisreview.org/blog/feed"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "longreads",
+      "name": "Longreads",
+      "site_url": "https://longreads.com/",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://longreads.com/feed"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "aeon",
+      "name": "Aeon",
+      "site_url": "https://aeon.co/",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://aeon.co/feed.rss"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "larb",
+      "name": "Los Angeles Review of Books",
+      "site_url": "https://lareviewofbooks.org/",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://lareviewofbooks.org/feed/?ver=2"
+      ],
+      "fallback_endpoints": [
+        "https://lareviewofbooks.org/"
+      ],
+      "status": "runtime_test_required"
+    },
+    {
+      "id": "quanta",
+      "name": "Quanta Magazine",
+      "site_url": "https://www.quantamagazine.org/",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://quantamagazine.org/feed/"
+      ],
+      "fallback_endpoints": [
+        "https://www.quantamagazine.org/"
+      ],
+      "status": "runtime_test_required"
+    },
+    {
+      "id": "mubi_notebook",
+      "name": "MUBI Notebook",
+      "site_url": "https://mubi.com/en/notebook",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://mubi.com/notebook/posts.rss"
+      ],
+      "fallback_endpoints": [
+        "https://mubi.com/en/notebook"
+      ],
+      "status": "confirmed"
+    },
+    {
+      "id": "public_domain_review",
+      "name": "The Public Domain Review",
+      "site_url": "https://publicdomainreview.org/",
+      "adapter": "rss",
+      "language": "en",
+      "endpoints": [
+        "https://publicdomainreview.org/rss.xml"
+      ],
+      "status": "confirmed"
+    }
+  ]
+}
