@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "checked_at": "2026-09-11",
+  "checked_at": "2026-09-12",
   "defaults": {
     "enabled": true,
     "store_full_text": false,
@@ -63,31 +63,6 @@
       "status": "confirmed"
     },
     {
-  "id": "aeon",
-  "name": "Aeon",
-  "site_url": "https://aeon.co/",
-  "adapter": "rss",
-  "language": "en",
-  "endpoints": [
-    "https://aeon.co/feed.rss"
-  ],
-  "status": "confirmed"
-},
-{
-  "id": "quanta",
-  "name": "Quanta Magazine",
-  "site_url": "https://www.quantamagazine.org/",
-  "adapter": "rss",
-  "language": "en",
-  "endpoints": [
-    "https://quantamagazine.org/feed/"
-  ],
-  "fallback_endpoints": [
-    "https://www.quantamagazine.org/"
-  ],
-  "status": "runtime_test_required"
-},,
-    {
       "id": "quanta",
       "name": "Quanta Magazine",
       "site_url": "https://www.quantamagazine.org/",
@@ -96,10 +71,7 @@
       "endpoints": [
         "https://quantamagazine.org/feed/"
       ],
-      "fallback_endpoints": [
-        "https://www.quantamagazine.org/"
-      ],
-      "status": "runtime_test_required"
+      "status": "confirmed"
     },
     {
       "id": "mubi_notebook",
@@ -109,9 +81,6 @@
       "language": "en",
       "endpoints": [
         "https://mubi.com/notebook/posts.rss"
-      ],
-      "fallback_endpoints": [
-        "https://mubi.com/en/notebook"
       ],
       "status": "confirmed"
     },
