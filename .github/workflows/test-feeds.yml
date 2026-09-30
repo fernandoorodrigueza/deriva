@@ -1,4 +1,4 @@
-name: Ingest Deriva
+name: Test Deriva feeds
 
 on:
   workflow_dispatch:
@@ -6,10 +6,9 @@ on:
     paths:
       - "config/sources.json"
       - "ingest/test_feeds.py"
-      - "ingest/ingest.py"
 
 jobs:
-  ingest:
+  test-feeds:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,19 +25,3 @@ jobs:
 
       - name: Probar los feeds
         run: python ingest/test_feeds.py
-
-      - name: Ingestar artículos
-        run: python ingest/ingest.py
-
-      - name: Mostrar resultado
-        run: |
-          echo "Contenido de data/articles.json:"
-          python -m json.tool data/articles.json | head -80
-
-      - name: Guardar articles.json
-        uses: actions/upload-artifact@v4
-        with:
-          name: deriva-articles
-          path: data/articles.json
-```
-
