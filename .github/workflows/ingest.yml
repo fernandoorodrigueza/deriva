@@ -1,0 +1,43 @@
+name: Ingest Deriva
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "config/sources.json"
+      - "ingest/test_feeds.py"
+      - "ingest/ingest.py"
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v5
+
+      - name: Configurar Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Probar los feeds
+        run: python ingest/test_feeds.py
+
+      - name: Ingestar artículos
+        run: python ingest/ingest.py
+
+      - name: Mostrar resultado
+        run: |
+          echo "Contenido de data/articles.json:"
+          python -m json.tool data/articles.json | head -80
+
+      - name: Guardar articles.json
+        uses: actions/upload-artifact@v4
+        with:
+          name: deriva-articles
+          path: data/articles.json
+```
