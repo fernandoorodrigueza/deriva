@@ -1,7 +1,31 @@
 {
-  "generated_at": "2026-09-30T23:31:40.303104+00:00",
-  "article_count": 204,
+  "generated_at": "2026-09-30T23:40:03.424766+00:00",
+  "article_count": 205,
   "articles": [
+    {
+      "id": "ac09da04fd0325eb7229eee5cf760763970ef6b06cc8e3467d72a9533ca35f73",
+      "source": "new_yorker",
+      "source_name": "The New Yorker",
+      "title": "Why Trump Delayed Cancelling Legal Status for Salvadorans",
+      "author": "Jonathan Blitzer",
+      "url": "https://www.newyorker.com/news/the-lede/why-trump-delayed-cancelling-legal-status-for-salvadorans",
+      "published_at": "2026-09-30T23:30:55+00:00",
+      "description": "The White House has quietly paused an order to end Temporary Protected Status for thousands of immigrants from El Salvador, a move that came after months of lobbying from the construction industry and other interest groups.",
+      "image_url": "https://media.newyorker.com/photos/6abd530e769c5b9952fce5d2/master/pass/Blitzer_TPS_GettyImages-2290583797.jpg",
+      "categories": [
+        "cultura"
+      ],
+      "tags": [
+        "News / The Lede",
+        "News / Election 2026"
+      ],
+      "reading_time": 8,
+      "reading_time_source": "estimated",
+      "reading_time_estimated": true,
+      "access": "unknown",
+      "content_type": "essay",
+      "fetched_at": "2026-09-30T23:39:59.335846+00:00"
+    },
     {
       "id": "d371158b4ac4e532306b31bc4423445eb0fbc0a5c4733e351742d1fa10dfbc23",
       "source": "longreads",
@@ -13,7 +37,7 @@
       "description": "\"Parenting is a practice. You learn from your mistakes and then repeat them anyway.\"",
       "image_url": null,
       "categories": [
-        "artes_visuales"
+        "cultura"
       ],
       "tags": [
         "Editor's Pick",
@@ -30,7 +54,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.083836+00:00"
+      "fetched_at": "2026-09-30T23:40:00.104285+00:00"
     },
     {
       "id": "6ce6bc594f0b64e6069d2bd6996c9b9c3b56e10237b9988f8de75833e74165bf",
@@ -53,7 +77,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.486219+00:00"
+      "fetched_at": "2026-09-30T23:39:59.337488+00:00"
     },
     {
       "id": "7769f7938e2d32b66f151c4989c4095fbcf9db01670acaa34dc52518951a9413",
@@ -66,8 +90,7 @@
       "description": "Erasmus called them “little moons” and George Puttenham praised them as “figures of tolerable disorder” (if used not too often “nor too thick”). For Philip Sidney, they were simply indispensable. Florence Hazrat introduces us to the uncontested early modern king of brackets and to his romance Arcadia , which abruptly ends, like its author’s life, hanging on a parenthesis.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -75,7 +98,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.282847+00:00"
+      "fetched_at": "2026-09-30T23:40:03.271151+00:00"
     },
     {
       "id": "621129be00679a7b29235eadfada20c2586e711b3ad7ba28e5600f6960cbd03b",
@@ -88,9 +111,7 @@
       "description": "Choice excerpts from *Leaves of Grass* that speak to Whitman’s conception of immortality.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -98,7 +119,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.283066+00:00"
+      "fetched_at": "2026-09-30T23:40:03.272635+00:00"
     },
     {
       "id": "0610916c1b8b7cd5937f312f5b7c9c73848966603b4fc4dda913a5e947567c64",
@@ -111,7 +132,7 @@
       "description": "\"Archiving a life at the edge of disposal.\"",
       "image_url": null,
       "categories": [
-        "artes_visuales"
+        "cultura"
       ],
       "tags": [
         "Editor's Pick",
@@ -125,7 +146,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.084012+00:00"
+      "fetched_at": "2026-09-30T23:40:00.105449+00:00"
     },
     {
       "id": "d25f7678f2294004ce6225acbbd38ac855527d9334ceeb5b10fb2bfd2b26d9fe",
@@ -149,7 +170,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-09-30T23:31:37.486438+00:00"
+      "fetched_at": "2026-09-30T23:39:59.338757+00:00"
     },
     {
       "id": "065f3e95edf5cd70e5d6e3aa3aa38addc42fe289b4d74b92d396ad25e6b718bf",
@@ -163,8 +184,7 @@
       "image_url": null,
       "categories": [
         "artes_visuales",
-        "sociedad",
-        "historia"
+        "sociedad"
       ],
       "tags": [
         "Historia",
@@ -194,7 +214,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:37.827053+00:00"
+      "fetched_at": "2026-09-30T23:39:59.795442+00:00"
     },
     {
       "id": "3b3c7da9726a9d6bdd3289dab2e3e85ef0f0873a31a6b79702648c2588f2e608",
@@ -207,8 +227,7 @@
       "description": "Unexpected patterns traveling across the human brain may be reorganizing its activity in real time. The post Surprisingly Complex Waves Reveal the Brain’s Inner Workings first appeared on Quanta Magazine",
       "image_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/Thought-Geometry-cr.Mark-Belan-Default.webp",
       "categories": [
-        "ciencia",
-        "sociedad"
+        "ciencia"
       ],
       "tags": [
         "Biology"
@@ -218,7 +237,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.672163+00:00"
+      "fetched_at": "2026-09-30T23:40:00.449026+00:00"
     },
     {
       "id": "aac80be61e70a7d5c263d9ba728eff24dd2fd48c8d50641a20c055aadf85b9c2",
@@ -231,7 +250,7 @@
       "description": "A drawing that riffs on the latest news and happenings.",
       "image_url": "https://media.newyorker.com/cartoons/6abd0e6d769c5b9952fce46d/master/pass/A62275.jpg",
       "categories": [
-        "artes_visuales"
+        "cultura"
       ],
       "tags": [
         "Cartoons / Daily Cartoon",
@@ -242,7 +261,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "cartoon",
-      "fetched_at": "2026-09-30T23:31:37.486572+00:00"
+      "fetched_at": "2026-09-30T23:39:59.340040+00:00"
     },
     {
       "id": "34ba89f2d33b15e3884f7b5c8868f77d012a274950ce2a879c6335cf81e3d6c8",
@@ -255,8 +274,7 @@
       "description": "The poet joins Kevin Young to read and discuss “The Owl's Night,” by Mahmoud Darwish, and her own poem “The Museum of Stones.”",
       "image_url": "https://media.newyorker.com/photos/6abacae64c9e383ddbd2abfc/master/pass/Poetry-Pod-Carolyn-Forche-portrait-by-Sandy-Cohen-(1).jpg",
       "categories": [
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [
         "Podcast / Poetry Podcast"
@@ -266,7 +284,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-09-30T23:31:37.486731+00:00"
+      "fetched_at": "2026-09-30T23:39:59.341395+00:00"
     },
     {
       "id": "e438da781b41aea93593e6eeaa50e67b5c7f54fc5c846cf2017a4fe8dbfbd986",
@@ -289,7 +307,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.486924+00:00"
+      "fetched_at": "2026-09-30T23:39:59.342995+00:00"
     },
     {
       "id": "292e49f1d3919e9f4288b6aa2eb202fc6cdf68ae589206c3eebe8c85d9cf0599",
@@ -302,8 +320,7 @@
       "description": "The Pulitzer Prize winner’s intimate new novel, “Partita,” is out next week.",
       "image_url": "https://media.newyorker.com/photos/6abbf48933195a3cf2dbbe4f/master/pass/wwr_cep_final%203.jpg",
       "categories": [
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [
         "Books / What We’re Reading"
@@ -313,7 +330,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.487123+00:00"
+      "fetched_at": "2026-09-30T23:39:59.344257+00:00"
     },
     {
       "id": "e35b2a4aa8bd1304fa864c372aa9d04538b704c98769c884cabf370c18f2bd80",
@@ -343,7 +360,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.084258+00:00"
+      "fetched_at": "2026-09-30T23:40:00.107118+00:00"
     },
     {
       "id": "db98dfded23c33bf4770421be9e1f81630bd512e93e1d38326823aa9c935568c",
@@ -356,9 +373,7 @@
       "description": "Mar Gómez Glez, por Sangre. Historia íntima y cultural de un fluir constante (Ariel), y Alberto Casas, por La ilusión del tiempo (Ediciones B), son los ganadores de la primera edición del Premio Delta de Dirac de Ensayo, el galardón que Jot Down convocó en marzo con ocho finalistas propuestos […]",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "ciencia",
-        "filosofia"
+        "ciencia"
       ],
       "tags": [
         "Arte y Letras",
@@ -389,7 +404,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:37.827480+00:00"
+      "fetched_at": "2026-09-30T23:39:59.799635+00:00"
     },
     {
       "id": "016a362158b26434ef0a1c6254293ccce8559fee2d6a57abc85f846abe8b1cb3",
@@ -410,7 +425,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.243010+00:00"
+      "fetched_at": "2026-09-30T23:40:00.263788+00:00"
     },
     {
       "id": "ebda00577c415e93bc5eff83c906c416bc5607f0a3f55fcb3703d7d87d92f5c2",
@@ -433,7 +448,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.487295+00:00"
+      "fetched_at": "2026-09-30T23:39:59.345603+00:00"
     },
     {
       "id": "9007149883049ec30b3168f567eda72bf14bf1b0b222b717c097780a972b722e",
@@ -446,7 +461,7 @@
       "description": "Can you guess when these New Yorker cartoons were originally published?",
       "image_url": "https://media.newyorker.com/photos/675c84675b9e51f1393ae141/master/pass/Focus_SiteImage.gif",
       "categories": [
-        "artes_visuales"
+        "cultura"
       ],
       "tags": [
         "Puzzles & Games Dept. / Laugh Lines"
@@ -456,7 +471,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "game",
-      "fetched_at": "2026-09-30T23:31:37.487414+00:00"
+      "fetched_at": "2026-09-30T23:39:59.346866+00:00"
     },
     {
       "id": "3dca2c9fc195a8163ab98dd25460ab06ad3cdd99f2159d9ca7b09d4e57b09223",
@@ -479,7 +494,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "game",
-      "fetched_at": "2026-09-30T23:31:37.487525+00:00"
+      "fetched_at": "2026-09-30T23:39:59.347989+00:00"
     },
     {
       "id": "eccc2a79223489a181a8daabb40ef7bc905910aa86934024d8b1092c8d461485",
@@ -525,7 +540,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.827762+00:00"
+      "fetched_at": "2026-09-30T23:39:59.801868+00:00"
     },
     {
       "id": "81c2bd3457dd63fe1f8006677afb03b6d58cb3695ab3ff306c8ddc79502ba586",
@@ -538,9 +553,8 @@
       "description": "Una no puede dar un paso, culturalmente hablando, por Sevilla sin pasar por delante del legado de Silvio Fernández Melgarejo, y de Pive Amador. De Silvio dice Luz Casal que era un «rockero intelectual». Sus conciertos imposibles y sus entrevistas con Jesús Quintero dan buena cuenta de ello. Pive fue, […]",
       "image_url": null,
       "categories": [
-        "artes_visuales",
         "musica",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [
         "Entrevistas",
@@ -572,7 +586,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:37.828089+00:00"
+      "fetched_at": "2026-09-30T23:39:59.805525+00:00"
     },
     {
       "id": "4aff65372e4cb021ab2f338a8d42d15f4c84d5af229b055539e9ccbab80f7081",
@@ -586,7 +600,6 @@
       "image_url": "https://www.youtube.com/embed/t2o-snHDVQA",
       "categories": [
         "musica",
-        "cine",
         "sociedad"
       ],
       "tags": [
@@ -618,7 +631,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "criticism",
-      "fetched_at": "2026-09-30T23:31:37.828431+00:00"
+      "fetched_at": "2026-09-30T23:39:59.809148+00:00"
     },
     {
       "id": "3a356b687ccae4bf0dc737be2994c3763c780afc770d46ce149ab9cde2147322",
@@ -642,7 +655,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.828755+00:00"
+      "fetched_at": "2026-09-30T23:39:59.811934+00:00"
     },
     {
       "id": "84c9ef563498debe987c3ff04460f5256fd144aa943c326457d89c3edc70f51b",
@@ -655,8 +668,7 @@
       "description": "Early surgical diagrams that present patients prying themselves open for our anatomical gaze.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -664,7 +676,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.283273+00:00"
+      "fetched_at": "2026-09-30T23:40:03.273959+00:00"
     },
     {
       "id": "8c1e612a90aca0adf0ddf833a3d4446be8445038bb63b0395e1977579438d13c",
@@ -696,7 +708,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:37.981974+00:00"
+      "fetched_at": "2026-09-30T23:40:00.049519+00:00"
     },
     {
       "id": "58ee424ac3ccdac8d67c8ba8b58f6f5d3ef70d3b44b4b312308cdf1759029168",
@@ -709,7 +721,7 @@
       "description": "\"I had to do everything the jurors did—sit in every court session, examine each piece of evidence, look out from the jury box every day at a man accused of murder—but I wouldn’t participate in the deliberation unless two jurors dropped out.\"",
       "image_url": null,
       "categories": [
-        "artes_visuales"
+        "cultura"
       ],
       "tags": [
         "Editor's Pick",
@@ -728,7 +740,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.084548+00:00"
+      "fetched_at": "2026-09-30T23:40:00.109522+00:00"
     },
     {
       "id": "fa64d21f65618ae1cc4e30eac18dd7fb7107a19b4cef647304e9e3228536eee1",
@@ -758,7 +770,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.084717+00:00"
+      "fetched_at": "2026-09-30T23:40:00.110762+00:00"
     },
     {
       "id": "8b3a4a03409c03cb2891c7f5aa304009064048ad97b3e2e8fddf83b60bb4f6b9",
@@ -799,7 +811,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-09-30T23:31:38.084920+00:00"
+      "fetched_at": "2026-09-30T23:40:00.113005+00:00"
     },
     {
       "id": "e8c597bd7b75e8549ba333d961c498e163bae99405beb559ebab21551bd2f31d",
@@ -812,7 +824,7 @@
       "description": "A cancer diagnosis carries with it fear and upheaval. For many patients the cellular changes do not warrant the label - by Matthew R Cooperberg Read on Aeon",
       "image_url": null,
       "categories": [
-        "historia"
+        "cultura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -820,7 +832,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.243276+00:00"
+      "fetched_at": "2026-09-30T23:40:00.265273+00:00"
     },
     {
       "id": "ea47eaaf3e690f282217b3a993d5da333a36597da29c4d55c1f0f619e05ca184",
@@ -834,8 +846,8 @@
       "image_url": null,
       "categories": [
         "cine",
-        "tecnologia",
-        "sociedad"
+        "sociedad",
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -843,7 +855,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:39.476221+00:00"
+      "fetched_at": "2026-09-30T23:40:01.334599+00:00"
     },
     {
       "id": "ebd8e1846611f59e6b8f74b94b03bba780e56248081a898fb5865ef799284f5a",
@@ -856,9 +868,7 @@
       "description": "En 1268, la República de Venecia adoptó un complejo procedimiento para elegir a un nuevo dux. Con algunas modificaciones, se mantuvo hasta 1797. Doscientos diez años después, en 2007, Miranda Mowbray, de HP Labs, y Dieter Gollmann, de la Universidad Técnica de Hamburgo, decidieron estudiar aquel extraño mecanismo con las […]",
       "image_url": null,
       "categories": [
-        "tecnologia",
-        "sociedad",
-        "historia"
+        "tecnologia"
       ],
       "tags": [
         "Tecnología",
@@ -888,7 +898,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:37.829180+00:00"
+      "fetched_at": "2026-09-30T23:39:59.816376+00:00"
     },
     {
       "id": "be56b5d8d621b4affe3de763990e97fe0925e6d4ad54f9c4ffbddd514c29b30d",
@@ -902,7 +912,6 @@
       "image_url": null,
       "categories": [
         "literatura",
-        "artes_visuales",
         "historia"
       ],
       "tags": [
@@ -936,7 +945,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "poetry",
-      "fetched_at": "2026-09-30T23:31:37.829576+00:00"
+      "fetched_at": "2026-09-30T23:39:59.820403+00:00"
     },
     {
       "id": "426d330ca54d86fb09a7ca0f9204055af62edd48a2bcac3e3b030d85ede0afc7",
@@ -965,7 +974,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.085175+00:00"
+      "fetched_at": "2026-09-30T23:40:00.114951+00:00"
     },
     {
       "id": "b853d7eac5757379d18f1790adca3b0fc940f1cf31f567532e2b69458d894cb3",
@@ -978,8 +987,7 @@
       "description": "Gary Indiana’s Art of Fiction, unlocked from the archive by Natalie Shapero.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [
         "Redux",
@@ -991,7 +999,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "fiction",
-      "fetched_at": "2026-09-30T23:31:37.982202+00:00"
+      "fetched_at": "2026-09-30T23:40:00.050942+00:00"
     },
     {
       "id": "fbb70e1a4deeb229ca3a6c71974bcf8fdd0bbd6d785f19fa4eeb8bc9eeaf021c",
@@ -1014,7 +1022,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.672433+00:00"
+      "fetched_at": "2026-09-30T23:40:00.451193+00:00"
     },
     {
       "id": "a8f4f1d4831347efe967941797040096f5111bcfc31ff6a81af80876dadf88ce",
@@ -1047,7 +1055,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.085394+00:00"
+      "fetched_at": "2026-09-30T23:40:00.116587+00:00"
     },
     {
       "id": "88e51ecf0b62abb4fea39a2f4b45f41391a30a9f5727677e9e8438c48ba44c84",
@@ -1090,7 +1098,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.829988+00:00"
+      "fetched_at": "2026-09-30T23:39:59.824281+00:00"
     },
     {
       "id": "0b975613653062449e661fde02522b093c11fff84f9ad6bbf3c2f45a00010681",
@@ -1111,7 +1119,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.243426+00:00"
+      "fetched_at": "2026-09-30T23:40:00.266615+00:00"
     },
     {
       "id": "4ad3635f05ee9edc9537aa0ba3af2d960f69fe00b9bb122284fec0757f7b90ec",
@@ -1124,7 +1132,6 @@
       "description": "The notion that fatherhood and creativity are at odds is plain wrong, as both poetry and neuroscience are showing us - by Daniel Swift Read on Aeon",
       "image_url": null,
       "categories": [
-        "ciencia",
         "literatura"
       ],
       "tags": [],
@@ -1133,7 +1140,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "poetry",
-      "fetched_at": "2026-09-30T23:31:38.243604+00:00"
+      "fetched_at": "2026-09-30T23:40:00.267958+00:00"
     },
     {
       "id": "8e235ec195a42db860a294a90ed3e7e49ab6fcae122f26c031671c3d425221ef",
@@ -1148,7 +1155,7 @@
       "categories": [
         "cine",
         "tecnologia",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 179,
@@ -1156,7 +1163,7 @@
       "reading_time_estimated": false,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:39.480678+00:00"
+      "fetched_at": "2026-09-30T23:40:01.421022+00:00"
     },
     {
       "id": "7182257c8191aae07367a3c83700f000c0c803d802683e6e8483b1fc5c69afa2",
@@ -1169,9 +1176,7 @@
       "description": "Marcus du Sautoy es mi divulgador favorito. Desde que leí La música de los números primos me hago con sus libros en cuanto me aparecen como novedades editoriales. Con él visualicé un teseracto, descubrí al «monstruo» de Conway y entendí que la inteligencia artificial puede ser creativa antes de que […]",
       "image_url": "https://www.youtube.com/embed/_TRE1EhfEw4",
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "ciencia"
+        "literatura"
       ],
       "tags": [
         "Ciencias"
@@ -1181,7 +1186,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.830328+00:00"
+      "fetched_at": "2026-09-30T23:39:59.827054+00:00"
     },
     {
       "id": "e40bf0efe1654a92c230dae82961bf1631aa6b649855abe374dda09c2cbcb301",
@@ -1204,7 +1209,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.672714+00:00"
+      "fetched_at": "2026-09-30T23:40:00.453474+00:00"
     },
     {
       "id": "d3184ecfbaff8da0443a8824406869cc17e09036c271e239bd98bea30ce2b70b",
@@ -1217,8 +1222,7 @@
       "description": "“The dating app has engineered what one might call an Enneagrammatical system of bookish star signs.”",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [
         "Dispatch",
@@ -1235,7 +1239,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.982454+00:00"
+      "fetched_at": "2026-09-30T23:40:00.052930+00:00"
     },
     {
       "id": "bbc1eeefd2fb18c6deca2471651ba47061cdcc9bce988ba142fb4344191f928a",
@@ -1270,7 +1274,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-09-30T23:31:38.085587+00:00"
+      "fetched_at": "2026-09-30T23:40:00.118646+00:00"
     },
     {
       "id": "b11a0569a46c472b74da8d250c8778c4c63df79ee16c80685d35333a02c898e0",
@@ -1291,7 +1295,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.243795+00:00"
+      "fetched_at": "2026-09-30T23:40:00.269339+00:00"
     },
     {
       "id": "e346bc9283cbf4944c801af0c3f623816fbfc49e65f6aba0dc6b58131050b7ab",
@@ -1304,9 +1308,7 @@
       "description": "French grande for Small Change (François Truffaut, France, 1976). Design by Jouineau Bourduge. Another year, another Truffaut, another Fassbinder, another Visconti, another Renoir revival. The 1976 New York Film Festival—which ran from October 1 to 17—was nothing if not true to its brand. But the 14th New York Film Festival, programmed by Richard Roud, Susan Sontag, Richard Corliss, Charles Michener, and Roger Greenspun, was still a relatively small affair, showcasing just eighteen features and eleven shorts. It was also still a defiantly Euro-centric program, top heavy with French cinema. Both the opening- and closing-night films were French (François Truffaut’s Small Change and Eric Rohmer’s The Marquise of O , respectively) and there were four other French features in the mix along with an Agnès Varda short. There were three films from Germany, two from Italy, and one from Switzerland. But whereas the previous year there were no films from Asia, the 1976 fest branched out with films from India (Satyajit Ray’s The Middleman , 1975), Hong Kong (King Hu’s A Touch of Zen , 1971) and Japan (Nagisa Ōshima’s In the Realm of the Senses and Akira Kurosawa’s Japanese-Russian co-production Dersu Uzala , 1975). The 1976 NYFF is full of great films, but not as many out-and-out masterpieces as in other years. In the world at large, cinema seemed to have taken a step back after the banner year of 1975 (which was so chock-full of barnstormers that Morgan Neville made a documentary about it last year ). In my piece on the 1975 festival I listed all the major movies that were playing in commercial theaters in New York the weekend that the NYFF began (concluding “Who needs a film festival?”). In 1976 it was a different story. The biggest ads in The New York Times on October 1, 1976, were for the boy-and-his-dog weepie Where the Red Fern Grows , a Jack Lemmon film ( Alex & The Gypsy ), an Italian film starring Marcello Mastroianni ( Sunday Woman ), a Dennis Hopper western ( Mad Dog ), a Giancarlo Giannini romp ( How Funny Can Sex Be? ), a Redd Foxx comedy ( Norman…Is That You? ), a horror movie ( Burnt Offerings ), and a compilation film of “the most hilarious, brilliant scenes in film history” called All About Us: America at the Movies —none of which I had ever heard of before I scrolled through the Times’ archives. The only two high-profile films I did know were Alan Parker’s Bugsy Malone and Martin Ritt’s The Front . But buried among the smaller ads are more promising signs of life in Victor Erice’s The Spirit of the Beehive (1973), Barbet Schroeder’s General Idi Amin Dada: A Self-Portrait (1974), Peter Watkins’s Edvard Munch (1974), Paul Verhoeven’s Keetje Tippel (1975), and—in its “10th Smash Week”—Bertrand Tavernier’s The Clockmaker of St. Paul (1974). Also, opening five days later at the Ziegfeld, and seemingly having its very first New York showing, was Andrei Tarkovski’s Solaris (it had played at the Chicago Film Festival in November 1972 but had seemingly been passed over by the NYFF that year). But Lincoln Center had Truffaut, Rohmer, Rivette, Kurosawa, Fassbinder, Francesco Rosi, Marcel Ophuls, Satyajit Ray, and Nagisa Ōshima. Sadly, 50 years on, only two of the NYFF Class of 1976 are still with us: Wim Wenders (31 then, 81 now, and with a new film this year, From Inside Out – The Architecture of Peter Zumthor ) and Barbara Kopple (now 80, also with a new film this year: Union Town ) whose world premiere of Harlan County U.S.A. was one of the two sensations of the festival. Alexander Kluge, whose Strongman Ferdinand was in the 1976 edition, passed away on March 25 of this year at the age of 94. The other sensation of the festival didn’t actually play at the festival. Ōshima’s famously sexually explicit In the Realm of the Senses was seized by customs officers who were in attendance at its press screening, and confiscated for alleged obscenity. It had to be replaced at the last minute with Ōshima’s 1971 film The Ceremony . Apparently this is the only time in NYFF history that they have been unable to show a scheduled film. A judge later ruled that the film had been improperly detained (the story made the front page of The New York Times ) and the Film Society screened it at MoMA in December, honoring New York Film Festival ticket stubs. This governmental prudishness is surprising when you see that there were ads for porn movies in The New York Times in those days, films like In the Heat of the Knight and two seemingly unrelated pornos called Alice in Wonderland: An X-Rated Musical Fantasy and Through the Looking Glass (pull quote: “Hard core pornography at its best. A ‘Marnie’ like mystery and the ‘Exorcist’ with incest. Ladies, you’ll like it.”) I’ve tried to find the most interesting poster for each film that played in the 1976 festival. The highlights include Jerzy Flisak’s Polish poster for his countryman Walerian Borowczyk’s The Story of Sin (1975), Averardo Ciriello’s Italian in medias res cliffhanger for Dersu Uzala , and Satyajit Ray’s own type-centric collage for The Middleman . The only feature film that I couldn’t find any poster for was Fassbinders’s Fear of Fear (1975), which was made for television and seems to have never had a theatrical release. The posters are shown below in the order in which the films played in the festival. Artists and designers are credited where known. Italian 2- foglio for Ossessione (Luchino Visconti, Italy, 1943). US one sheet for Jonah Who Will Be 25 in the Year 2000 (Alain Tanner, Switzerland, 1976). Japanese poster for In the Realm of the Senses (Nagisa Oshima, Japan, 1976). Art by Susumu Masukawa. Japanese poster for The Ceremony (Nagisa Oshima, Japan, 1971). French poster for Kings of the Road (Wim Wenders, West Germany, 1976). Art by E. Watcker. US poster for The Memory of Justice (Marcel Ophuls, France, 1976). Italian 2-foglio for Dersu Uzala (Akira Kurosawa, Japan/USSR, 1975). Art by Averardo Ciriello. French poster for Illustrious Corpses (Francesco Rosi, Italy, 1976). Design by Jouineau Bourduge. Polish poster for The Story of Sin (Walerian Borowczyk, Poland, 1975). Art by Jerzy Flisak. French poster for Surreal Estate (Eduardo de Gregorio, France, 1976). German poster for Strongman Ferdinand (Alexander Kluge, West Germany, 1976). Hong Kong poster for A Touch of Zen (King Hu, Hong Kong, 1971). Indian poster for The Middleman (Satyajit Ray, India, 1975). Design by Satyajit Ray. French poster for Duelle (Jacques Rivette, France, 1976). French poster for Nana (Jean Renoir, France, 1926). French poster for Harlan County, U.S.A. (Barbara Kopple, USA, 1976). French grande for The Marquise of O (Eric Rohmer, France, 1976). Design by René Ferracci. Official poster by Allan D’Arcangelo for the 14th New York Film Festival. Full-page advertisement for the 14th New York Film Festival in the New York Times on Sunday, September 12, 1975. At these links, you can see my previous New York Film Festival flashbacks to 1963 , 1965 , 1968 , 1969 , 1971 , 1972 , 1973 , 1974 , 1975 and 1988 .",
       "image_url": null,
       "categories": [
-        "cine",
-        "artes_visuales",
-        "television"
+        "cine"
       ],
       "tags": [],
       "reading_time": 7,
@@ -1314,7 +1316,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "profile",
-      "fetched_at": "2026-09-30T23:31:39.483013+00:00"
+      "fetched_at": "2026-09-30T23:40:01.455734+00:00"
     },
     {
       "id": "01321512e5ac647f619aaf2bd5d478af402587458d40828ad5b2210757ca9299",
@@ -1346,7 +1348,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.085884+00:00"
+      "fetched_at": "2026-09-30T23:40:00.121256+00:00"
     },
     {
       "id": "208d54760a26635745f54bd2d2c5b49064987347ed1348e3aeb72c5e498dfe62",
@@ -1359,7 +1361,6 @@
       "description": "\"From a certain height, the problem becomes one of knowledge itself: Do you believe what you hear, or do you hear what you believe?\"",
       "image_url": null,
       "categories": [
-        "tecnologia",
         "musica"
       ],
       "tags": [
@@ -1381,7 +1382,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.086143+00:00"
+      "fetched_at": "2026-09-30T23:40:00.123190+00:00"
     },
     {
       "id": "c0922647b55ada9b02d9ecbaf20353dd2d1a754e82102eecc2f9cec667c781e4",
@@ -1394,7 +1395,6 @@
       "description": "“The first letter I sent to him was about a print that he’d made, which was in the archive—a Chagall-inspired Virgin Mary standing on a donkey.”",
       "image_url": null,
       "categories": [
-        "artes_visuales",
         "sociedad"
       ],
       "tags": [
@@ -1412,7 +1412,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:37.982658+00:00"
+      "fetched_at": "2026-09-30T23:40:00.054949+00:00"
     },
     {
       "id": "772c013aea7e30c1022f8717d6bee102aaeefaacccc1a23a1144ec0e3a25c4a7",
@@ -1433,7 +1433,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.243938+00:00"
+      "fetched_at": "2026-09-30T23:40:00.270669+00:00"
     },
     {
       "id": "15d00f6de5b0a65d8b36af291feb5d21981579d9bbab49140270a5c5693be23e",
@@ -1463,7 +1463,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-09-30T23:31:38.086334+00:00"
+      "fetched_at": "2026-09-30T23:40:00.125167+00:00"
     },
     {
       "id": "92ae1667dd96b93f8257a4b10cd3e7f58c0bb506f031ae80950a80d06f37836c",
@@ -1484,7 +1484,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.244140+00:00"
+      "fetched_at": "2026-09-30T23:40:00.272066+00:00"
     },
     {
       "id": "b53fef504a64a30ecb2ea79fab06544ef1eb126cc688d86721178e0d546cafab",
@@ -1497,8 +1497,7 @@
       "description": "Scientists have a history of trying — and failing — to link biology and quantum mechanics. The real connection between them may be in the math. The post Biology Might Not Be Quantum, but Its Math Is Quantumlike first appeared on Quanta Magazine",
       "image_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/Quantum-like-complex-systems-cr.Xavi-Bou-Default.webp",
       "categories": [
-        "ciencia",
-        "historia"
+        "ciencia"
       ],
       "tags": [
         "Physics"
@@ -1508,7 +1507,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:38.672968+00:00"
+      "fetched_at": "2026-09-30T23:40:00.455609+00:00"
     },
     {
       "id": "43a7ec920128e9c76adfd70cc2698f118811808cce070cadc283b9d134ac5a0e",
@@ -1521,8 +1520,7 @@
       "description": "An illuminated Persian manuscript about customs, culture, and caste, written by an enigmatic figure of the early British Raj.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -1530,7 +1528,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.283481+00:00"
+      "fetched_at": "2026-09-30T23:40:03.275575+00:00"
     },
     {
       "id": "6d4c99e458fa653893dd356cb324b43a04d1487e0e33fe340ee850bb745dade3",
@@ -1563,7 +1561,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.086576+00:00"
+      "fetched_at": "2026-09-30T23:40:00.127122+00:00"
     },
     {
       "id": "c0144b7ac28bbeb464d00b15d865e9cfe8c559e99848cced014f3deef033f180",
@@ -1596,7 +1594,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:38.086752+00:00"
+      "fetched_at": "2026-09-30T23:40:00.128498+00:00"
     },
     {
       "id": "539b5535d85bacdd2d3a8bc3988e5485198faaa294947269574ade84122ac875",
@@ -1617,7 +1615,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.244282+00:00"
+      "fetched_at": "2026-09-30T23:40:00.273374+00:00"
     },
     {
       "id": "6339d6e6c9f93449d36272cd327b7e05895584d1e585849259ab9f7c020aeb15",
@@ -1631,8 +1629,8 @@
       "image_url": null,
       "categories": [
         "cine",
-        "sociedad",
-        "literatura"
+        "literatura",
+        "historia"
       ],
       "tags": [],
       "reading_time": 5,
@@ -1640,7 +1638,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-09-30T23:31:39.486458+00:00"
+      "fetched_at": "2026-09-30T23:40:01.522414+00:00"
     },
     {
       "id": "4bdd2c7b670a59f3bf389c6ce93ad086de3a3274cd0cdd071b8816fffb439146",
@@ -1653,8 +1651,7 @@
       "description": "Possible Love (Lee Chang-dong, 2026). Throughout the summer and fall festival season, we'll be publishing a wide array of interviews, dispatches, and surveys from Il Cinema Ritrovato, Locarno, Venice, and Toronto. NEW YORK “ The Posters of the 1976 New York Film Festival ” by Adrian Curry As the 64th NYFF kicks off, a look back half a century to the films and posters of the 14th edition. TORONTO “ The War Against Memory ” by Michael Sicinski Short films and features from the festival’s Wavelengths section propose alternative ways of remembering and archiving. “ Toronto Filmmaker Survey: Just One Moment ” by Daniel Kasman From emerging voices to lauded auteurs, filmmakers at the Toronto International Film Festival share key moments from their new films. VENICE “ The Garden of Forking Paths ” by Leonardo Goi From West Bank brutalities in VR to the Best Director-winning DAU , Werner Herzog's synchronized twins to Elon Musk and Jorge Luis Borges. LOCARNO “ It Was Once Fire: A Locarno Critics Academy Correspondence ” by Rafaela Bassili, Vedant Srinivas, and Alyssandra Maxine Letters reflect upon the unique experiences of three international critics at the Swiss film festival. “ Cut and Spliced: A Locarno Critics Academy Correspondence ” by Catherine Wang, Alex Petrescu, Manahil Tahira, and Charles Carrall Four international critics read between the lines at the Swiss film festival. “ Survival Tactics: A Locarno Critics Academy Correspondence ” by Dylan Adamson, Ishita Sengupta, and Matilda Hague Three critics at the Swiss festival find films across the program that, in different ways, echo the theme of isolating during a disaster. IL CINEMA RITROVATO “ Getting the Scoop in Bologna ” by Beatrice Loayza Taking place during a heatwave, Il Cinema Ritrovato's festival of restorations and revivals soothed the soul while gelato cooled the body. “ Seven-Word Reviews ” Critics, programmers, and film professionals at the Bologna festival of restorations and retrospectives review films in only seven words.",
       "image_url": null,
       "categories": [
-        "cine",
-        "historia"
+        "cine"
       ],
       "tags": [],
       "reading_time": 6,
@@ -1662,7 +1659,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-09-30T23:31:39.487205+00:00"
+      "fetched_at": "2026-09-30T23:40:01.532579+00:00"
     },
     {
       "id": "5ef315c69064e505a0fd14f7a338ec74655e49b395660eaa44919ff90f057846",
@@ -1675,8 +1672,7 @@
       "description": "\"Sacha Jafri sold an artwork for $62 million dollars in 2021 at an auction. But the money never changed hands. What happened?\"",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [
         "Editor's Pick",
@@ -1694,7 +1690,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.086955+00:00"
+      "fetched_at": "2026-09-30T23:40:00.130177+00:00"
     },
     {
       "id": "b00cdf87b59c7dc8cd60868dfd1336ad836697a7c3ed043f9452cd4ffed2dfbc",
@@ -1728,7 +1724,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:38.087186+00:00"
+      "fetched_at": "2026-09-30T23:40:00.132065+00:00"
     },
     {
       "id": "e90d61af14e969178d1714999ce3413cadf53ce1b999cbd8633be9bf8e035ce1",
@@ -1762,7 +1758,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.982946+00:00"
+      "fetched_at": "2026-09-30T23:40:00.057351+00:00"
     },
     {
       "id": "0f9415fbfeeada4c1ceab8380a380edd1117c2754e289a9c526c9ec14ec5efb9",
@@ -1791,7 +1787,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.087408+00:00"
+      "fetched_at": "2026-09-30T23:40:00.133889+00:00"
     },
     {
       "id": "2d34d5a4f1bbb13f6b08031fc92afb389215a13c93406c423411b982f48b93ae",
@@ -1804,8 +1800,7 @@
       "description": "“In 2024, The Paris Review and BPI announced a partnership, through which a distinguished creative writer would teach the literature that has most inspired them to BPI’s students.”",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [
         "Bulletin",
@@ -1818,7 +1813,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-09-30T23:31:37.983162+00:00"
+      "fetched_at": "2026-09-30T23:40:00.059386+00:00"
     },
     {
       "id": "36aa1256d9fb69ebeb9a408aaa21b7bbd51c56d141dec9c211d6a67e3e57c841",
@@ -1831,7 +1826,7 @@
       "description": "\"In New Orleans, water is coming. What should we do with the time we have left?\"",
       "image_url": null,
       "categories": [
-        "sociedad"
+        "cultura"
       ],
       "tags": [
         "Editor's Pick",
@@ -1848,7 +1843,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.087612+00:00"
+      "fetched_at": "2026-09-30T23:40:00.135436+00:00"
     },
     {
       "id": "59b092b3997526379ea868c8074dc50ccffdab66c0a73291c4f0e1c5505dea65",
@@ -1886,7 +1881,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-09-30T23:31:38.087814+00:00"
+      "fetched_at": "2026-09-30T23:40:00.137174+00:00"
     },
     {
       "id": "120e489fe1b2fba3aeb7d8d269a668ca6c21d0d652a35dad726ec4dcff045505",
@@ -1907,7 +1902,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.244464+00:00"
+      "fetched_at": "2026-09-30T23:40:00.274774+00:00"
     },
     {
       "id": "2f21809272cb3bafdd93ecc7f97e4854a6476b2d0daffb3c1d51ff4c99824653",
@@ -1922,7 +1917,7 @@
       "categories": [
         "cine",
         "sociedad",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 10,
@@ -1930,7 +1925,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-09-30T23:31:39.495709+00:00"
+      "fetched_at": "2026-09-30T23:40:01.662505+00:00"
     },
     {
       "id": "514b6e59c24a60ec5e1d9ca9fd3067d90fec6d8b0a7e31251b5bfebbdd72fb9f",
@@ -1961,7 +1956,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.088010+00:00"
+      "fetched_at": "2026-09-30T23:40:00.138797+00:00"
     },
     {
       "id": "7b8a70c4a4264b789be40d20d11ab0597ac2b1cb71f6f08a63c0d55810b39052",
@@ -1974,7 +1969,7 @@
       "description": "“Your worst enemy ain’t Moby Dick, it’s your half brother, Derek.”",
       "image_url": null,
       "categories": [
-        "historia"
+        "cultura"
       ],
       "tags": [
         "Document",
@@ -1993,7 +1988,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.983390+00:00"
+      "fetched_at": "2026-09-30T23:40:00.061138+00:00"
     },
     {
       "id": "c76a1ec3b16dc0be9a07181b21b6111a3e82b8ce9eb815f9ed31b24da8eabc0a",
@@ -2006,8 +2001,7 @@
       "description": "Half of our genome is made of transposons — snips of DNA that can move and copy themselves. But they’re more than parasites or genetic junk. The post How Virus-like ‘Jumping Genes’ Became Our Partners in Evolution first appeared on Quanta Magazine",
       "image_url": "https://www.quantamagazine.org/wp-content/uploads/2026/09/OurViralGenome-crSamuelVelasco-Default.webp",
       "categories": [
-        "ciencia",
-        "artes_visuales"
+        "ciencia"
       ],
       "tags": [
         "Biology"
@@ -2017,7 +2011,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.673250+00:00"
+      "fetched_at": "2026-09-30T23:40:00.457814+00:00"
     },
     {
       "id": "42dfb44312fa1c070d2203dea7586198c1b2b19614b9a28f0cae5813c399be18",
@@ -2030,7 +2024,6 @@
       "description": "\"The quiet medicine of small jobs, finished before dark.\"",
       "image_url": null,
       "categories": [
-        "cine",
         "ciencia"
       ],
       "tags": [
@@ -2047,7 +2040,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.088194+00:00"
+      "fetched_at": "2026-09-30T23:40:00.140055+00:00"
     },
     {
       "id": "02b39eddfc5db405df65f1e41648303cbb2a12f51fba53dc7d160179825a02a1",
@@ -2068,7 +2061,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.244591+00:00"
+      "fetched_at": "2026-09-30T23:40:00.276052+00:00"
     },
     {
       "id": "0b86360dac772a72ef1434c0fae3f13820c86c42ff5981bd7145f76b3447f479",
@@ -2089,7 +2082,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.244799+00:00"
+      "fetched_at": "2026-09-30T23:40:00.277529+00:00"
     },
     {
       "id": "971dd944f95f6de52d4292ba046392976f19e8b4238cabfcf4f63c80c9635a17",
@@ -2112,7 +2105,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-09-30T23:31:39.500995+00:00"
+      "fetched_at": "2026-09-30T23:40:01.751798+00:00"
     },
     {
       "id": "5bca8a5a37ef2f6b9c67fb8846ecf501fcbc93649bce8ef76119451e7a97b0a3",
@@ -2139,7 +2132,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.983581+00:00"
+      "fetched_at": "2026-09-30T23:40:00.062408+00:00"
     },
     {
       "id": "395e9e49def7f942a7b3c37b9e01d163e0cb365ba5853a8a4d4c7585df609a8e",
@@ -2168,7 +2161,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.088344+00:00"
+      "fetched_at": "2026-09-30T23:40:00.141102+00:00"
     },
     {
       "id": "c67a4cc1ee83f216834998dc6d3f6ced9fb9191512c962a4af5e8c43d6df380a",
@@ -2198,7 +2191,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.088509+00:00"
+      "fetched_at": "2026-09-30T23:40:00.142349+00:00"
     },
     {
       "id": "ff6da44c01d33164c7909cac9822744b8b02d4d4ca9d373ea126d3e72c10d2ca",
@@ -2231,7 +2224,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-09-30T23:31:38.088668+00:00"
+      "fetched_at": "2026-09-30T23:40:00.144210+00:00"
     },
     {
       "id": "cf0f43360b1c1c36c275fae7a49e30d2bfc87fcca1e798d5a4a82d0f88dce0e0",
@@ -2252,7 +2245,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:38.244973+00:00"
+      "fetched_at": "2026-09-30T23:40:00.278864+00:00"
     },
     {
       "id": "9954e0cffbec8dc26b1f9f4d3e890615a3d447c4035a1d4e8a7fa48fa6a0ad01",
@@ -2275,7 +2268,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:39.504964+00:00"
+      "fetched_at": "2026-09-30T23:40:01.824760+00:00"
     },
     {
       "id": "1c7215a6a7bb206b1afa16ae461fc6f8bd3356fbd7f6febea403462a99ec38df",
@@ -2288,9 +2281,7 @@
       "description": "\"A series of encounters with an unlikely band of separatists.\"",
       "image_url": null,
       "categories": [
-        "television",
-        "musica",
-        "sociedad"
+        "television"
       ],
       "tags": [
         "Editor's Pick",
@@ -2309,7 +2300,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.088874+00:00"
+      "fetched_at": "2026-09-30T23:40:00.145732+00:00"
     },
     {
       "id": "103e20b45cdd7f2bbc163ae168dd595818d566f0aad324d18210610a28c2f120",
@@ -2330,7 +2321,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.245121+00:00"
+      "fetched_at": "2026-09-30T23:40:00.280046+00:00"
     },
     {
       "id": "aa7e2750e89be56b41941de6c0f08a3e18f4f20602f065004ce7ea8e3dfb1ac3",
@@ -2351,7 +2342,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.245304+00:00"
+      "fetched_at": "2026-09-30T23:40:00.281508+00:00"
     },
     {
       "id": "991595c2606f8c6f1023e73257b59b32a0f51d8ec453c45558dc1646d3359b1d",
@@ -2364,9 +2355,7 @@
       "description": "“Oh, if I could only pray”, Luther once said of his dog Tölpel, “the way this dog watches the meat”. Attending to attentive canine figures in half a dozen paintings by Paolo Veronese, Thomas W. Laqueur explores the work of an artist whose love of dogs landed him in hot water with the Inquisition.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2374,7 +2363,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.283713+00:00"
+      "fetched_at": "2026-09-30T23:40:03.277691+00:00"
     },
     {
       "id": "a2b09d1211d58b9144af989e3c75026d5f35e869dff04bfd900d1c3e9c9e56ea",
@@ -2405,7 +2394,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.983815+00:00"
+      "fetched_at": "2026-09-30T23:40:00.064276+00:00"
     },
     {
       "id": "cb7e0b2db55a7b85cc4553b6321bf3fe1c3670cb9ef374616d410fd185df921e",
@@ -2426,7 +2415,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.245434+00:00"
+      "fetched_at": "2026-09-30T23:40:00.282833+00:00"
     },
     {
       "id": "7b7b3e57f42d1756734e543e82fbe8beb4242cbb8dedecae4e0bac8a9b76e9de",
@@ -2439,9 +2428,7 @@
       "description": "“A Cat-astrophe” came on the tail end of an odd 1918 boom in cat-themed music.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "musica",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2449,7 +2436,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.283880+00:00"
+      "fetched_at": "2026-09-30T23:40:03.278805+00:00"
     },
     {
       "id": "75fcf60b0bfcdfb4a6c3f8414c13b8e076d486f5208460318001f79935012963",
@@ -2470,7 +2457,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.245637+00:00"
+      "fetched_at": "2026-09-30T23:40:00.284269+00:00"
     },
     {
       "id": "1e2c15a2e95a1f70749f1d93b9e72217ee2b87193bf66b08203ea69327725261",
@@ -2493,7 +2480,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-09-30T23:31:39.507798+00:00"
+      "fetched_at": "2026-09-30T23:40:01.867030+00:00"
     },
     {
       "id": "e3d04b33abedee67e51ac1e77745fbfe11a7e786a0e47ac612b877e7c9e17d93",
@@ -2518,7 +2505,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:37.984002+00:00"
+      "fetched_at": "2026-09-30T23:40:00.065625+00:00"
     },
     {
       "id": "5899043fe8826f17f5b1809637c66e43726f6d976df5ce33a3290b82229ccd64",
@@ -2539,7 +2526,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.245785+00:00"
+      "fetched_at": "2026-09-30T23:40:00.285684+00:00"
     },
     {
       "id": "1814b5c831985c3318037c614a8e970d32b5013689943e5cffb76d3d8f76b0a7",
@@ -2560,7 +2547,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.245992+00:00"
+      "fetched_at": "2026-09-30T23:40:00.287166+00:00"
     },
     {
       "id": "b86a2f031e34bbe56d55d0dbd3eff39f48a04a1b85e99b60d870486b0c0e07d3",
@@ -2583,7 +2570,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:39.513623+00:00"
+      "fetched_at": "2026-09-30T23:40:01.981238+00:00"
     },
     {
       "id": "9c969f6407d8a633d1f599ffdb780fc338b47a76e2937e86afdbe22a191f0830",
@@ -2604,7 +2591,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:38.246195+00:00"
+      "fetched_at": "2026-09-30T23:40:00.288601+00:00"
     },
     {
       "id": "caa7451e38c3fe32a79a1f6520e3c3e0d394605065fbddb7c7c82209154771cc",
@@ -2627,7 +2614,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:39.519295+00:00"
+      "fetched_at": "2026-09-30T23:40:02.055509+00:00"
     },
     {
       "id": "249f3faff26f247b8f448bbd86b2b3d81a55a4275a32919bd6a1d8a2f9f4cc5b",
@@ -2640,9 +2627,7 @@
       "description": "By manipulating paper flaps, the child could turn Adam into Eve into a mermaid, a lion into a griffin into an eagle — all while learning about the inevitability of death.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2650,7 +2635,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.284123+00:00"
+      "fetched_at": "2026-09-30T23:40:03.280641+00:00"
     },
     {
       "id": "306b0389633a8c41ed4dd390c66c7b4e502dc1672b6e14e8589aa47864a264b6",
@@ -2671,7 +2656,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-09-30T23:31:38.246335+00:00"
+      "fetched_at": "2026-09-30T23:40:00.289906+00:00"
     },
     {
       "id": "05dc4f1e698bec2adeeb3b1fc24bf09aefb6e4269c34539e14f7c90db511127d",
@@ -2685,7 +2670,7 @@
       "image_url": null,
       "categories": [
         "cine",
-        "literatura",
+        "artes_visuales",
         "historia"
       ],
       "tags": [],
@@ -2694,7 +2679,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-09-30T23:31:39.523975+00:00"
+      "fetched_at": "2026-09-30T23:40:02.158620+00:00"
     },
     {
       "id": "df91032a3a0e67c8e5e4c84e823d0431ef51e6b4252f032bffc121852f859a31",
@@ -2709,7 +2694,7 @@
       "categories": [
         "cine",
         "sociedad",
-        "musica"
+        "television"
       ],
       "tags": [],
       "reading_time": 5,
@@ -2717,7 +2702,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-09-30T23:31:39.526953+00:00"
+      "fetched_at": "2026-09-30T23:40:02.219379+00:00"
     },
     {
       "id": "801cad90ad5ae6d9409d0a3117a5638772e3b0460c3c207ff1240b8bdf3015a8",
@@ -2730,8 +2715,7 @@
       "description": "Vibrant textiles from the dazzling Timurid metropolis of Bukhara.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2739,7 +2723,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.284283+00:00"
+      "fetched_at": "2026-09-30T23:40:03.281804+00:00"
     },
     {
       "id": "120a4719d80c9ac2033900b97f3a1b6b47ace360ac5e47e83ba5332a1ba4c755",
@@ -2762,7 +2746,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:39.532190+00:00"
+      "fetched_at": "2026-09-30T23:40:02.311629+00:00"
     },
     {
       "id": "663af67e72c4f8d58fd26df9d10855a80c534d1afdb21f1e6a16ab6978002bce",
@@ -2775,9 +2759,7 @@
       "description": "Photo by Emma Fuchs. At sunset we move like a herd. Arms laden with blankets, we snake down the gravel path, as signs in blue spray paint warn “ΠΡΟΣΟΧΗ! Use Caution!” Halfway there, the trees that bracket us part like curtains. Below, stark against the green-gold valley, we can make out a small white square—the projection screen. At a fork in the path, there is a small sign with a blue arrow on it, and the word “Temenos.” From here, the path narrows until suddenly it opens onto a clearing. In a small field, like a basin, rows of red beanbag chairs dot the ground in front of the screen, and behind them, a crescent of pink cushioned benches and a projector wait. The restoration of Eniaios (1948–1990),the magnum opus of Greek-American experimental filmmaker Gregory J. Markopoulos, has been a gradually revealed 25-year process. The experimental film comprises 168 reels organized into 22 cycles—each composed of meticulously spliced black film leader, clear leader, and brief bursting footage from Markopoulos’s early films—and is 80 hours long. Segments of Eniaios ’s restoration have been screened in the same field in the Greek village of Lyssarea at Olympic intervals since 2004. This June, over the course of four nights , the final four cycles ( XIX – XXII ) were screened, marking the completion of the Temenos. This name, originally meaning “a place set apart or a sacred precinct,” has come to signify both Eniaios and the open-air cinema dedicated to it—it has become an event inseparable from its home. 1 This was my induction into the cult of Markopoulos. As I climbed onto the bus which would bring spectators from Karaiskaki Square, a hectic roundabout in the center of Athens, to the shrublands of Arcadia, I was asked if I considered myself “a Marko-head” too. I shrugged. I had found my way here by word of mouth. To undertake a pilgrimage requires both boldness and suppleness. One needs an openness to strangers, and the strangeness encountered along the way, as well as a willingness to transform. Markopoulos conceived of the Temenos not only as a screening but also as a “sanctuary where one may approach Understanding.” 2 This summer, I am approaching the idea that the goal is not to have completed something, but to have seen something through to the end. Photo by Emma Fuchs. When Markopoulos first sought a site for the Temenos, highways hadn’t yet been carved into Arcadia. Lyssarea, his father’s ancestral village, was six hours from Athens by car. According to Markopoulos, “Here was a location upon which a dream could be built. It was never forgotten, and it was believed to be inaccessible.” 3 Now, as two cream-colored coaches carry a hundred cinephiles across mountainous switchbacks to the lush and remote municipality of Gortynia, pilgrimage takes on a new form. While the site of the Temenos is not easily accessible, with certain organizational skills, it is reachable. Before this summer, my sole exposure to Markopoulos had been the film Through a Lens Brightly: Mark Turbyfill (1967), a portrait richly saturated in warm tones and overlaid images. In a cinema in New York, I had found the short film dense, dizzying, and claustrophobic. However, Markopoulos believed that every film deserves an architect that understands its needs. Cinemas, lacking specificity, fail. In 1967, he withdrew his entire filmography from distribution, from his first short of 1940 to his completed but unprinted projects. He envisioned the Temenos as an amphitheater of screens , a projection site that would allow his work to exist in its purest form—not as entertainment, but as “film as film.” I was innocent as to the distance I would have to travel as a spectator. I was unprepared for the ethereality of Eniaios. Photo by Micah Newberger. The film is composed mainly of varying brightnesses. Segments of clear leader create a total and stinging white. Pale moths in these projector beams become bright as stars. Black leader conjures a dark screen, but as the sun sets and the sky darkens, it takes on a violet quality against the true black of night. Brief and sharp between these two modes, excerpts of Markopoulos’s early films arrive stripped of their narrative qualities. Creases in the bent elbow of a man’s tweed jacket. A strange tool. A balding head. A nude body in a shabby apartment. An arm drawn back, hand curled and brushing the jaw, as if pulling an arrow taut against a bow string. Movements barely flicker and that which moves is always gestural, sensual. When black leader follows an image, it creates a lingering, silhouetted after-image. White clears the slate, cleanses the eye, and, when it precedes an image, distills the light into a sudden form, a figurative beauty. Photo by Emma Fuchs. The reels spin these contrasts in rapid cycles. I imagine looking down from the hilltops surrounding the screening site and mistaking the screen for a strobe light. Each image rarely exceeds six seconds, and this length itself is a delicacy. Something to be savored. Most images are even more fleeting, as brief as one frame. Nearly fifteen hours of footage were screened this year—yet endurance felt easy. Suspended between images, time condenses. Each night, extremes of duration and speed combined “subdue the common meaning of Time.” 4 Though the film is silent, dogs in the distance, the granular shift of the beanbag chairs, crickets, and the motoring projector score and texturize the night. On occasion, the rhythm of the film is interrupted by a loud clunk and a true dark screen. When the projector glitches on the second and fourth nights, the projectionist reveals a palm-sized flashlight and sets to fixing the machine with stoicism. Silence and bated breath, and then the reel picks up as if nothing had happened. There is simultaneously much and little more to say, for, as Italo Calvino has written, “any interpretation impoverishes the myth and suffocates it.” 5 The myth, in this case, refers to both the inspiration for Markopoulos’s early works, for he was obsessed with the tales of Asclepius and Prometheus, the Old Masters and Andy Warhol, and his tendency to mythologize and idolize himself and Robert Beavers, his muse and collaborator. Since Markopoulos’s death in 1992, Beavers, alongside his own filmmaking, has spent much of his life succeeding Markopoulos in his stewardship of their archives, the restorations of Eniaios , and their steadfast vision of the Temenos. As per Calvino again: “With myths, one should not be in a hurry. It is better to let them settle into the memory, to stop and dwell on every detail, to reflect on them without losing touch with their language of images.” 6 Where I find Markopoulos’s work the most remarkable, however, is in its value of lightness, not only in the form of brilliance, but also in relation to weightlessness. How does one make a colossal, 80-hour film without creating something stone-heavy? I have turned to Calvino’s essay “On Lightness” to try and make sense of this, since he shares Markopoulos’s view that the “intensively ascetic and isolated” process of creation is a calling to “remove weight from the structure.” 7 Calvino writes: Were I to choose an auspicious image for the new millennium, I would choose… the sudden agile leap of the poet philosopher who raises himself above the weight of the world, showing that with all his gravity he has the secret of lightness, and that what many consider to be the vitality of the times noisy, aggressive, revving and roaring-belongs to the realm of death, like a cemetery for rusty old cars. 8 Markopoulos viewed the world in similar conjunctions, whose hyphenated roles and merged ideologies allow one to view the world in a minuscule and modular manner, with greater attention paid to the illuminations of an image beyond language. For Markopoulos, his role was one of the filmmaker-physician. Anatomical delicacy, to Markopoulos, was the ideal approach to filmmaking, the approach that would result in the greatest clarity of his ideas. By counting the seconds of footage and meticulously measuring and suturing lengths of film, Markopoulos makes a science of his own. By reducing his filmography to brief illuminations, time itself seems to evaporate into light beams. Photo by Micah Newberger. P. Adams Sitney, the late historian of American avant-garde cinema, in his reflections on the earliest Temenos, 9 referred to his friendship with Markopoulos as “clouded.” Nonetheless, he had attended every Temenos between 2004 and his passing in the summer of 2025. At the annual welcome dinner, I sat with his son, who was attending the Temenos, carrying his father’s spirit. He gestured vaguely, explaining this, and the word spirit seemed to exist on the threshold of corporeal and atmospheric. On the third night of screenings, Beavers hosted a town hall of sorts in concentric circles of plastic lawn chairs. He sat alone in the center, and in a soft voice addressed the finality of the event while also joking that the Temenos is yet to be realized, and that the next iteration will occur in a field arranged with alabaster chairs. 10 On this penultimate night, Eniaios XXI felt particularly sparse. But, vibrant against the sparsity, there was an image on the screen of a glittering fountain. The total shock of this moment’s beauty reverberated long after the image had ended. After the last reel, as we walked uphill with flashlights casting halos around our feet, there seemed to be a thread woven through the crowd, euphoric whispers of “fountain!” In the murkiness of the bus ride home, faces obscured, I heard the word “fountain!” float past me again and again. Photo by Micah Newberger. On our final descent into the field on that fourth night, walking down the hill to endure hours of flashing lights felt both absurd and familiar. The air was charged with a heaviness of anticipation. Cycle XXII has a runtime of four hours and 43 minutes, with five reel changes. Alongside dinners and town halls, it is tradition to release large-format folios relating to each year’s Temenos. This year, embossed with a grasshopper on the cover and unfolding like a newspaper, Markopoulos’s 1992 essay “The Future of the Temenos and its Boundaries” is reprinted alongside its Greek translation in green ink. The folio also includes “Poverty & Need and Abundance & Ingenuity” in which Beavers further reflects on the Temenos’s totality, and Markopoulos’s own sparsely annotated list of the films from which he salvaged footage to build Eniaios XIX – XXII. Those who are familiar with Markopoulos’s oeuvre use this bibliography-like list as an archeological guide to the films. To the uninitiated spectator, these notes feel as sparse as the Eniaios , like loose threads that must be pulled taut in order to locate their origin. The final image of the film is attributed to figalea , a work that never circulated. In the folio, its naming is preceded by the note: “[morning, phosphorous / the light bearer, the morning star].” 11 Photo by Micah Newberger. Markopoulos wrote that ending a film is like tying an intricate surgical knot. One must make “the best knot for each work; and it is completed forever.” 12 It must be clean. It is somewhere near three in the morning when the projection cuts off and, though abrupt, there is a sense of finality. Before the screening, Beavers had asked that when the Temenos ends, we hold a moment of silence. These few minutes of quiet are like a canopy. In the dark, in the absence of the projector’s hum, true silence takes on a thick feeling in the air. The screen loses its violet wash as eyes readjust. We wait, until Beavers releases a thunderous “Thank you.” It is not yet light, but it will be soon. We march uphill in pairs and small clusters. At the top, the two coaches wait, patient and grave. Next to them is a folding table with sherbet-colored shot glasses and a large bottle of tsipouro, a Greek pomace brandy. Hands clink in the dark, and I make hazy eye contact as I toast. The rosy fingers of dawn stretch out across the sky. The exuberant birds are already waking. We toy with the idea of not sleeping, and then we drag our bags slowly through the village streets to meet the bus one last time and complete our own cycle, which ends in Athens, at Karaiskaki Square. 1. Beavers, “A Note.” The Temenos, n.d. Accessed July 19, 2026. 2. Markopoulos, Gregory J. “A Solemn Pause...” In Film as Film: The Collected Writings of Gregory J. Markopoulos . The Visible Press, 1971. 3. Markopoulos, Gregory J. “The Future of the Temenos and Its Boundaries.” Temenos 2026,1992, 5. 4. Ibid. 5. Calvino, Italo. “On Lightness.” In Six Memos for the Next Millenium . Harvard University Press, 1988.https://designopendata.wordpress.com/wp-content/uploads/2014/05/sixmemosforthenextmillennium_italocalvino.pdf, 4. 6. Ibid. 7. Beavers, Robert. “Poverty & Need and Abundance & Ingenuity.” Temenos 2026, 2026; Calvino, 3. 8. Calvino, 12. 9. Sitney, P. Adams. “Idyll Worship: Gregory J. Markopoulos’s Eniaios.” Artforum , November 1, 2004. https://www.artforum.com/features/idyll-worship-gregory-j-markopouloss-eniaios-170123/. 10. Alabaster, the sheer and soft stone, is a recurring materiality in Markopoulos’s writing. In “Herakles” he writes, “In surroundings as marvelous as Alabaster columns, the Temenos will appear.” ( Film as Film , 374) and in “The Threshold of the Frame” he writes, “[The filmmaker] perceives the glow of the true light which is seen somewhere out of the Infinite Past through the columns of the finest alabaster: that which becomes the final form of the work.” ( Film as Film , 313). Markopoulos, Gregory J. “The Threshold of the Frame.” In Film as Film: The Collected Writings of Gregory J. Markopoulos . The Visible Press, 1974. 11. Markopoulos, Gregory. Temenos 2026. 12. Markopoulos, Gregory J. “The Filmmaker’s Perception in Contemplation.” In Film as Film: The Collected Writings of Gregory J. Markopoulos . The Visible Press, 1972, 356. A previous version of this essay included a paragraph that misquoted and mischaracterized an anecdote at Tenemos. This has subsequently been corrected.",
       "image_url": null,
       "categories": [
-        "cine",
-        "historia",
-        "sociedad"
+        "cine"
       ],
       "tags": [],
       "reading_time": 43,
@@ -2785,7 +2767,7 @@
       "reading_time_estimated": false,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:39.537130+00:00"
+      "fetched_at": "2026-09-30T23:40:02.381948+00:00"
     },
     {
       "id": "c9b725106ae230e154cee99741e6c5a3b1e85d44e23c2d9b11eaa9c8cee85e3f",
@@ -2800,7 +2782,7 @@
       "categories": [
         "cine",
         "sociedad",
-        "historia"
+        "television"
       ],
       "tags": [],
       "reading_time": 6,
@@ -2808,7 +2790,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-09-30T23:31:39.540716+00:00"
+      "fetched_at": "2026-09-30T23:40:02.451085+00:00"
     },
     {
       "id": "c1742dec2a613d3f9bd99a7a853a9cf0d3e6f3c98f60a3a2c743cf779de28f63",
@@ -2823,7 +2805,7 @@
       "categories": [
         "cine",
         "sociedad",
-        "historia"
+        "television"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2831,7 +2813,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-09-30T23:31:39.545937+00:00"
+      "fetched_at": "2026-09-30T23:40:02.543545+00:00"
     },
     {
       "id": "d8d3a407c525509bd12ffeac3b135fc2ee66cf6620716ad0edc7285627c887e3",
@@ -2844,9 +2826,7 @@
       "description": "What does it really mean to set off on the road? In this season of MUBI Podcast: Contemporary Italian Voices, Isabella Ragonese explores the road movie as a metaphor for transformation. Joined by guests from the worlds of film and culture, she reflects on how every journey, whether physical or inward, profoundly changes the traveler, often more than the destination itself. Not every journey requires a road. Some begin in memory, imagination, music, or dreams. Through films such as Midnight in Paris (2011), Trainspotting (1996), and Another Earth (2011) , Barbara Chichiarelli and Marta Del Grandi join Isabella Ragonese in exploring the inner journey, the one that cinema and music make possible by allowing us to inhabit identities, worlds, and perspectives different from our own. Listen to the episode at the link below or with your favorite podcast app. Subscribe today and never miss an episode. Apple Podcast Spotify Amazon Music Cosa significa davvero partire? In questa stagione di MUBI Podcast: Voci Italiane Contemporanee, Isabella Ragonese esplora il cinema on the road come metafora di trasformazione. Insieme a ospiti del mondo del cinema e della cultura, racconta come ogni viaggio, reale o interiore, cambi profondamente chi lo vive, più della destinazione stessa. Non tutti i viaggi hanno bisogno di una strada. Alcuni iniziano nella memoria, nell'immaginazione, nella musica o nei sogni. Attraverso film come Midnight in Paris (2011), Trainspotting (1996) e Another Earth (2011), Barbara Chichiarelli e Marta Del Grandi esplorano con Isabella Ragonese il viaggio mentale: quello che il cinema e le canzoni rendono possibile quando ci permettono di abitare identità, mondi e prospettive diverse dalla nostra. Ascolta l’episodio ai link nell'articolo o nella tua app di podcast preferita. Iscriviti per rimanere aggiornato sui prossimi episodi della stagione.",
       "image_url": null,
       "categories": [
-        "cine",
-        "artes_visuales",
-        "musica"
+        "cine"
       ],
       "tags": [],
       "reading_time": 6,
@@ -2854,7 +2834,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-09-30T23:31:39.546496+00:00"
+      "fetched_at": "2026-09-30T23:40:02.553169+00:00"
     },
     {
       "id": "927f895125350a488a17bcb6ee93128813fed84911526fbf86cf6217b97bf217",
@@ -2868,7 +2848,6 @@
       "image_url": null,
       "categories": [
         "cine",
-        "artes_visuales",
         "musica"
       ],
       "tags": [],
@@ -2877,7 +2856,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-09-30T23:31:39.547100+00:00"
+      "fetched_at": "2026-09-30T23:40:02.563379+00:00"
     },
     {
       "id": "53572b52df2812a8be43a8bd6cdceb5e59c32b53a5c5a8c36568c9a2953bd5ce",
@@ -2900,7 +2879,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:39.553448+00:00"
+      "fetched_at": "2026-09-30T23:40:02.638631+00:00"
     },
     {
       "id": "c323f99cb95f3c8d3ac18fef4c1d266d7043bc92684ae92edf820eabbb115a79",
@@ -2923,7 +2902,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-09-30T23:31:39.556350+00:00"
+      "fetched_at": "2026-09-30T23:40:02.701043+00:00"
     },
     {
       "id": "5dae9e9c5bc9ff17ca7639a3cd512487904a538e18e15d42c11af77a99357a0b",
@@ -2937,8 +2916,7 @@
       "image_url": null,
       "categories": [
         "cine",
-        "sociedad",
-        "historia"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2946,7 +2924,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:39.560663+00:00"
+      "fetched_at": "2026-09-30T23:40:02.753134+00:00"
     },
     {
       "id": "6327cb98159853e9fa2a6af7a13b616907038a8e5b99930b9ce5b6bb3e857d37",
@@ -2961,7 +2939,7 @@
       "categories": [
         "cine",
         "artes_visuales",
-        "literatura"
+        "musica"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2969,7 +2947,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:39.565013+00:00"
+      "fetched_at": "2026-09-30T23:40:02.813516+00:00"
     },
     {
       "id": "818ede178c120fff6c2d0a36c6e9de3b54636bd74c03be29d1c016e81562bdf9",
@@ -2982,8 +2960,7 @@
       "description": "Rosebush Pruning is streaming exclusively on MUBI from August 21 almost globally. Cannes-winning actor/filmmaker Riley Keough ( The Girlfriend Experience , 2016) is no stranger to the worlds of wealth or fashion, and in the bloody, bawdy new satire Rosebush Pruning (2026), she inhabits a larger-than-life character who is way too into both. Keough tells Rico what drew her to director Karim Aïnouz's weird-wave black comedy, and about finding love on the infamously intense set of Mad Max: Fury Road (2015). Listen to the special episode below or wherever you get your podcasts. Apple Podcasts Spotify More",
       "image_url": null,
       "categories": [
-        "cine",
-        "television"
+        "cine"
       ],
       "tags": [],
       "reading_time": 6,
@@ -2991,7 +2968,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-09-30T23:31:39.565298+00:00"
+      "fetched_at": "2026-09-30T23:40:02.817356+00:00"
     },
     {
       "id": "7ce191c9b5cfdd57025d865049e48ce8da19bc15f8d6127dce38eee101adaf2e",
@@ -3004,9 +2981,7 @@
       "description": "Centuries before Neo instantly mastered Kung Fu in *The Matrix*, medieval scholars found a shortcut to years of difficult study: a magical manuscript that promised to fast-track advanced learning. Anne Lawrence-Mathers investigates the *Ars notoria*, its supposed powers, and the demonic influence it had upon some users.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales",
-        "ciencia"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3014,7 +2989,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.284510+00:00"
+      "fetched_at": "2026-09-30T23:40:03.284235+00:00"
     },
     {
       "id": "962cb18ec4cbe8f87b7143edecc3a791f8d9d10e82e2521117729f5f0a33ed36",
@@ -3027,8 +3002,7 @@
       "description": "Photographs from when Atlantic City beaches featured artists ornately sculpting sand.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3036,7 +3010,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.284687+00:00"
+      "fetched_at": "2026-09-30T23:40:03.285487+00:00"
     },
     {
       "id": "cab95acf4e7a039fe64475465ffd68a2824a52c54d999d5c162641ede901831d",
@@ -3049,9 +3023,7 @@
       "description": "A Zoroastrian text about serpents translated by the President of the Bombay Anthropological Society.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3059,7 +3031,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.284872+00:00"
+      "fetched_at": "2026-09-30T23:40:03.286903+00:00"
     },
     {
       "id": "26ab16ecc45f8774308dab550d35892d7706820cc0c7d80806b9eb156eba1150",
@@ -3072,8 +3044,7 @@
       "description": "Circular maps custom-made for the fire towers that once dotted the American wilderness.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3081,7 +3052,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.285049+00:00"
+      "fetched_at": "2026-09-30T23:40:03.288149+00:00"
     },
     {
       "id": "9ab83b6ac9007d53958f519d6f6e883f7119baad0790afee08a0b9c31787ae94",
@@ -3095,8 +3066,7 @@
       "image_url": null,
       "categories": [
         "historia",
-        "sociedad",
-        "artes_visuales"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3104,7 +3074,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.285322+00:00"
+      "fetched_at": "2026-09-30T23:40:03.290651+00:00"
     },
     {
       "id": "17642c9230c2562c786e5486ec02e28643b22ba63a4a48e46c32f2bad1d5bd80",
@@ -3117,8 +3087,7 @@
       "description": "Cover designs for José Carlos Mariátegui’s radical Lima-based magazine.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3126,7 +3095,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.285492+00:00"
+      "fetched_at": "2026-09-30T23:40:03.291832+00:00"
     },
     {
       "id": "5b18c759513c2fe93b3836ba7efe9f8b0dca869aad41479544d082059da77d18",
@@ -3139,8 +3108,7 @@
       "description": "Selections from the long-running British journal on historical peculiarities, from the whereabouts of Mary Queen of Scot’s severed head to the identity of Charles I's hooded executioner.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3148,7 +3116,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:40.285703+00:00"
+      "fetched_at": "2026-09-30T23:40:03.293578+00:00"
     },
     {
       "id": "025bf41c03096f9929f03ef24d4380310fa1f8974d4ea9403eb7012bfc49ddf8",
@@ -3161,8 +3129,7 @@
       "description": "Diagrams from a now-lost Urdu manuscript illustrating the propitious days and directions for travel.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3170,7 +3137,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.285869+00:00"
+      "fetched_at": "2026-09-30T23:40:03.294819+00:00"
     },
     {
       "id": "01dc9dfb64eaf9d55ddd16c49322a057081fbf17a84a6e07ca49fa180942c48a",
@@ -3183,9 +3150,7 @@
       "description": "Arguably the first work of fiction to feature a *Tyrannosaurus rex*, Louis Pope Gratacap’s *The New Northland* (1915) is at once kaleidoscopic, mischievous, fascinating — and exhausting. Richard Fallon explores this “lost world” novel, finding a work as interested in cutting-edge science as it was in paying dues to its generic precursors.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "ciencia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 10,
@@ -3193,7 +3158,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-09-30T23:31:40.286113+00:00"
+      "fetched_at": "2026-09-30T23:40:03.297259+00:00"
     },
     {
       "id": "5906cc569be645066ee7ecddf766b85ed32edd6cce7b1f0ab4d8e26a321c0983",
@@ -3206,8 +3171,7 @@
       "description": "69 images of kite flying from across 5 centuries and some dozen countries.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3215,7 +3179,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.286278+00:00"
+      "fetched_at": "2026-09-30T23:40:03.298348+00:00"
     },
     {
       "id": "2a9d9d2dddadc13206d47b5f71ffd753a0798efdca1e25c784438e418154c031",
@@ -3228,9 +3192,7 @@
       "description": "Artworks from an era when Venetians brawled on bridges.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3238,7 +3200,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.286425+00:00"
+      "fetched_at": "2026-09-30T23:40:03.299388+00:00"
     },
     {
       "id": "8e7d629efc48647f95f61f6965efbd92db74559e99f044d12d9515597c3b767c",
@@ -3251,8 +3213,7 @@
       "description": "A philosophical system and a practical guide for the cultivation of dramatic genius.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3260,7 +3221,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.286598+00:00"
+      "fetched_at": "2026-09-30T23:40:03.300693+00:00"
     },
     {
       "id": "5f185e48a2115217cdd1caf5b5ff42c162f78087d0ff8d8945e5769c693d3e75",
@@ -3273,8 +3234,7 @@
       "description": "Our Mid-Year Fundraiser is launched, and the new postcards theme will be Soil.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3282,7 +3242,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.286753+00:00"
+      "fetched_at": "2026-09-30T23:40:03.301794+00:00"
     },
     {
       "id": "308f6f86d26823705941070fe01e0574f58be9336a3e8117212c6719c576a332",
@@ -3295,8 +3255,7 @@
       "description": "Legal infographics that reflect a Turkish nation in flux.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3304,7 +3263,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.286916+00:00"
+      "fetched_at": "2026-09-30T23:40:03.302929+00:00"
     },
     {
       "id": "baa57f2ea57ef2b5081b9e580d83eaf0fac3acd26ef332e12c842d2f0a355474",
@@ -3317,8 +3276,7 @@
       "description": "In the Middle Ages, rumours spread across Europe of a strange hybrid creature, half-animal, half-plant, known as the Vegetable Lamb of Tartary. A hoax based on fern rhizomes? A euphemism for culled fetal lambs? Or perhaps a medieval misapprehension of cotton? Thom Sliwowski traces the roots of this fabled zoophyte.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3326,7 +3284,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.287154+00:00"
+      "fetched_at": "2026-09-30T23:40:03.305258+00:00"
     },
     {
       "id": "da2c8816e344ef4a6e1c64a32d0872e356ab6646fab7fc32acedcc0706265703",
@@ -3339,8 +3297,7 @@
       "description": "Photographs of flowers by an advocate of California’s beauty.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3348,7 +3305,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.287330+00:00"
+      "fetched_at": "2026-09-30T23:40:03.306467+00:00"
     },
     {
       "id": "07c20d387d56b8c5919dfb1c7609d6ecf2c575190602a46a18c69e0d2a199653",
@@ -3361,8 +3318,7 @@
       "description": "Historical predictions from the Scottish Nostradamus.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3370,7 +3326,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:40.287468+00:00"
+      "fetched_at": "2026-09-30T23:40:03.307427+00:00"
     },
     {
       "id": "439175eb0ccbd2043575dd49b0090e15670696038605c816049825c12545b9ec",
@@ -3383,9 +3339,7 @@
       "description": "Photographs and films of a forgotten pastime.",
       "image_url": null,
       "categories": [
-        "cine",
-        "artes_visuales",
-        "historia"
+        "cine"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3393,7 +3347,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.287622+00:00"
+      "fetched_at": "2026-09-30T23:40:03.308517+00:00"
     },
     {
       "id": "bf2ad1e3141cea2eeb89473f0544a86480912eb17b61120326df660e2df5f1f7",
@@ -3406,9 +3360,7 @@
       "description": "Before Linotype revolutionised typesetting in the 1880s, compositors set texts by hand — and they set them *fast*. Alex Wright rediscovers the thrilling world of typesetting races, which drew crowds in the thousands, offered huge cash prizes, and helped women \"Swifts\" fight for workplace equity.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales",
-        "ciencia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3416,7 +3368,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.287857+00:00"
+      "fetched_at": "2026-09-30T23:40:03.310948+00:00"
     },
     {
       "id": "9b0aff4b86dc52d6cc6a90669a12dde1498c254ed33b54274ee0a78b31ce6520",
@@ -3429,8 +3381,7 @@
       "description": "A Dutch physician’s encounter with acupuncture.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3438,7 +3389,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.288011+00:00"
+      "fetched_at": "2026-09-30T23:40:03.312006+00:00"
     },
     {
       "id": "0a8b2517cd65e699ce9a51dccb248d7322021e87eefc35a0e347f14d284bf4d1",
@@ -3451,8 +3402,7 @@
       "description": "A treatise on a powder that can cure wounds at a distance.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3460,7 +3410,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.288215+00:00"
+      "fetched_at": "2026-09-30T23:40:03.313267+00:00"
     },
     {
       "id": "43e83d1e94013c3451e8709aa1040358a7305cf0389b67d9062505aab4bd4eb2",
@@ -3473,9 +3423,7 @@
       "description": "The working class undergirds everything in this cartoon of capitalist society.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "sociedad",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3483,7 +3431,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.288373+00:00"
+      "fetched_at": "2026-09-30T23:40:03.314341+00:00"
     },
     {
       "id": "61b7e3ee22e02043d7480ea6f39c153f61aeaf35b467e4c3321d60d03eb6364c",
@@ -3496,9 +3444,7 @@
       "description": "What allowed occultism to blossom in the United States at the turn of the 20th century? Linotype machines, cheap pulp paper, and newly improved postal networks. Allan Johnson investigates the forgotten history and (still living) world of mail-order magic.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales",
-        "sociedad"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3506,7 +3452,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.288577+00:00"
+      "fetched_at": "2026-09-30T23:40:03.316343+00:00"
     },
     {
       "id": "75325cfcf90a0ea48b3f46ffb80c4a6fb4cb3754902bf806b3bab1c968dfea7d",
@@ -3519,8 +3465,7 @@
       "description": "Lantern slide of man battling bug.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3528,7 +3473,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.288713+00:00"
+      "fetched_at": "2026-09-30T23:40:03.317262+00:00"
     },
     {
       "id": "3eb93dd506b38baf1528d221b7b45663afc56d885be5055d1e95a26e9194898b",
@@ -3541,9 +3486,7 @@
       "description": "An early contribution to drug literature, in which a man came to be fashioned out of wood.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3551,7 +3494,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.288911+00:00"
+      "fetched_at": "2026-09-30T23:40:03.318781+00:00"
     },
     {
       "id": "95b1a21f1b6c553d358edfaf8780e61f98cd1c7db9e0e31309d29072f2184d3d",
@@ -3564,9 +3507,7 @@
       "description": "Announcing an exciting new book series!",
       "image_url": null,
       "categories": [
-        "television",
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3574,7 +3515,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.289045+00:00"
+      "fetched_at": "2026-09-30T23:40:03.319629+00:00"
     },
     {
       "id": "939bd6883a666a4943466ffd0083123fe3bc973bcae7eb4ca7c9ec2fd4f09964",
@@ -3587,9 +3528,7 @@
       "description": "A modernist adaptation of Edgar Allan Poe. One of the first avant-garde films from America.",
       "image_url": null,
       "categories": [
-        "cine",
-        "artes_visuales",
-        "historia"
+        "cine"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3597,7 +3536,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.289231+00:00"
+      "fetched_at": "2026-09-30T23:40:03.320863+00:00"
     },
     {
       "id": "1abb4b03b9fea38bce6014c93e6156110f64d4342a59e09f7409a8b329e8c691",
@@ -3610,9 +3549,7 @@
       "description": "The creator of WNYC's Public Song Project on creativity, copyright, and the public domain.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "musica",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3620,7 +3557,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.289409+00:00"
+      "fetched_at": "2026-09-30T23:40:03.322196+00:00"
     },
     {
       "id": "df7b12dbd6355178df85d7595b02e7be42f42146edb44e2f952eb8f33a7c62f0",
@@ -3633,9 +3570,7 @@
       "description": "As populations flocked to city centres in the 19th century, church cemeteries began to overflow with the dead. Roger Luckhurst exhumes the history of this period, when anatomists fuelled a body-snatching trade led by “resurrection men” and reformers sought alternatives to the toxic urban graveyards and their pestilent fumes.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales",
-        "musica"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3643,7 +3578,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.289659+00:00"
+      "fetched_at": "2026-09-30T23:40:03.324725+00:00"
     },
     {
       "id": "64c624d86b0dec6505a954016a29614d1c989028ce2b98c20c063ef827d43326",
@@ -3656,8 +3591,7 @@
       "description": "Marvels, wonders, and monstrosities: something between a medieval bestiary and a scientific treatise on birth defects.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3665,7 +3599,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.289854+00:00"
+      "fetched_at": "2026-09-30T23:40:03.326257+00:00"
     },
     {
       "id": "8eb3870ce61b61beb12ede36334c3f48e2f5cb2d4a59c1d00b0d19164241a2d3",
@@ -3678,9 +3612,7 @@
       "description": "One of the most elaborate works of literary insult ever written.",
       "image_url": null,
       "categories": [
-        "sociedad",
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3688,7 +3620,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.290023+00:00"
+      "fetched_at": "2026-09-30T23:40:03.327495+00:00"
     },
     {
       "id": "68c54a11364b00d1cc6d5f01f7312f65a05090e948c20b59d50f16d9e1b670a0",
@@ -3701,8 +3633,7 @@
       "description": "Moneymaking caricatures by a teenage Monet, before he turned to Impressionism.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3710,7 +3641,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.290210+00:00"
+      "fetched_at": "2026-09-30T23:40:03.328794+00:00"
     },
     {
       "id": "56e86f3e346ffcae02b0e73bd7344dea126513b3d5b4dbf31f7b21edce4b5c9b",
@@ -3723,7 +3654,6 @@
       "description": "In early modern Europe, around the time when lenses began to bring the world (and heavens) into newfound focus, patients started appearing in medical records with a particular ailment: a firm belief that they were made of glass. Tamara Sanderson investigates the source and manifestation of this delusion, and finds a psychological idiom that once carried the weight of what could otherwise not be said.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
         "historia"
       ],
       "tags": [],
@@ -3732,7 +3662,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.290464+00:00"
+      "fetched_at": "2026-09-30T23:40:03.331525+00:00"
     },
     {
       "id": "410a8a8d44d4e51a8a820ab0904fc1557f8614d6bba5d0c5069e005167ec001b",
@@ -3745,8 +3675,7 @@
       "description": "\"Tall-tale\" or \"exaggeration\" postcards illustrating the bounties of California.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3754,7 +3683,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.290620+00:00"
+      "fetched_at": "2026-09-30T23:40:03.332696+00:00"
     },
     {
       "id": "d3ba30ae2528d187629403d40de08fb0116516b6c8743ead19d2a6bc0c652480",
@@ -3767,9 +3696,7 @@
       "description": "A utopian novel where men are no longer necessary.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3777,7 +3704,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.290767+00:00"
+      "fetched_at": "2026-09-30T23:40:03.333698+00:00"
     },
     {
       "id": "7e17e9aab19e982fbb4340e0fcf495a6d77c6734bfd60c1a6f2d99744a1b424a",
@@ -3790,8 +3717,7 @@
       "description": "Illustrations of Javanese *wayang kulit* puppets with vivid colour and gilding.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3799,7 +3725,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.290941+00:00"
+      "fetched_at": "2026-09-30T23:40:03.334983+00:00"
     },
     {
       "id": "b29e6209b704916c46825e2fa11b280b5b76c7833ad2557602966ba57f171ce2",
@@ -3812,9 +3738,7 @@
       "description": "Does the flâneur , that curiously modern figure who wanders metropolitan streets, have a political consciousness? For Franz Hessel — author of Spazieren in Berlin , “a memorization while strolling” that Walter Benjamin called “thoroughly epic” — the answer seemed to be no. Paul Sullivan explores Hessel’s perambulations through Berlin and the achievements and limitations of his vision.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3822,7 +3746,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.291227+00:00"
+      "fetched_at": "2026-09-30T23:40:03.337789+00:00"
     },
     {
       "id": "c02f8218e196fd36804ae6ef86f5973f710a651aa7755e2bb14aa9108e5edd53",
@@ -3835,8 +3759,7 @@
       "description": "Unruly steeds from King Mu’s mythology, cavorting across a silk scroll.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3844,7 +3767,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.291401+00:00"
+      "fetched_at": "2026-09-30T23:40:03.339061+00:00"
     },
     {
       "id": "60def559ea05506429d1de2d5c01bebeeb16a133be68a2207ab529ec780c28b9",
@@ -3857,9 +3780,7 @@
       "description": "A bestselling 18th-century cookbook, containing the first recipe for curry in English.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "literatura",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3867,7 +3788,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.291585+00:00"
+      "fetched_at": "2026-09-30T23:40:03.340428+00:00"
     },
     {
       "id": "1eb20412ad1ef874778313f3b86a42985cb1ad1c86a04272ea0e3de595f95051",
@@ -3880,8 +3801,7 @@
       "description": "A wondrous illuminated manuscript, which gathers and illustrates the marvels of the world and beyond.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3889,7 +3809,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.291796+00:00"
+      "fetched_at": "2026-09-30T23:40:03.342141+00:00"
     },
     {
       "id": "ea73d3dcc5a2fa7842a1c42bab0ac56ebce51c9567aa80d3f4ef0f22577a777c",
@@ -3902,9 +3822,7 @@
       "description": "Observations of “snow flowers” made by microscope in Edo-era Japan.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3912,7 +3830,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.291953+00:00"
+      "fetched_at": "2026-09-30T23:40:03.343226+00:00"
     },
     {
       "id": "8083327c284510ecac717eb6f298d955b704f15b09af4dbc869db84cfaf2a132",
@@ -3926,8 +3844,7 @@
       "image_url": null,
       "categories": [
         "literatura",
-        "sociedad",
-        "artes_visuales"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3935,7 +3852,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.292232+00:00"
+      "fetched_at": "2026-09-30T23:40:03.345945+00:00"
     },
     {
       "id": "a138019f16305347c7e1ac2281daf8b9090d658e9510475dc44ad0726e1d86a6",
@@ -3948,8 +3865,7 @@
       "description": "A forgotten bridge between Spiritualism and UFO encounters.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3957,7 +3873,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.292389+00:00"
+      "fetched_at": "2026-09-30T23:40:03.347014+00:00"
     },
     {
       "id": "435f2eca439b8c97b0c44baf34b2a456cf16705deb7710c2b615bbf6134ae841",
@@ -3970,9 +3886,7 @@
       "description": "A WWII propaganda film narrated as an \"auto\"-biography",
       "image_url": null,
       "categories": [
-        "cine",
-        "artes_visuales",
-        "historia"
+        "cine"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3980,7 +3894,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.292535+00:00"
+      "fetched_at": "2026-09-30T23:40:03.348021+00:00"
     },
     {
       "id": "ef58563826dc5a80849ac99e2d975cbdbc3cb58dface1700ed3114e3cb7b66df",
@@ -3993,9 +3907,7 @@
       "description": "Before the attention economy consumed our lives, “pursuit tests” devised by the US military coupled man to machine with the aim of assessing focus under pressure. D. Graham Burnett explores these devices for evaluating aviators, finding a pre-history of the laboratory research that has relentlessly worked to slice and dice the attentional powers of human beings.",
       "image_url": null,
       "categories": [
-        "sociedad",
-        "historia",
-        "artes_visuales"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4003,7 +3915,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.292785+00:00"
+      "fetched_at": "2026-09-30T23:40:03.350652+00:00"
     },
     {
       "id": "c0bfde5e952c985fb6c6be362dace40eb42ec1e546ed4d59e16bb1f3823aba4f",
@@ -4016,8 +3928,7 @@
       "description": "Etchings of birds in a somewhat theatrical style.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4025,7 +3936,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.292932+00:00"
+      "fetched_at": "2026-09-30T23:40:03.351717+00:00"
     },
     {
       "id": "a967c6196209fbe501738537273227b8fc347ec07f430b59d777ca878a0f4e4f",
@@ -4038,9 +3949,7 @@
       "description": "Slides from twenty years of lecturing about the workings of the universe and the fate of the soul.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4048,7 +3957,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.293132+00:00"
+      "fetched_at": "2026-09-30T23:40:03.353178+00:00"
     },
     {
       "id": "e8b302271c1a5f8df68d1825b706aff0397a4a53de8ff7ef44442ffe8648847f",
@@ -4061,9 +3970,7 @@
       "description": "The memoirs of an aristocratic man revolutionised into an anarchist communist.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales",
-        "ciencia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4071,7 +3978,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.293298+00:00"
+      "fetched_at": "2026-09-30T23:40:03.354347+00:00"
     },
     {
       "id": "2c21f81594e38ae1ebb073dea7a5f775af7552933b2bca8b0e41948d1b94f020",
@@ -4084,9 +3991,7 @@
       "description": "Each January 1st is Public Domain Day, when a new crop of works have their copyrights expire and become free to share and reuse for any purpose. Here's our highlights for 2026.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4094,7 +3999,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.293490+00:00"
+      "fetched_at": "2026-09-30T23:40:03.355886+00:00"
     },
     {
       "id": "e7812e50d641e6649f39b263868b0192ee96b6c74cb9cd163971eebaed14e0e6",
@@ -4107,8 +4012,7 @@
       "description": "From sublime spheres to hungry cats, a rundown of the ten most read of what we published this year.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 4,
@@ -4116,7 +4020,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-09-30T23:31:40.293652+00:00"
+      "fetched_at": "2026-09-30T23:40:03.357076+00:00"
     },
     {
       "id": "bc317b71a44a7c9dd2aa3598e71877e61375e8209ba92e955166c47c6832ddc3",
@@ -4129,8 +4033,7 @@
       "description": "In mid-19th century Italy, two eccentric aristocrats set forth on parallel projects: constructing ostentatious castles in a Moorish Revival style. Iván Moure Pazos tours the psychedelic chambers of Rochetta Mattei, optimised for electrohomeopathic healing, and Castello di Sammezzano, an immersive, orientalist fever dream.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4138,7 +4041,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.293901+00:00"
+      "fetched_at": "2026-09-30T23:40:03.359653+00:00"
     },
     {
       "id": "167fb1db2fbe4c5f6c5f316ea89277184e806c89d42291ecb74fe0d7faf3ca60",
@@ -4151,8 +4054,7 @@
       "description": "Still lifes by the artist who seemed to bridge expressionism with the baroque.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4160,7 +4062,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.294067+00:00"
+      "fetched_at": "2026-09-30T23:40:03.360854+00:00"
     },
     {
       "id": "6751789583c9f3f9dd48258ed09c75983f0da500f244cb563469e7af583a591f",
@@ -4173,8 +4075,7 @@
       "description": "Illustrations of Abū Zayd and his adventures in double meaning.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4182,7 +4083,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.294244+00:00"
+      "fetched_at": "2026-09-30T23:40:03.362053+00:00"
     },
     {
       "id": "b80098f97c2bedcd0bb4f2aa4e635d9ef893d528e1b27893bdd840f0b9e3b805",
@@ -4195,9 +4096,7 @@
       "description": "First cloud taxonomer and a poem by Goethe.",
       "image_url": null,
       "categories": [
-        "historia",
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4205,7 +4104,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.294384+00:00"
+      "fetched_at": "2026-09-30T23:40:03.363072+00:00"
     },
     {
       "id": "3cb544bcd7024a2d7ebe9a1c09b1d6f1a05fbf59e722471b62d9ee96cf45c4fb",
@@ -4218,8 +4117,7 @@
       "description": "Our End-of-Year Fundraiser is launched, and the new postcards theme will be Attention.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4227,7 +4125,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.294544+00:00"
+      "fetched_at": "2026-09-30T23:40:03.364235+00:00"
     },
     {
       "id": "95c1dbf9151dfcdb1aae7725763d336754b9a6808f8901b6640c998a762ce819",
@@ -4240,8 +4138,7 @@
       "description": "Bizarre sweet treats that resemble human and animal forms.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4249,7 +4146,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.294701+00:00"
+      "fetched_at": "2026-09-30T23:40:03.365355+00:00"
     },
     {
       "id": "ce62438393e2ed9f50124efa58df66413b687958a3ae3933a8b350dfe5afe864",
@@ -4262,8 +4159,7 @@
       "description": "French lithographs of the Eiffel Tower and its environs, in the style of Japanese woodblock prints.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4271,7 +4167,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.294881+00:00"
+      "fetched_at": "2026-09-30T23:40:03.366733+00:00"
     },
     {
       "id": "154e015d255835b118c274ffbfbb4025d886cabf578a66721f2175c348d0a742",
@@ -4284,9 +4180,7 @@
       "description": "In the 17th century, emanating from Antwerp, a new genre of artwork came on the scene: paintings of paintings, works populated by a lush array of meta-images. From its origins in picturing private curiosity cabinets to its later use in documenting increasingly public collections, Thea Applebaum Licht charts the course of this alluring aesthetic tradition.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "musica",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4294,7 +4188,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.295137+00:00"
+      "fetched_at": "2026-09-30T23:40:03.369230+00:00"
     },
     {
       "id": "70cd2d8d3654220e885e84ff90748ca4dbdd5c9e6e3435753d46f058f06219c5",
@@ -4307,9 +4201,7 @@
       "description": "A past vision of the future. Domestic utopia? Or sanitised hell?",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "tecnologia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4317,7 +4209,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.295288+00:00"
+      "fetched_at": "2026-09-30T23:40:03.370294+00:00"
     },
     {
       "id": "5314c26875e9eef6db48d75760102ea3815c9bfa02a5579dba09ec081b5b07d2",
@@ -4330,8 +4222,7 @@
       "description": "Adorn your body and coffee in PDR goodness! We’ve just added 8 new T-shirts and 13 new mugs to our online shop.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4339,7 +4230,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.295485+00:00"
+      "fetched_at": "2026-09-30T23:40:03.371785+00:00"
     },
     {
       "id": "dbf1f517fe3f29b2cef643e544fca3dab9139e782d172816a4b839e99638b6e4",
@@ -4352,9 +4243,7 @@
       "description": "In 1899, Charles Godfrey Leland published Aradia , “the gospel of the witches”, containing a goddess-orientated creation and saviour narrative, purported to descend from an ancient, hermetic tradition of witchcraft in Italy. A. D. Manns explores this text via an enchanting conjecture: that the writer, medium, and witch Roma Lister played a pivotal role in the formation of both Aradia and, therefore, a new form of paganism called Wicca.",
       "image_url": null,
       "categories": [
-        "historia",
-        "literatura",
-        "artes_visuales"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4362,7 +4251,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.295781+00:00"
+      "fetched_at": "2026-09-30T23:40:03.374895+00:00"
     },
     {
       "id": "7a5f908f837de957920f1e26ceab45320422e743c382136ca827f0902c25c8d5",
@@ -4375,8 +4264,7 @@
       "description": "The recommended cut-off dates to order from our shop by to ensure delivery in time for Dec 25th.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4384,7 +4272,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.295945+00:00"
+      "fetched_at": "2026-09-30T23:40:03.376122+00:00"
     },
     {
       "id": "1107638e5fd8f5d183b00dd0a5e4f79c6ea3f170d1a0b4be5a3d0127153ccb17",
@@ -4397,9 +4285,7 @@
       "description": "Selections from an artist whose phantasmagoric works defined an era.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4407,7 +4293,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.296119+00:00"
+      "fetched_at": "2026-09-30T23:40:03.377357+00:00"
     },
     {
       "id": "1dd44ab6ee1a6f05ebcce4d3751d5eccee7df4c25d4bb1874281a0410277b232",
@@ -4420,8 +4306,7 @@
       "description": "Photographs from a costume ball featuring fairytale fables.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4429,7 +4314,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.296289+00:00"
+      "fetched_at": "2026-09-30T23:40:03.378613+00:00"
     },
     {
       "id": "27e5f1028e9d0fe2769cde4906088b63628d164e7b6a7fc8016354166f39c369",
@@ -4442,8 +4327,7 @@
       "description": "This Halloween week, a devilish dive into our archives to unearth some supernatural treats...",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4451,7 +4335,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.296442+00:00"
+      "fetched_at": "2026-09-30T23:40:03.379706+00:00"
     },
     {
       "id": "d43f2d21f090782fa52254dc76d624869da6ead7916db1a10c08c837e2b8adc2",
@@ -4464,9 +4348,7 @@
       "description": "A novel about a woman who throws off the yoke of patriarchy to become a witch.",
       "image_url": null,
       "categories": [
-        "historia",
-        "literatura",
-        "artes_visuales"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4474,7 +4356,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.296619+00:00"
+      "fetched_at": "2026-09-30T23:40:03.381036+00:00"
     },
     {
       "id": "2a56522d6df3768cc57301c7690b85d1cf8ef7ea1358789ab0d2cb1ceddfb7ae",
@@ -4487,9 +4369,7 @@
       "description": "Of all the senses cultivated throughout the 19th century, it was the sense of hearing that experienced the most dramatic transformation, as the science of sound underwent rapid advancement. Lucas Thompson delves into a particular genre of popular acoustics primers aimed at children and amateurs alike, which reveal the pedagogical, ludic, and transcendental strivings of Victorian society.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "ciencia",
-        "musica"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4497,7 +4377,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.296866+00:00"
+      "fetched_at": "2026-09-30T23:40:03.383771+00:00"
     },
     {
       "id": "01d2bd7f4cf46610b6385481180a4b22857f0bf423ec06fcb6a992e09721f595",
@@ -4510,8 +4390,7 @@
       "description": "A medical tract on the health effects of burying oneself alive in mud.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4519,7 +4398,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.297017+00:00"
+      "fetched_at": "2026-09-30T23:40:03.384943+00:00"
     },
     {
       "id": "75595828bca26a2077a875c7d5e3f1048ecb007a17d44fd17bbfe84d40ac75c8",
@@ -4532,8 +4411,7 @@
       "description": "Dioramas avant la lettre that depict local life in Suriname.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4541,7 +4419,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.297200+00:00"
+      "fetched_at": "2026-09-30T23:40:03.386177+00:00"
     },
     {
       "id": "d51f0560d18003c85b86e42da6e345c9ae1428dd318239ac3c0756aab74fae3d",
@@ -4554,8 +4432,7 @@
       "description": "Illustrations of supposed physiognomic affinities between humans and animals.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4563,7 +4440,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.297376+00:00"
+      "fetched_at": "2026-09-30T23:40:03.387449+00:00"
     },
     {
       "id": "526e82cc9dc9cb79a75d19f6da5406f600bfaa7aee3b2f9dacd9cc8e7b83cbbf",
@@ -4577,7 +4454,6 @@
       "image_url": null,
       "categories": [
         "literatura",
-        "artes_visuales",
         "historia"
       ],
       "tags": [],
@@ -4586,7 +4462,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.297683+00:00"
+      "fetched_at": "2026-09-30T23:40:03.390653+00:00"
     },
     {
       "id": "5f9bde79ef63d5e66ded45211090aac7a294111475827b3674b84db3537955b6",
@@ -4599,8 +4475,7 @@
       "description": "Expedition accounts of aeronauts bravely venturing into the heavens on hot-air balloons.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4608,7 +4483,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.297842+00:00"
+      "fetched_at": "2026-09-30T23:40:03.391906+00:00"
     },
     {
       "id": "3562c7f4cb1f2babf22c423754dd104093bce55170c802843e3dfb1781fddce0",
@@ -4621,9 +4496,7 @@
       "description": "A \"living picture\" film staging Botticelli’s *Birth of Venus* with a twist.",
       "image_url": null,
       "categories": [
-        "cine",
-        "artes_visuales",
-        "historia"
+        "cine"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4631,7 +4504,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.297998+00:00"
+      "fetched_at": "2026-09-30T23:40:03.392958+00:00"
     },
     {
       "id": "0f5e88da428bda5cfb5dcbdfe35853a265ba0b727e93b2033c0d0067eddc0d2d",
@@ -4644,8 +4517,7 @@
       "description": "A Rapture that wasn’t, in 2025 and 1844.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4653,7 +4525,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.298171+00:00"
+      "fetched_at": "2026-09-30T23:40:03.394046+00:00"
     },
     {
       "id": "ed81f7a899a96df9d229a682c666859d535b9d863215472fe0aed4da5385b52f",
@@ -4666,8 +4538,7 @@
       "description": "Paintings illustrating Pliny the Elder’s account of the origins of art.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4675,7 +4546,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.298344+00:00"
+      "fetched_at": "2026-09-30T23:40:03.395276+00:00"
     },
     {
       "id": "f55e927bb2eeadb25e43b99ce099798dc4517e40e29a25a74af925dcebaa4070",
@@ -4688,9 +4559,7 @@
       "description": "Accused of posing as foreign royalty to lure her young suitor into a bigamous marriage, Mary Carleton was the subject of dozens of pamphlets and broadsides published in the mid-17th century, including by Carleton herself. Investigating the fraudster’s life, Laura Kolb finds a self-fashioning figure who both influenced the emergence of the English novel and serves as a strange precursor to our modern-day fascination with conwomen and counterfeits, like the heiress manqué Anna Delvey.",
       "image_url": null,
       "categories": [
-        "literatura",
-        "artes_visuales",
-        "historia"
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4698,7 +4567,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.298653+00:00"
+      "fetched_at": "2026-09-30T23:40:03.398580+00:00"
     },
     {
       "id": "af3eddce32d68684fb765f98e66e9a01e0c6ef12043ddab43ade5e36f769833b",
@@ -4711,8 +4580,7 @@
       "description": "A compilation of historical gifting traditions in England, with a focus on the peculiar.",
       "image_url": null,
       "categories": [
-        "historia",
-        "artes_visuales"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4720,7 +4588,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:40.298819+00:00"
+      "fetched_at": "2026-09-30T23:40:03.399906+00:00"
     },
     {
       "id": "904d45624bb595b90527b6949b27d52f6be26f2958d548074d00618ce2b56bf6",
@@ -4733,8 +4601,7 @@
       "description": "Identical photographs of the artist, each with a unique miniature painting at the centre.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4742,7 +4609,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.298993+00:00"
+      "fetched_at": "2026-09-30T23:40:03.401128+00:00"
     },
     {
       "id": "b1b26fdf346381310ac596ac4bbee96b103c4b1647dc674ced22c0531fc1a0a3",
@@ -4755,8 +4622,7 @@
       "description": "A manuscript that pairs illustrations of cats with poetic descriptions and notes on what mystical benefits their owners might hope to accrue.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4764,7 +4630,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.299203+00:00"
+      "fetched_at": "2026-09-30T23:40:03.402714+00:00"
     },
     {
       "id": "f8b3f5c42e679370dded97e05f7bda7a121db18fc243243df65ec946eb572123",
@@ -4777,9 +4643,7 @@
       "description": "Centuries before photography froze the world into neat frames, scientists, poets, and artists streamed transient images into dark interior spaces with the help of a camera obscura. Julie Park explores the early modern fascination with this quasi-spiritual technology and the magic, melancholy, and dream-like experiences it produced.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "tecnologia",
-        "ciencia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4787,7 +4651,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.299434+00:00"
+      "fetched_at": "2026-09-30T23:40:03.405117+00:00"
     },
     {
       "id": "d6256f8e76133695e129cdb8c4e1d487f429f13991a3ec990f515f670d71fd59",
@@ -4800,8 +4664,7 @@
       "description": "A modernist manifesto inspired (controversially) by the Tupi people of Brazil.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4809,7 +4672,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.299607+00:00"
+      "fetched_at": "2026-09-30T23:40:03.406389+00:00"
     },
     {
       "id": "3b178cb8aa038b6ec93bdedb52e7c7ae2d19a486c71e4fb30850f743a7111c1d",
@@ -4822,9 +4685,7 @@
       "description": "Commemorative manuscript featuring illustrations of pageants, costumes, and fireworks, later further illustrated by a separate artist, with floral motifs.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4832,7 +4693,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.299828+00:00"
+      "fetched_at": "2026-09-30T23:40:03.408194+00:00"
     },
     {
       "id": "eddddc760c8b8c863c108f72f2e364e0b8deedc5173df86817b115de221b6bd7",
@@ -4845,8 +4706,7 @@
       "description": "Female astronomical first, in 2025 and 1787.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4854,7 +4714,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.299973+00:00"
+      "fetched_at": "2026-09-30T23:40:03.409189+00:00"
     },
     {
       "id": "9881de489b0570cdb6d5f5c58d048b7a93b38f80117f0270174755a5d0c853c4",
@@ -4867,9 +4727,7 @@
       "description": "A trick film in the peepshow vein, involving magnification and mites on a block of cheese.",
       "image_url": null,
       "categories": [
-        "cine",
-        "artes_visuales",
-        "historia"
+        "cine"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4877,7 +4735,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.300147+00:00"
+      "fetched_at": "2026-09-30T23:40:03.410468+00:00"
     },
     {
       "id": "7f45401c7e6a59a271252256a42e2aaf034141103d3c5f8d6ea5a8a30c579f5f",
@@ -4890,9 +4748,7 @@
       "description": "As Chinese immigration to California accelerated across the 19th century, the hairstyle known as the queue — a long, braided pony tail — became the subject of white Americans’ fascination, disgust, and legal regulation. Sarah Gold McBride explores why hair served as an index of political subjecthood, and how the queue exposed cracks in American norms regarding gender, economy, and citizenship.",
       "image_url": null,
       "categories": [
-        "sociedad",
-        "artes_visuales",
-        "historia"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4900,7 +4756,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.300431+00:00"
+      "fetched_at": "2026-09-30T23:40:03.413435+00:00"
     },
     {
       "id": "3ad50c10f19fe289805944bbb0372e4da1839941d4d6804e0fdae2822358202a",
@@ -4913,8 +4769,7 @@
       "description": "A crop circle sighting tinged with Christian morality.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4922,7 +4777,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.300586+00:00"
+      "fetched_at": "2026-09-30T23:40:03.414636+00:00"
     },
     {
       "id": "e77e98f8ed0d05d07fd1fb63c795a8f1b3927d5314af1815957131547915cc51",
@@ -4935,8 +4790,7 @@
       "description": "Time travel and murder during a New York heat wave.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4944,7 +4798,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.300754+00:00"
+      "fetched_at": "2026-09-30T23:40:03.415780+00:00"
     },
     {
       "id": "b7bea2b5fb58a8f245285835673dcec80a19695e7464efb494cf853347517b36",
@@ -4957,8 +4811,7 @@
       "description": "Excerpts from a dazzling image collection, discovered in a Norwegian barn in the 1980s, that experiments with the presentation of gender.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4966,7 +4819,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.300959+00:00"
+      "fetched_at": "2026-09-30T23:40:03.417377+00:00"
     },
     {
       "id": "173b1742be3696ff9799842ddf98f1909f4667300590ff682f3235d139c52fdb",
@@ -4979,7 +4832,6 @@
       "description": "In 1853, John Benjamin Dancer achieved a feat of seemingly impossible scale: he shrunk an image to the size of a sharpened pencil tip. Anika Burgess explores the invention of microphotography and its influence on erotic paraphernalia and military communications.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
         "historia"
       ],
       "tags": [],
@@ -4988,7 +4840,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.301182+00:00"
+      "fetched_at": "2026-09-30T23:40:03.419449+00:00"
     },
     {
       "id": "a8096db6682d5c8bdba13864b4f48538dce661fee04633e43887761e0f8e93e5",
@@ -5001,9 +4853,7 @@
       "description": "Eleventh instalment in our series of extremely small and free-form cryptic crossword puzzles, themed on our latest essay.",
       "image_url": null,
       "categories": [
-        "television",
-        "artes_visuales",
-        "historia"
+        "television"
       ],
       "tags": [],
       "reading_time": 8,
@@ -5011,7 +4861,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-09-30T23:31:40.301330+00:00"
+      "fetched_at": "2026-09-30T23:40:03.420673+00:00"
     },
     {
       "id": "dfdec71b7a4b2b592107e9e941d1a3a63a39265537080c05ee458503ae559caf",
@@ -5024,9 +4874,7 @@
       "description": "The sole example of a Bauhaus workshop’s arcane theatrical scoring system, combining colours, words, and complex symbolic notation.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "sociedad"
+        "artes_visuales"
       ],
       "tags": [],
       "reading_time": 8,
@@ -5034,7 +4882,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-09-30T23:31:40.301517+00:00"
+      "fetched_at": "2026-09-30T23:40:03.422161+00:00"
     },
     {
       "id": "47084df498c955436f05372051ab26ded611603011b87797f838573aabe0b718",
@@ -5047,9 +4895,7 @@
       "description": "The first comprehensive history of marionette artistry in the English language.",
       "image_url": null,
       "categories": [
-        "artes_visuales",
-        "historia",
-        "literatura"
+        "historia"
       ],
       "tags": [],
       "reading_time": 8,
@@ -5057,7 +4903,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-09-30T23:31:40.301700+00:00"
+      "fetched_at": "2026-09-30T23:40:03.423424+00:00"
     }
   ]
 }
