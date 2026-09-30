@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Instalar dependencias
+        run: pip install requests
+
       - name: Probar los feeds
         run: python ingest/test_feeds.py
 
@@ -37,3 +40,5 @@ jobs:
         with:
           name: deriva-articles
           path: data/articles.json
+```
+
