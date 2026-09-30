@@ -60,6 +60,7 @@ def normalize_text(value):
     value = html.unescape(str(value))
     value = re.sub(r"<[^>]+>", " ", value)
     value = re.sub(r"\s+", " ", value)
+
     return value.strip()
 
 
@@ -72,8 +73,6 @@ def canonical_url(url):
     try:
         parts = urlsplit(url)
 
-        # Eliminamos query y fragmentos para evitar duplicados
-        # causados por parámetros de tracking.
         clean = urlunsplit(
             (
                 parts.scheme,
@@ -85,6 +84,7 @@ def canonical_url(url):
         )
 
         return clean
+
     except Exception:
         return url
 
@@ -100,14 +100,14 @@ def make_id(url):
 def first_text(element, paths, namespaces):
     """
     Busca el primer elemento que exista entre varios paths.
-
-    Importante:
-    namespaces se pasa explícitamente para que expresiones como
-    dc:creator y content:encoded funcionen correctamente.
     """
+
     for path in paths:
         try:
-            node = element.find(path, namespaces)
+            node = element.find(
+                path,
+                namespaces,
+            )
         except SyntaxError:
             continue
 
@@ -134,7 +134,11 @@ def get_namespaces():
 # ============================================================
 
 def load_config():
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+    with open(
+        CONFIG_PATH,
+        "r",
+        encoding="utf-8",
+    ) as f:
         return json.load(f)
 
 
@@ -146,21 +150,22 @@ def load_sources():
         "version": "...",
         "defaults": {...},
         "sources": [
-            {...},
             {...}
         ]
     }
-
-    Por eso debemos devolver config["sources"] y no todo
-    el JSON completo.
     """
+
     config = load_config()
 
-    sources = config.get("sources", [])
+    sources = config.get(
+        "sources",
+        [],
+    )
 
     if not isinstance(sources, list):
         raise ValueError(
-            "config/sources.json: 'sources' debe ser una lista."
+            "config/sources.json: "
+            "'sources' debe ser una lista."
         )
 
     return sources
@@ -169,7 +174,10 @@ def load_sources():
 def load_defaults():
     config = load_config()
 
-    defaults = config.get("defaults", {})
+    defaults = config.get(
+        "defaults",
+        {},
+    )
 
     if not isinstance(defaults, dict):
         return {}
@@ -186,16 +194,29 @@ def load_existing_articles():
         return []
 
     try:
-        with open(DATA_PATH, "r", encoding="utf-8") as f:
+        with open(
+            DATA_PATH,
+            "r",
+            encoding="utf-8",
+        ) as f:
             data = json.load(f)
 
-        articles = data.get("articles", [])
+        articles = data.get(
+            "articles",
+            [],
+        )
 
         if isinstance(articles, list):
             return articles
 
-    except (json.JSONDecodeError, OSError) as exc:
-        print(f"Advertencia: no se pudo leer articles.json: {exc}")
+    except (
+        json.JSONDecodeError,
+        OSError,
+    ) as exc:
+        print(
+            "Advertencia: no se pudo leer "
+            f"articles.json: {exc}"
+        )
 
     return []
 
@@ -213,17 +234,22 @@ def normalize_date(value):
     # ISO 8601
     try:
         parsed = datetime.fromisoformat(
-            value.replace("Z", "+00:00")
+            value.replace(
+                "Z",
+                "+00:00",
+            )
         )
 
         if parsed.tzinfo is None:
-            parsed = parsed.replace(tzinfo=timezone.utc)
+            parsed = parsed.replace(
+                tzinfo=timezone.utc
+            )
 
         return parsed.isoformat()
+
     except ValueError:
         pass
 
-    # Fechas RSS comunes
     formats = [
         "%a, %d %b %Y %H:%M:%S %z",
         "%a, %d %b %Y %H:%M:%S GMT",
@@ -233,12 +259,18 @@ def normalize_date(value):
 
     for fmt in formats:
         try:
-            parsed = datetime.strptime(value, fmt)
+            parsed = datetime.strptime(
+                value,
+                fmt,
+            )
 
             if parsed.tzinfo is None:
-                parsed = parsed.replace(tzinfo=timezone.utc)
+                parsed = parsed.replace(
+                    tzinfo=timezone.utc
+                )
 
             return parsed.isoformat()
+
         except ValueError:
             continue
 
@@ -250,6 +282,7 @@ def normalize_date(value):
 # ============================================================
 
 def extract_link(item, namespaces):
+
     # RSS
     link = first_text(
         item,
@@ -261,13 +294,24 @@ def extract_link(item, namespaces):
         return link
 
     # Atom
-    for node in item.findall("atom:link", namespaces):
-        href = node.attrib.get("href")
+    for node in item.findall(
+        "atom:link",
+        namespaces,
+    ):
+        href = node.attrib.get(
+            "href"
+        )
 
         if href:
-            rel = node.attrib.get("rel", "alternate")
+            rel = node.attrib.get(
+                "rel",
+                "alternate",
+            )
 
-            if rel in ("alternate", ""):
+            if rel in (
+                "alternate",
+                "",
+            ):
                 return href
 
     # GUID como último recurso
@@ -285,10 +329,20 @@ def extract_link(item, namespaces):
 # ============================================================
 
 def extract_image(item, namespaces):
+
     # RSS enclosure
-    for enclosure in item.findall("enclosure"):
-        url = enclosure.attrib.get("url", "")
-        media_type = enclosure.attrib.get("type", "")
+    for enclosure in item.findall(
+        "enclosure"
+    ):
+        url = enclosure.attrib.get(
+            "url",
+            "",
+        )
+
+        media_type = enclosure.attrib.get(
+            "type",
+            "",
+        )
 
         if url and (
             media_type.startswith("image/")
@@ -297,9 +351,19 @@ def extract_image(item, namespaces):
             return url
 
     # Media RSS
-    for media in item.findall("media:content", namespaces):
-        url = media.attrib.get("url", "")
-        media_type = media.attrib.get("type", "")
+    for media in item.findall(
+        "media:content",
+        namespaces,
+    ):
+        url = media.attrib.get(
+            "url",
+            "",
+        )
+
+        media_type = media.attrib.get(
+            "type",
+            "",
+        )
 
         if url and (
             media_type.startswith("image/")
@@ -312,7 +376,10 @@ def extract_image(item, namespaces):
         "media:thumbnail",
         namespaces,
     ):
-        url = thumbnail.attrib.get("url", "")
+        url = thumbnail.attrib.get(
+            "url",
+            "",
+        )
 
         if url:
             return url
@@ -324,17 +391,29 @@ def extract_image(item, namespaces):
 # CATEGORÍAS ORIGINALES DEL FEED
 # ============================================================
 
-def extract_feed_categories(item, namespaces):
+def extract_feed_categories(
+    item,
+    namespaces,
+):
     categories = []
 
-    for node in item.findall("category"):
-        text = normalize_text(node.text)
+    for node in item.findall(
+        "category"
+    ):
+        text = normalize_text(
+            node.text
+        )
 
         if text:
             categories.append(text)
 
-    for node in item.findall("media:category", namespaces):
-        text = normalize_text(node.text)
+    for node in item.findall(
+        "media:category",
+        namespaces,
+    ):
+        text = normalize_text(
+            node.text
+        )
 
         if text:
             categories.append(text)
@@ -364,6 +443,7 @@ def classify_content_type(
     source_id,
     feed_categories,
 ):
+
     text = " ".join(
         [
             title or "",
@@ -373,13 +453,18 @@ def classify_content_type(
         ]
     ).lower()
 
-    path = (urlsplit(url).path if url else "").lower()
+    path = (
+        urlsplit(url).path
+        if url
+        else ""
+    ).lower()
 
     # --------------------------------------------------------
-    # Casos muy específicos por fuente
+    # Casos específicos por fuente
     # --------------------------------------------------------
 
     if source_id == "new_yorker":
+
         if (
             "/puzzles-and-games-dept/" in path
             or "/games/" in path
@@ -387,20 +472,34 @@ def classify_content_type(
         ):
             return "game"
 
-        if "/podcast/" in path or "podcast" in text:
+        if (
+            "/podcast/" in path
+            or "podcast" in text
+        ):
             return "podcast"
 
-        if "/newsletter/" in path or "newsletter" in text:
+        if (
+            "/newsletter/" in path
+            or "newsletter" in text
+        ):
             return "newsletter"
 
-        if "/cartoon/" in path or "cartoon" in text:
+        if (
+            "/cartoon/" in path
+            or "cartoon" in text
+        ):
             return "cartoon"
 
     if source_id == "aeon":
-        if "/videos/" in path or "video" in text:
+
+        if (
+            "/videos/" in path
+            or "video" in text
+        ):
             return "video"
 
     if source_id == "longreads":
+
         list_patterns = [
             "top 5 longreads",
             "reading list",
@@ -410,10 +509,14 @@ def classify_content_type(
             "recommended reading",
         ]
 
-        if any(pattern in text for pattern in list_patterns):
+        if any(
+            pattern in text
+            for pattern in list_patterns
+        ):
             return "list"
 
     if source_id == "mubi_notebook":
+
         if (
             "rushes" in text
             or "/rushes" in path
@@ -440,7 +543,7 @@ def classify_content_type(
         return "video"
 
     if re.search(
-        r"\b(newsletter)\b",
+        r"\bnewsletter\b",
         text,
     ):
         return "newsletter"
@@ -456,15 +559,17 @@ def classify_content_type(
         return "game"
 
     if re.search(
-        r"\b(interview|entrevista|conversation with|"
-        r"talks with|dialogue with)\b",
+        r"\b(interview|entrevista|"
+        r"conversation with|talks with|"
+        r"dialogue with)\b",
         text,
     ):
         return "interview"
 
     if re.search(
-        r"\b(review|reviews|reseña|reseñas|"
-        r"book review|film review|movie review)\b",
+        r"\b(review|reviews|reseña|"
+        r"reseñas|book review|"
+        r"film review|movie review)\b",
         text,
     ):
         return "review"
@@ -476,8 +581,9 @@ def classify_content_type(
         return "profile"
 
     if re.search(
-        r"\b(reportage|reportaje|investigation|"
-        r"investigación|feature)\b",
+        r"\b(reportage|reportaje|"
+        r"investigation|investigación|"
+        r"feature)\b",
         text,
     ):
         return "reportage"
@@ -508,7 +614,8 @@ def classify_content_type(
         return "poetry"
 
     if re.search(
-        r"\b(fiction|ficción|short story|cuento)\b",
+        r"\b(fiction|ficción|"
+        r"short story|cuento)\b",
         text,
     ):
         return "fiction"
@@ -533,6 +640,7 @@ def classify_content_type(
 # ============================================================
 
 CATEGORY_KEYWORDS = {
+
     "literatura": [
         "literature",
         "literary",
@@ -554,6 +662,7 @@ CATEGORY_KEYWORDS = {
         "escritor",
         "escritura",
     ],
+
     "cine": [
         "film",
         "films",
@@ -567,11 +676,10 @@ CATEGORY_KEYWORDS = {
         "cine",
         "película",
         "películas",
-        "director",
         "cineasta",
-        "actor",
         "actriz",
     ],
+
     "television": [
         "television",
         "tv",
@@ -584,6 +692,7 @@ CATEGORY_KEYWORDS = {
         "serie",
         "series de tv",
     ],
+
     "artes_visuales": [
         "art",
         "artist",
@@ -602,6 +711,7 @@ CATEGORY_KEYWORDS = {
         "museo",
         "galería",
     ],
+
     "ciencia": [
         "science",
         "scientist",
@@ -629,6 +739,7 @@ CATEGORY_KEYWORDS = {
         "neurociencia",
         "ecología",
     ],
+
     "videojuegos": [
         "video game",
         "video games",
@@ -638,6 +749,7 @@ CATEGORY_KEYWORDS = {
         "videojuego",
         "videojuegos",
     ],
+
     "musica": [
         "music",
         "musician",
@@ -655,6 +767,7 @@ CATEGORY_KEYWORDS = {
         "cantante",
         "compositor",
     ],
+
     "filosofia": [
         "philosophy",
         "philosopher",
@@ -662,7 +775,6 @@ CATEGORY_KEYWORDS = {
         "metaphysics",
         "epistemology",
         "existential",
-        "philosophy",
         "filosofía",
         "filósofo",
         "ética",
@@ -670,6 +782,7 @@ CATEGORY_KEYWORDS = {
         "epistemología",
         "existencialismo",
     ],
+
     "historia": [
         "history",
         "historical",
@@ -688,6 +801,7 @@ CATEGORY_KEYWORDS = {
         "guerra",
         "revolución",
     ],
+
     "tecnologia": [
         "technology",
         "tech",
@@ -702,13 +816,12 @@ CATEGORY_KEYWORDS = {
         "digital",
         "tecnología",
         "inteligencia artificial",
-        "software",
-        "internet",
         "computación",
         "algoritmo",
         "robot",
         "digital",
     ],
+
     "sociedad": [
         "society",
         "social",
@@ -738,25 +851,37 @@ CATEGORY_KEYWORDS = {
 
 def keyword_matches(text, keyword):
     """
-    Evita el problema de buscar 'ai' como substring.
-    Por ejemplo, 'ai' no debe coincidir con palabras
-    completamente ajenas.
+    Busca keywords como palabras o expresiones completas.
+
+    Evita coincidencias accidentales dentro de otras palabras.
+
+    Ejemplo:
+
+        "art" NO coincide con "parenting".
+        "film" SÍ coincide con "film director".
+        "video game" SÍ coincide con "video game history".
     """
+
     keyword = keyword.lower().strip()
 
     if not keyword:
         return False
 
-    if len(keyword) <= 2:
-        return bool(
-            re.search(
-                r"\b" + re.escape(keyword) + r"\b",
-                text,
-                flags=re.IGNORECASE,
-            )
-        )
+    escaped = re.escape(keyword)
 
-    return keyword in text
+    pattern = (
+        r"(?<!\w)"
+        + escaped
+        + r"(?!\w)"
+    )
+
+    return bool(
+        re.search(
+            pattern,
+            text,
+            flags=re.IGNORECASE,
+        )
+    )
 
 
 def classify_categories(
@@ -765,6 +890,7 @@ def classify_categories(
     source_id,
     feed_categories,
 ):
+
     text = " ".join(
         [
             title or "",
@@ -778,12 +904,24 @@ def classify_categories(
         for category in MASTER_CATEGORIES
     }
 
+    # --------------------------------------------------------
+    # Puntuación por keywords
+    # --------------------------------------------------------
+
     for category, keywords in CATEGORY_KEYWORDS.items():
+
         for keyword in keywords:
-            if keyword_matches(text, keyword):
+
+            if keyword_matches(
+                text,
+                keyword,
+            ):
                 scores[category] += 1
 
-    # Reglas adicionales por fuente
+    # --------------------------------------------------------
+    # Reglas específicas por fuente
+    # --------------------------------------------------------
+
     if source_id == "mubi_notebook":
         scores["cine"] += 3
 
@@ -794,26 +932,51 @@ def classify_categories(
         scores["historia"] += 1
         scores["artes_visuales"] += 1
 
-    # Solo devolvemos categorías con alguna evidencia.
-    # Máximo 3 para evitar que un artículo termine
-    # clasificado como absolutamente todo.
+    # --------------------------------------------------------
+    # Ordenar categorías por puntuación
+    # --------------------------------------------------------
+
     ranked = sorted(
         scores.items(),
         key=lambda item: item[1],
         reverse=True,
     )
 
-    categories = [
+    # --------------------------------------------------------
+    # Categorías con evidencia fuerte
+    #
+    # 2 o más coincidencias.
+    # --------------------------------------------------------
+
+    strong_categories = [
+        category
+        for category, score in ranked
+        if score >= 2
+    ]
+
+    if strong_categories:
+        return strong_categories[:3]
+
+    # --------------------------------------------------------
+    # Si ninguna categoría tiene evidencia fuerte,
+    # conservamos solamente la mejor categoría.
+    # --------------------------------------------------------
+
+    best_categories = [
         category
         for category, score in ranked
         if score > 0
-    ][:3]
+    ]
 
-    # Si no encontramos nada, lo dejamos como cultura.
-    if not categories:
-        categories = ["cultura"]
+    if best_categories:
+        return best_categories[:1]
 
-    return categories
+    # --------------------------------------------------------
+    # Si no hay ninguna evidencia:
+    # cultura.
+    # --------------------------------------------------------
+
+    return ["cultura"]
 
 
 # ============================================================
@@ -821,6 +984,7 @@ def classify_categories(
 # ============================================================
 
 READING_TIME_BY_TYPE = {
+
     "essay": 8,
     "analysis": 8,
     "reportage": 10,
@@ -835,6 +999,7 @@ READING_TIME_BY_TYPE = {
     "collection": 5,
     "list": 4,
     "newsletter": 4,
+
     "podcast": None,
     "video": None,
     "game": None,
@@ -843,15 +1008,23 @@ READING_TIME_BY_TYPE = {
 
 
 def extract_reading_time(text):
+
     if not text:
         return None
 
     patterns = [
-        r"(\d+)\s*(?:min|mins|minute|minutes)\s*(?:read|reading)?",
-        r"(\d+)\s*(?:minutos?|min)\s*(?:de lectura)?",
+
+        r"(\d+)\s*"
+        r"(?:min|mins|minute|minutes)"
+        r"\s*(?:read|reading)?",
+
+        r"(\d+)\s*"
+        r"(?:minutos?|min)"
+        r"\s*(?:de lectura)?",
     ]
 
     for pattern in patterns:
+
         match = re.search(
             pattern,
             text,
@@ -859,7 +1032,9 @@ def extract_reading_time(text):
         )
 
         if match:
-            return int(match.group(1))
+            return int(
+                match.group(1)
+            )
 
     return None
 
@@ -870,6 +1045,7 @@ def estimate_reading_time(
     content_type,
     source_id,
 ):
+
     text = " ".join(
         [
             title or "",
@@ -877,20 +1053,30 @@ def estimate_reading_time(
         ]
     )
 
-    detected = extract_reading_time(text)
+    detected = extract_reading_time(
+        text
+    )
 
     if detected is not None:
-        return detected, "feed", False
+        return (
+            detected,
+            "feed",
+            False,
+        )
 
     estimated = READING_TIME_BY_TYPE.get(
         content_type
     )
 
     if estimated is not None:
-        return estimated, "estimated", True
+        return (
+            estimated,
+            "estimated",
+            True,
+        )
 
-    # Defaults muy conservadores por fuente
     source_defaults = {
+
         "new_yorker": 8,
         "jot_down": 10,
         "paris_review": 8,
@@ -906,7 +1092,11 @@ def estimate_reading_time(
         8,
     )
 
-    return estimated, "estimated", True
+    return (
+        estimated,
+        "estimated",
+        True,
+    )
 
 
 # ============================================================
@@ -918,6 +1108,7 @@ def parse_item(
     source,
     namespaces,
 ):
+
     source_id = source["id"]
     source_name = source["name"]
 
@@ -970,9 +1161,11 @@ def parse_item(
         namespaces,
     )
 
-    feed_categories = extract_feed_categories(
-        item,
-        namespaces,
+    feed_categories = (
+        extract_feed_categories(
+            item,
+            namespaces,
+        )
     )
 
     if not title or not url:
@@ -984,8 +1177,12 @@ def parse_item(
         return None
 
     title = normalize_text(title)
-    description = normalize_text(description)
-    author = normalize_text(author)
+    description = normalize_text(
+        description
+    )
+    author = normalize_text(
+        author
+    )
 
     content_type = classify_content_type(
         title=title,
@@ -1002,32 +1199,53 @@ def parse_item(
         feed_categories=feed_categories,
     )
 
-    reading_time, reading_source, estimated = (
-        estimate_reading_time(
-            title=title,
-            description=description,
-            content_type=content_type,
-            source_id=source_id,
-        )
+    (
+        reading_time,
+        reading_source,
+        estimated,
+    ) = estimate_reading_time(
+        title=title,
+        description=description,
+        content_type=content_type,
+        source_id=source_id,
     )
 
     article = {
+
         "id": make_id(url),
+
         "source": source_id,
+
         "source_name": source_name,
+
         "title": title,
+
         "author": author,
+
         "url": url,
-        "published_at": normalize_date(published),
+
+        "published_at": normalize_date(
+            published
+        ),
+
         "description": description,
+
         "image_url": image_url,
+
         "categories": categories,
+
         "tags": feed_categories,
+
         "reading_time": reading_time,
+
         "reading_time_source": reading_source,
+
         "reading_time_estimated": estimated,
+
         "access": "unknown",
+
         "content_type": content_type,
+
         "fetched_at": now_iso(),
     }
 
@@ -1038,17 +1256,26 @@ def parse_item(
 # PARSEO DEL FEED
 # ============================================================
 
-def parse_feed(xml_content, source):
+def parse_feed(
+    xml_content,
+    source,
+):
+
     namespaces = get_namespaces()
 
-    root = ET.fromstring(xml_content)
+    root = ET.fromstring(
+        xml_content
+    )
 
     items = []
 
     # RSS / RDF
-    rss_items = root.findall(".//item")
+    rss_items = root.findall(
+        ".//item"
+    )
 
     for item in rss_items:
+
         article = parse_item(
             item,
             source,
@@ -1060,12 +1287,14 @@ def parse_feed(xml_content, source):
 
     # Atom
     if not rss_items:
+
         atom_items = root.findall(
             ".//atom:entry",
             namespaces,
         )
 
         for item in atom_items:
+
             article = parse_item(
                 item,
                 source,
@@ -1083,15 +1312,22 @@ def parse_feed(xml_content, source):
 # ============================================================
 
 def fetch_source(source):
+
     name = source["name"]
     source_id = source["id"]
 
-    endpoints = source.get("endpoints", [])
+    endpoints = source.get(
+        "endpoints",
+        [],
+    )
 
     if not endpoints:
+
         print(
-            f"[{source_id}] No tiene endpoints."
+            f"[{source_id}] "
+            "No tiene endpoints."
         )
+
         return []
 
     print(
@@ -1101,7 +1337,9 @@ def fetch_source(source):
     all_articles = []
 
     headers = {
+
         "User-Agent": USER_AGENT,
+
         "Accept": (
             "application/rss+xml, "
             "application/atom+xml, "
@@ -1112,9 +1350,12 @@ def fetch_source(source):
     }
 
     for endpoint in endpoints:
+
         try:
+
             print(
-                f"  Descargando: {endpoint}"
+                f"  Descargando: "
+                f"{endpoint}"
             )
 
             response = requests.get(
@@ -1131,66 +1372,99 @@ def fetch_source(source):
             )
 
             print(
-                f"  Encontrados: {len(articles)}"
+                f"  Encontrados: "
+                f"{len(articles)}"
             )
 
-            all_articles.extend(articles)
+            all_articles.extend(
+                articles
+            )
 
         except requests.RequestException as exc:
+
             print(
                 f"  ERROR HTTP: {exc}"
             )
 
         except ET.ParseError as exc:
+
             print(
                 f"  ERROR XML: {exc}"
             )
 
         except Exception as exc:
+
             print(
-                f"  ERROR procesando feed: "
-                f"{type(exc).__name__}: {exc}"
+                "  ERROR procesando feed: "
+                f"{type(exc).__name__}: "
+                f"{exc}"
             )
 
-    # Deduplicar dentro de la propia fuente
+    # Deduplicar dentro de la fuente
     unique = {}
-    
-    for article in all_articles:
-        unique[article["id"]] = article
 
-    return list(unique.values())
+    for article in all_articles:
+
+        unique[
+            article["id"]
+        ] = article
+
+    return list(
+        unique.values()
+    )
 
 
 # ============================================================
 # DEDUPLICACIÓN GENERAL
 # ============================================================
 
-def deduplicate_articles(articles):
+def deduplicate_articles(
+    articles
+):
+
     unique = {}
 
     for article in articles:
-        article_id = article.get("id")
+
+        article_id = article.get(
+            "id"
+        )
 
         if not article_id:
-            url = article.get("url", "")
+
+            url = article.get(
+                "url",
+                "",
+            )
 
             if not url:
                 continue
 
-            article_id = make_id(url)
+            article_id = make_id(
+                url
+            )
+
             article["id"] = article_id
 
-        unique[article_id] = article
+        unique[
+            article_id
+        ] = article
 
-    return list(unique.values())
+    return list(
+        unique.values()
+    )
 
 
 # ============================================================
 # ORDEN
 # ============================================================
 
-def sort_articles(articles):
+def sort_articles(
+    articles
+):
+
     def sort_key(article):
+
         return article.get(
             "published_at"
         ) or ""
@@ -1206,15 +1480,23 @@ def sort_articles(articles):
 # GUARDAR
 # ============================================================
 
-def save_articles(articles):
+def save_articles(
+    articles
+):
+
     DATA_PATH.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
     output = {
+
         "generated_at": now_iso(),
-        "article_count": len(articles),
+
+        "article_count": len(
+            articles
+        ),
+
         "articles": articles,
     }
 
@@ -1223,6 +1505,7 @@ def save_articles(articles):
         "w",
         encoding="utf-8",
     ) as f:
+
         json.dump(
             output,
             f,
@@ -1231,11 +1514,13 @@ def save_articles(articles):
         )
 
     print(
-        f"\nGuardado: {DATA_PATH}"
+        f"\nGuardado: "
+        f"{DATA_PATH}"
     )
 
     print(
-        f"Artículos totales: {len(articles)}"
+        f"Artículos totales: "
+        f"{len(articles)}"
     )
 
 
@@ -1243,74 +1528,135 @@ def save_articles(articles):
 # ESTADÍSTICAS
 # ============================================================
 
-def print_stats(articles):
-    print("\n" + "=" * 60)
-    print("ESTADÍSTICAS")
-    print("=" * 60)
+def print_stats(
+    articles
+):
+
+    print(
+        "\n" + "=" * 60
+    )
+
+    print(
+        "ESTADÍSTICAS"
+    )
+
+    print(
+        "=" * 60
+    )
+
+    # --------------------------------------------------------
+    # Por fuente
+    # --------------------------------------------------------
 
     by_source = {}
 
     for article in articles:
+
         source = article.get(
             "source",
             "unknown",
         )
 
         by_source[source] = (
-            by_source.get(source, 0) + 1
+            by_source.get(
+                source,
+                0,
+            ) + 1
         )
 
     for source, count in sorted(
         by_source.items()
     ):
+
         print(
             f"  {source}: {count}"
         )
 
+    # --------------------------------------------------------
+    # Por tipo
+    # --------------------------------------------------------
+
     by_type = {}
 
     for article in articles:
+
         content_type = article.get(
             "content_type",
             "unknown",
         )
 
-        by_type[content_type] = (
-            by_type.get(content_type, 0) + 1
+        by_type[
+            content_type
+        ] = (
+            by_type.get(
+                content_type,
+                0,
+            ) + 1
         )
 
-    print("\nPor tipo de contenido:")
+    print(
+        "\nPor tipo de contenido:"
+    )
 
-    for content_type, count in sorted(
+    for (
+        content_type,
+        count,
+    ) in sorted(
         by_type.items(),
-        key=lambda item: (-item[1], item[0]),
+        key=lambda item: (
+            -item[1],
+            item[0],
+        ),
     ):
+
         print(
             f"  {content_type}: {count}"
         )
 
+    # --------------------------------------------------------
+    # Por categoría
+    # --------------------------------------------------------
+
     by_category = {}
 
     for article in articles:
+
         for category in article.get(
             "categories",
             [],
         ):
-            by_category[category] = (
-                by_category.get(category, 0) + 1
+
+            by_category[
+                category
+            ] = (
+                by_category.get(
+                    category,
+                    0,
+                ) + 1
             )
 
-    print("\nPor categoría:")
+    print(
+        "\nPor categoría:"
+    )
 
-    for category, count in sorted(
+    for (
+        category,
+        count,
+    ) in sorted(
         by_category.items(),
-        key=lambda item: (-item[1], item[0]),
+        key=lambda item: (
+            -item[1],
+            item[0],
+        ),
     ):
+
         print(
             f"  {category}: {count}"
         )
 
-    print("=" * 60)
+    print(
+        "=" * 60
+    )
 
 
 # ============================================================
@@ -1318,15 +1664,21 @@ def print_stats(articles):
 # ============================================================
 
 def main():
-    print("Iniciando ingestión de Deriva...")
+
+    print(
+        "Iniciando ingestión de Deriva..."
+    )
+
     print(
         f"Config: {CONFIG_PATH}"
     )
+
     print(
         f"Salida: {DATA_PATH}"
     )
 
     sources = load_sources()
+
     defaults = load_defaults()
 
     max_items = defaults.get(
@@ -1334,7 +1686,9 @@ def main():
         100,
     )
 
-    existing_articles = load_existing_articles()
+    existing_articles = (
+        load_existing_articles()
+    )
 
     print(
         f"\nArtículos existentes: "
@@ -1344,16 +1698,23 @@ def main():
     all_new_articles = []
 
     for source in sources:
+
         enabled = source.get(
             "enabled",
-            defaults.get("enabled", True),
+            defaults.get(
+                "enabled",
+                True,
+            ),
         )
 
         if not enabled:
+
             print(
-                f"\nOmitiendo {source['name']}: "
-                f"deshabilitada."
+                f"\nOmitiendo "
+                f"{source['name']}: "
+                "deshabilitada."
             )
+
             continue
 
         articles = fetch_source(
@@ -1362,14 +1723,17 @@ def main():
 
         # Limitar cantidad por fuente
         if max_items:
-            articles = articles[:max_items]
+            articles = articles[
+                :max_items
+            ]
 
         all_new_articles.extend(
             articles
         )
 
     print(
-        f"\nArtículos nuevos encontrados: "
+        f"\nArtículos nuevos "
+        f"encontrados: "
         f"{len(all_new_articles)}"
     )
 
@@ -1390,7 +1754,8 @@ def main():
     )
 
     print(
-        f"Artículos después de deduplicar: "
+        f"Artículos después de "
+        f"deduplicar: "
         f"{len(combined)}"
     )
 
@@ -1403,7 +1768,8 @@ def main():
     )
 
     print(
-        "\nIngestión terminada correctamente."
+        "\nIngestión terminada "
+        "correctamente."
     )
 
 
