@@ -1,6 +1,5 @@
 const DATA_URL = "data/articles.json";
 
-
 const CATEGORY_LABELS = {
     literatura: "Literatura",
     cine: "Cine",
@@ -15,7 +14,6 @@ const CATEGORY_LABELS = {
     tecnologia: "Tecnología",
     sociedad: "Sociedad"
 };
-
 
 const CATEGORY_ORDER = [
     "literatura",
@@ -32,9 +30,10 @@ const CATEGORY_ORDER = [
     "videojuegos"
 ];
 
+const HISTORY_KEY = "deriva_random_history";
+const MAX_RANDOM_HISTORY = 30;
 
 let articles = [];
-
 let currentCategory = null;
 
 
@@ -46,33 +45,13 @@ async function loadArticles() {
 
     try {
 
-        const response = await fetch(
-            DATA_URL
-        );
+        const response = await fetch(DATA_URL);
 
         if (!response.ok) {
-            throw new Error(
-                `HTTP ${response.status}`
-            );
+            throw new Error(`HTTP ${response.status}`);
         }
 
         const data = await response.json();
-
-
-        /*
-         * articles.json puede ser:
-         *
-         * [
-         *   {...},
-         *   {...}
-         * ]
-         *
-         * o:
-         *
-         * {
-         *   "articles": [...]
-         * }
-         */
 
         if (Array.isArray(data)) {
 
@@ -105,7 +84,6 @@ async function loadArticles() {
                 "No se encontró la lista de artículos."
             );
         }
-
 
         initializeApp();
 
@@ -143,28 +121,26 @@ function initializeApp() {
 
 function setupNavigation() {
 
-    const buttons = document.querySelectorAll(
-        ".nav-button"
-    );
+    const buttons =
+        document.querySelectorAll(
+            ".nav-button"
+        );
 
+    buttons.forEach(button => {
 
-    buttons.forEach(
-        button => {
+        button.addEventListener(
+            "click",
+            () => {
 
-            button.addEventListener(
-                "click",
-                () => {
+                const view =
+                    button.dataset.view;
 
-                    const view =
-                        button.dataset.view;
+                showView(view);
 
-                    showView(view);
+            }
+        );
 
-                }
-            );
-
-        }
-    );
+    });
 }
 
 
@@ -175,23 +151,18 @@ function showView(viewName) {
             ".view"
         );
 
+    views.forEach(view => {
 
-    views.forEach(
-        view => {
+        view.classList.remove(
+            "active-view"
+        );
 
-            view.classList.remove(
-                "active-view"
-            );
-
-        }
-    );
-
+    });
 
     const target =
         document.getElementById(
             `${viewName}-view`
         );
-
 
     if (target) {
 
@@ -201,24 +172,19 @@ function showView(viewName) {
 
     }
 
-
     const navButtons =
         document.querySelectorAll(
             ".nav-button"
         );
 
+    navButtons.forEach(button => {
 
-    navButtons.forEach(
-        button => {
+        button.classList.toggle(
+            "active",
+            button.dataset.view === viewName
+        );
 
-            button.classList.toggle(
-                "active",
-                button.dataset.view === viewName
-            );
-
-        }
-    );
-
+    });
 
     window.scrollTo({
         top: 0,
@@ -233,34 +199,17 @@ function showView(viewName) {
 
 function getAvailableCategories() {
 
-    const available =
-        new Set();
+    return CATEGORY_ORDER.filter(
+        category => {
 
-
-    articles.forEach(
-        article => {
-
-            const categories =
-                article.categories || [];
-
-
-            categories.forEach(
-                category => {
-
-                    available.add(
-                        category
-                    );
-
-                }
+            return articles.some(
+                article =>
+                    (
+                        article.categories || []
+                    ).includes(category)
             );
 
         }
-    );
-
-
-    return CATEGORY_ORDER.filter(
-        category =>
-            available.has(category)
     );
 }
 
@@ -270,71 +219,51 @@ function renderCategoryGrids() {
     const categories =
         getAvailableCategories();
 
-
     const grids =
         document.querySelectorAll(
             ".category-grid"
         );
 
+    grids.forEach(grid => {
 
-    grids.forEach(
-        grid => {
+        grid.innerHTML = "";
 
-            grid.innerHTML = "";
+        categories.forEach(category => {
 
+            const button =
+                createCategoryButton(
+                    category
+                );
 
-            categories.forEach(
-                category => {
+            grid.appendChild(button);
 
-                    const button =
-                        createCategoryButton(
-                            category
-                        );
+        });
 
-
-                    grid.appendChild(
-                        button
-                    );
-
-                }
-            );
-
-        }
-    );
+    });
 }
 
 
-function createCategoryButton(
-    category
-) {
+function createCategoryButton(category) {
 
     const button =
         document.createElement(
             "button"
         );
 
-
     button.className =
         "category-button";
 
-
     button.textContent =
-        CATEGORY_LABELS[
-            category
-        ] || category;
-
+        CATEGORY_LABELS[category] || category;
 
     button.addEventListener(
         "click",
         () => {
 
-            showCategory(
-                category
-            );
+            showCategory(category);
 
         }
     );
-
 
     return button;
 }
@@ -351,11 +280,128 @@ function setupRandomButton() {
             "random-button"
         );
 
-
     button.addEventListener(
         "click",
         showRandomArticle
     );
+}
+
+
+function getRandomHistory() {
+
+    try {
+
+        const stored =
+            localStorage.getItem(
+                HISTORY_KEY
+            );
+
+        if (!stored) {
+            return [];
+        }
+
+        const parsed =
+            JSON.parse(stored);
+
+        return Array.isArray(parsed)
+            ? parsed
+            : [];
+
+    } catch {
+
+        return [];
+    }
+}
+
+
+function saveRandomHistory(id) {
+
+    if (!id) {
+        return;
+    }
+
+    let history =
+        getRandomHistory();
+
+    history =
+        history.filter(
+            item => item !== id
+        );
+
+    history.unshift(id);
+
+    history =
+        history.slice(
+            0,
+            MAX_RANDOM_HISTORY
+        );
+
+    try {
+
+        localStorage.setItem(
+            HISTORY_KEY,
+            JSON.stringify(history)
+        );
+
+    } catch {
+
+        // Si localStorage está bloqueado,
+        // simplemente continuamos sin historial.
+    }
+}
+
+
+function scoreArticleForRandom(article) {
+
+    let score = 0;
+
+    const history =
+        getRandomHistory();
+
+    /*
+     * Penalizar artículos ya mostrados.
+     */
+
+    if (history.includes(article.id)) {
+        score -= 100;
+    }
+
+    /*
+     * Favorecer artículos con información
+     * útil para la interfaz.
+     */
+
+    if (article.description) {
+        score += 10;
+    }
+
+    if (article.image_url) {
+        score += 5;
+    }
+
+    if (article.author) {
+        score += 3;
+    }
+
+    if (article.reading_time) {
+        score += 3;
+    }
+
+    if (
+        Array.isArray(article.categories) &&
+        article.categories.length
+    ) {
+        score += 2;
+    }
+
+    /*
+     * Un pequeño componente aleatorio evita
+     * que siempre gane exactamente el mismo artículo.
+     */
+
+    score += Math.random() * 20;
+
+    return score;
 }
 
 
@@ -365,34 +411,39 @@ function showRandomArticle() {
         return;
     }
 
-
-    const randomIndex =
-        Math.floor(
-            Math.random()
-            * articles.length
-        );
-
+    const ranked =
+        articles
+            .map(article => ({
+                article,
+                score:
+                    scoreArticleForRandom(article)
+            }))
+            .sort(
+                (a, b) =>
+                    b.score - a.score
+            );
 
     const article =
-        articles[randomIndex];
+        ranked[0].article;
 
+    saveRandomHistory(
+        article.id
+    );
 
     const container =
         document.getElementById(
             "random-result"
         );
 
-
     container.innerHTML =
         createArticleCard(
-            article
+            article,
+            true
         );
-
 
     container.classList.remove(
         "hidden"
     );
-
 
     container.scrollIntoView({
         behavior: "smooth",
@@ -405,92 +456,80 @@ function showRandomArticle() {
  * MOSTRAR CATEGORÍA
  */
 
-function showCategory(
-    category
-) {
+function showCategory(category) {
 
     currentCategory =
         category;
 
-
-    showView(
-        "explore"
-    );
-
+    showView("explore");
 
     const categoryGrid =
         document.getElementById(
             "explore-category-grid"
         );
 
-
     const results =
         document.getElementById(
             "category-results"
         );
 
-
     categoryGrid.classList.add(
         "hidden"
     );
 
-
     results.classList.remove(
         "hidden"
     );
-
 
     const title =
         document.getElementById(
             "category-title"
         );
 
-
     const count =
         document.getElementById(
             "category-count"
         );
 
-
     title.textContent =
-        CATEGORY_LABELS[
-            category
-        ] || category;
-
+        CATEGORY_LABELS[category]
+        || category;
 
     const categoryArticles =
         articles.filter(
             article =>
                 (
-                    article.categories
-                    || []
-                ).includes(
-                    category
-                )
+                    article.categories || []
+                ).includes(category)
         );
-
 
     count.textContent =
         `${categoryArticles.length} artículos`;
-
 
     const grid =
         document.getElementById(
             "articles-grid"
         );
 
-
     grid.innerHTML = "";
 
+    if (!categoryArticles.length) {
+
+        grid.innerHTML = `
+            <p class="empty-state">
+                Todavía no hay artículos en esta categoría.
+            </p>
+        `;
+
+        return;
+    }
 
     categoryArticles.forEach(
         article => {
 
             grid.insertAdjacentHTML(
                 "beforeend",
-                createArticleCard(
-                    article
-                )
+                createArticleCard(article)
             );
 
         }
@@ -509,7 +548,6 @@ function setupBackButton() {
             "back-to-categories"
         );
 
-
     button.addEventListener(
         "click",
         () => {
@@ -519,22 +557,18 @@ function setupBackButton() {
                     "explore-category-grid"
                 );
 
-
             const results =
                 document.getElementById(
                     "category-results"
                 );
 
-
             grid.classList.remove(
                 "hidden"
             );
 
-
             results.classList.add(
                 "hidden"
             );
-
 
             currentCategory =
                 null;
@@ -549,7 +583,8 @@ function setupBackButton() {
  */
 
 function createArticleCard(
-    article
+    article,
+    featured = false
 ) {
 
     const title =
@@ -558,22 +593,19 @@ function createArticleCard(
             || "Sin título"
         );
 
-
     const description =
         cleanDescription(
             article.description
             || ""
         );
 
-
     const source =
         escapeHtml(
-            formatSource(
-                article.source
-                || ""
+            article.source_name
+            || formatSource(
+                article.source || ""
             )
         );
-
 
     const contentType =
         escapeHtml(
@@ -583,47 +615,123 @@ function createArticleCard(
             )
         );
 
+    const author =
+        article.author
+            ? escapeHtml(
+                article.author
+            )
+            : "";
+
+    const date =
+        formatDate(
+            article.published_at
+        );
+
+    const readingTime =
+        formatReadingTime(
+            article.reading_time
+        );
+
+    const category =
+        formatFirstCategory(
+            article.categories
+        );
+
+    const image =
+        article.image_url
+            ? `
+                <div class="article-image">
+                    <img
+                        src="${escapeAttribute(
+                            article.image_url
+                        )}"
+                        alt=""
+                        loading="lazy"
+                        onerror="this.parentElement.remove()"
+                    >
+                </div>
+            `
+            : "";
 
     const url =
-        article.url
-        || "#";
+        article.url || "#";
 
+    const metadata =
+        [
+            contentType,
+            category,
+            readingTime
+        ].filter(Boolean);
+
+    const authorDate =
+        [
+            author,
+            date
+        ].filter(Boolean);
 
     return `
-        <article class="article-card">
+        <article class="
+            article-card
+            ${featured ? "article-card-featured" : ""}
+        ">
 
-            <p class="article-source">
-                ${source}
-            </p>
+            ${image}
 
-            <h3>
-                ${title}
-            </h3>
+            <div class="article-card-content">
 
-            ${
-                description
-                    ? `
-                    <p class="article-description">
-                        ${description}
-                    </p>
-                    `
-                    : ""
-            }
+                <p class="article-source">
+                    ${source}
+                </p>
 
-            <div class="article-footer">
+                <h3>
+                    ${title}
+                </h3>
 
-                <span class="article-type">
-                    ${contentType}
-                </span>
+                ${
+                    description
+                        ? `
+                            <p class="article-description">
+                                ${description}
+                            </p>
+                        `
+                        : ""
+                }
 
-                <a
-                    class="article-link"
-                    href="${escapeAttribute(url)}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Leer →
-                </a>
+                ${
+                    authorDate.length
+                        ? `
+                            <p class="article-byline">
+                                ${authorDate.join(" · ")}
+                            </p>
+                        `
+                        : ""
+                }
+
+                <div class="article-footer">
+
+                    <div class="article-meta">
+                        ${
+                            metadata
+                                .map(
+                                    item =>
+                                        `<span>${escapeHtml(item)}</span>`
+                                )
+                                .join(
+                                    '<span class="meta-separator">·</span>'
+                                )
+                        }
+                    </div>
+
+                    <a
+                        class="article-link"
+                        href="${escapeAttribute(url)}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Leer →
+                    </a>
+
+                </div>
 
             </div>
 
@@ -636,9 +744,7 @@ function createArticleCard(
  * FORMATO
  */
 
-function formatSource(
-    source
-) {
+function formatSource(source) {
 
     const names = {
 
@@ -668,7 +774,6 @@ function formatSource(
 
     };
 
-
     return (
         names[source]
         || source
@@ -677,44 +782,27 @@ function formatSource(
 }
 
 
-function formatContentType(
-    type
-) {
+function formatContentType(type) {
 
     const names = {
 
         essay: "Ensayo",
-
         analysis: "Análisis",
-
         interview: "Entrevista",
-
         history: "Historia",
-
         podcast: "Podcast",
-
         video: "Video",
-
         review: "Reseña",
-
         list: "Lista",
-
         collection: "Colección",
-
         reportage: "Reportaje",
-
         game: "Juego",
-
         criticism: "Crítica",
-
         fiction: "Ficción",
-
         profile: "Perfil",
-
         cartoon: "Caricatura"
 
     };
-
 
     return (
         names[type]
@@ -724,29 +812,91 @@ function formatContentType(
 }
 
 
+function formatFirstCategory(categories) {
+
+    if (
+        !Array.isArray(categories)
+        || !categories.length
+    ) {
+        return "";
+    }
+
+    return (
+        CATEGORY_LABELS[
+            categories[0]
+        ]
+        || categories[0]
+    );
+}
+
+
+function formatReadingTime(minutes) {
+
+    if (
+        minutes === null
+        || minutes === undefined
+        || minutes === ""
+    ) {
+        return "";
+    }
+
+    const value =
+        Number(minutes);
+
+    if (!Number.isFinite(value)) {
+        return "";
+    }
+
+    return `${value} min`;
+}
+
+
+function formatDate(value) {
+
+    if (!value) {
+        return "";
+    }
+
+    const date =
+        new Date(value);
+
+    if (
+        Number.isNaN(
+            date.getTime()
+        )
+    ) {
+        return "";
+    }
+
+    return new Intl.DateTimeFormat(
+        "es-MX",
+        {
+            day: "numeric",
+            month: "short",
+            year: "numeric"
+        }
+    ).format(date);
+}
+
+
 /*
  * LIMPIAR DESCRIPCIONES
  */
 
-function cleanDescription(
-    description
-) {
+function cleanDescription(description) {
 
     const temp =
         document.createElement(
             "div"
         );
 
-
     temp.innerHTML =
         description;
-
 
     const text =
         temp.textContent
         || temp.innerText
         || "";
-
 
     const clean =
         text
@@ -756,10 +906,8 @@ function cleanDescription(
             )
             .trim();
 
-
     if (
-        clean.length
-        <= 220
+        clean.length <= 220
     ) {
 
         return escapeHtml(
@@ -767,7 +915,6 @@ function cleanDescription(
         );
 
     }
-
 
     return escapeHtml(
         clean.slice(
@@ -783,9 +930,7 @@ function cleanDescription(
  * SEGURIDAD BÁSICA
  */
 
-function escapeHtml(
-    value
-) {
+function escapeHtml(value) {
 
     return String(value)
         .replace(
@@ -811,13 +956,9 @@ function escapeHtml(
 }
 
 
-function escapeAttribute(
-    value
-) {
+function escapeAttribute(value) {
 
-    return escapeHtml(
-        value
-    );
+    return escapeHtml(value);
 }
 
 
@@ -831,7 +972,6 @@ function showLoadError() {
         document.querySelector(
             "main"
         );
-
 
     main.innerHTML = `
         <section class="hero">
