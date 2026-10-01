@@ -38,6 +38,9 @@ jobs:
           echo "Contenido de data/articles.json:"
           python -m json.tool data/articles.json | head -80
 
+      - name: Auditar categorías
+        run: python ingest/audit_categories.py
+
       - name: Guardar articles.json en el repositorio
         run: |
           git config user.name "github-actions[bot]"
