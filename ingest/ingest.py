@@ -2246,6 +2246,19 @@ def main():
         f"{len(all_new_articles)}"
     )
 
+     # Reclasificar artículos existentes
+    # con la lógica actualizada.
+    for article in existing_articles:
+
+        article["categories"] = classify_categories(
+            article.get("title", ""),
+            article.get("description", ""),
+            article.get("source", ""),
+            [],
+            tags=article.get("tags", []),
+            url=article.get("url", ""),
+        )
+
     # Combinar con artículos previos
     combined = (
         existing_articles
@@ -2256,7 +2269,7 @@ def main():
     combined = deduplicate_articles(
         combined
     )
-
+    
     # Ordenar
     combined = sort_articles(
         combined
