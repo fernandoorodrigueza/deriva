@@ -692,6 +692,13 @@ CATEGORY_KEYWORDS = {
         "editorial",
         "manuscrito",
         "manuscritos",
+        "romance",
+        "author",
+        "authors",
+        "literary",
+        "literature",
+        "manuscript",
+        
     ],
 
     "cine": [
@@ -803,6 +810,10 @@ CATEGORY_KEYWORDS = {
         "galerías",
         "obra de arte",
         "obras de arte",
+        "diagram",
+        "diagrams",
+        "anatomical",
+        "anatomy",
     ],
 
     "ciencia": [
