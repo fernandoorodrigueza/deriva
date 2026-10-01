@@ -13,7 +13,29 @@ def load_articles():
         "r",
         encoding="utf-8",
     ) as f:
-        return json.load(f)
+        data = json.load(f)
+
+    # Si el JSON es directamente una lista de artículos.
+    if isinstance(data, list):
+        return data
+
+    # Si el JSON contiene los artículos dentro de una propiedad.
+    if isinstance(data, dict):
+
+        for key in (
+            "articles",
+            "items",
+            "data",
+        ):
+            value = data.get(key)
+
+            if isinstance(value, list):
+                return value
+
+    raise ValueError(
+        "No se encontró una lista de artículos "
+        "en data/articles.json"
+    )
 
 
 def print_header(title):
