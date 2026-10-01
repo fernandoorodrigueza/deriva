@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Deriva</title>
+
+    <meta
+        name="description"
+        content="Una forma distinta de descubrir ideas, historias y cultura."
+    >
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <a href="#" class="logo">
+            Deriva
+        </a>
+
+        <nav class="main-nav">
+            <button
+                class="nav-button active"
+                data-view="home"
+            >
+                Inicio
+            </button>
+
+            <button
+                class="nav-button"
+                data-view="explore"
+            >
+                Explorar
+            </button>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- INICIO -->
+
+        <section
+            id="home-view"
+            class="view active-view"
+        >
+
+            <div class="hero">
+
+                <p class="eyebrow">
+                    CULTURA SIN RUMBO FIJO
+                </p>
+
+                <h1>
+                    Déjate llevar.
+                </h1>
+
+                <p class="hero-text">
+                    Artículos, ideas e historias para leer
+                    sin saber exactamente qué estabas buscando.
+                </p>
+
+                <button
+                    id="random-button"
+                    class="primary-button"
+                >
+                    Dame algo
+                </button>
+
+            </div>
+
+
+            <section
+                id="random-result"
+                class="random-result hidden"
+            >
+            </section>
+
+
+            <section class="section-block">
+
+                <div class="section-heading">
+
+                    <div>
+                        <p class="eyebrow">
+                            EXPLORAR
+                        </p>
+
+                        <h2>
+                            ¿Por dónde quieres perderte?
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="category-grid"
+                    class="category-grid"
+                >
+                </div>
+
+            </section>
+
+        </section>
+
+
+        <!-- EXPLORAR -->
+
+        <section
+            id="explore-view"
+            class="view"
+        >
+
+            <div class="page-heading">
+
+                <p class="eyebrow">
+                    EXPLORAR
+                </p>
+
+                <h1>
+                    Elige una categoría.
+                </h1>
+
+                <p>
+                    O no. También puedes dejar que Deriva
+                    decida por ti.
+                </p>
+
+            </div>
+
+
+            <div
+                id="explore-category-grid"
+                class="category-grid"
+            >
+            </div>
+
+
+            <section
+                id="category-results"
+                class="category-results hidden"
+            >
+
+                <div class="results-heading">
+
+                    <button
+                        id="back-to-categories"
+                        class="text-button"
+                    >
+                        ← Todas las categorías
+                    </button>
+
+                    <h2 id="category-title"></h2>
+
+                    <p id="category-count"></p>
+
+                </div>
+
+
+                <div
+                    id="articles-grid"
+                    class="articles-grid"
+                >
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <p>
+            Deriva
+        </p>
+
+        <p>
+            Para leer sin prisa.
+        </p>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
