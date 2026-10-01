@@ -79,7 +79,6 @@ button {
 .nav-button {
     border: 0;
     background: transparent;
-
     color: var(--muted);
 
     padding: 8px 12px;
@@ -138,7 +137,6 @@ button {
         sans-serif;
 
     font-size: 11px;
-
     font-weight: bold;
 
     letter-spacing: 2px;
@@ -168,7 +166,6 @@ button {
     color: #4f4b45;
 
     font-size: 21px;
-
     line-height: 1.5;
 }
 
@@ -187,7 +184,6 @@ button {
         sans-serif;
 
     font-size: 14px;
-
     font-weight: bold;
 
     border-radius: 3px;
@@ -222,6 +218,33 @@ button {
 
 .random-result .article-card {
     width: 100%;
+}
+
+
+.random-result .article-card-featured {
+    display: grid;
+
+    grid-template-columns:
+        minmax(260px, 0.9fr)
+        minmax(0, 1.1fr);
+
+    min-height: 390px;
+}
+
+
+.random-result .article-card-featured .article-image {
+    height: 100%;
+    min-height: 390px;
+}
+
+
+.random-result .article-card-featured .article-card-content {
+    padding: 34px;
+}
+
+
+.random-result .article-card-featured h3 {
+    font-size: 36px;
 }
 
 
@@ -424,13 +447,53 @@ button {
 
     flex-direction: column;
 
-    min-height: 280px;
-
-    padding: 26px;
+    min-height: 390px;
 
     background: var(--surface);
 
     border: 1px solid var(--border);
+
+    overflow: hidden;
+}
+
+
+.article-image {
+    width: 100%;
+
+    height: 190px;
+
+    overflow: hidden;
+
+    background: #e8e3db;
+}
+
+
+.article-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.article-card:hover .article-image img {
+    transform: scale(1.025);
+}
+
+
+.article-card-content {
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 26px;
 }
 
 
@@ -445,7 +508,6 @@ button {
         sans-serif;
 
     font-size: 10px;
-
     font-weight: bold;
 
     letter-spacing: 1.5px;
@@ -471,6 +533,22 @@ button {
     color: #5e5a54;
 
     font-size: 16px;
+
+    line-height: 1.5;
+}
+
+
+.article-byline {
+    margin: 16px 0 0;
+
+    color: var(--muted);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 11px;
 }
 
 
@@ -481,13 +559,23 @@ button {
 
     display: flex;
 
-    align-items: center;
+    align-items: flex-end;
 
     justify-content: space-between;
+
+    gap: 16px;
 }
 
 
-.article-type {
+.article-meta {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 6px;
+
     color: var(--muted);
 
     font-family:
@@ -495,15 +583,22 @@ button {
         Helvetica,
         sans-serif;
 
-    font-size: 11px;
+    font-size: 10px;
 
     text-transform: uppercase;
 
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
+}
+
+
+.meta-separator {
+    opacity: 0.5;
 }
 
 
 .article-link {
+    flex-shrink: 0;
+
     color: var(--text);
 
     font-family:
@@ -512,7 +607,6 @@ button {
         sans-serif;
 
     font-size: 12px;
-
     font-weight: bold;
 
     text-decoration: none;
@@ -521,6 +615,17 @@ button {
 
 .article-link:hover {
     text-decoration: underline;
+}
+
+
+.empty-state {
+    grid-column: 1 / -1;
+
+    padding: 40px 0;
+
+    color: var(--muted);
+
+    font-size: 18px;
 }
 
 
@@ -598,10 +703,12 @@ button {
     .page-heading,
     .category-results,
     #explore-view > .category-grid {
+
         width: min(
             calc(100% - 32px),
             var(--max-width)
         );
+
     }
 
 
@@ -619,6 +726,35 @@ button {
     }
 
 
+    .random-result {
+        width: min(
+            calc(100% - 32px),
+            900px
+        );
+    }
+
+
+    .random-result .article-card-featured {
+        display: flex;
+    }
+
+
+    .random-result .article-card-featured .article-image {
+        min-height: 220px;
+        height: 220px;
+    }
+
+
+    .random-result .article-card-featured .article-card-content {
+        padding: 26px;
+    }
+
+
+    .random-result .article-card-featured h3 {
+        font-size: 30px;
+    }
+
+
     .page-heading h1 {
         font-size: 46px;
     }
@@ -630,6 +766,7 @@ button {
             var(--max-width)
         );
     }
+
 }
 
 
@@ -648,4 +785,15 @@ button {
     .site-header {
         padding: 20px 0;
     }
+
+
+    .article-image {
+        height: 180px;
+    }
+
+
+    .article-card-content {
+        padding: 22px;
+    }
+
 }
