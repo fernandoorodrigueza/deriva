@@ -1062,6 +1062,115 @@ def classify_categories(
     source_id,
     feed_categories,
 ):
+    title_text = (title or "").lower()
+
+    description_text = (description or "").lower()
+
+    feed_text = " ".join(
+        feed_categories or []
+    ).lower()
+
+    scores = {
+        category: 0
+        for category in MASTER_CATEGORIES
+    }
+
+    # ---------------------------------------------------------
+    # 1. Las coincidencias en el título pesan más.
+    #
+    # El título suele indicar el tema principal.
+    # La descripción puede mencionar muchas cosas secundarias.
+    # ---------------------------------------------------------
+
+    for category, keywords in CATEGORY_KEYWORDS.items():
+
+        for keyword in keywords:
+
+            if keyword_matches(title_text, keyword):
+                scores[category] += 3
+
+            if keyword_matches(description_text, keyword):
+                scores[category] += 1
+
+            if keyword_matches(feed_text, keyword):
+                scores[category] += 1
+
+    # ---------------------------------------------------------
+    # 2. Prioridades especiales por fuente
+    # ---------------------------------------------------------
+
+    # MUBI Notebook es, ante todo, una publicación de cine.
+    # Le damos una prioridad fuerte a cine, pero permitimos
+    # categorías secundarias cuando realmente tienen suficiente
+    # evidencia.
+    if source_id == "mubi_notebook":
+        scores["cine"] += 5
+
+    # Quanta es una publicación científica.
+    if source_id == "quanta":
+        scores["ciencia"] += 3
+
+    # Public Domain Review tiene contenido muy variado.
+    # No agregamos automáticamente historia o artes visuales,
+    # porque eso estaba provocando falsos positivos.
+    #
+    # La categoría tendrá que surgir del contenido real.
+    # ---------------------------------------------------------
+
+    # ---------------------------------------------------------
+    # 3. Ordenar categorías por puntuación
+    # ---------------------------------------------------------
+
+    ranked = sorted(
+        scores.items(),
+        key=lambda item: item[1],
+        reverse=True,
+    )
+
+    # ---------------------------------------------------------
+    # 4. Reglas para categorías secundarias
+    # ---------------------------------------------------------
+
+    if source_id == "mubi_notebook":
+        # En MUBI exigimos más evidencia para una categoría
+        # secundaria. Esto evita que una mención incidental a
+        # libros, autores o literatura convierta un artículo
+        # cinematográfico en "literatura".
+        secondary_threshold = 4
+    else:
+        secondary_threshold = 2
+
+    strong_categories = [
+        category
+        for category, score in ranked
+        if score >= secondary_threshold
+    ]
+
+    # ---------------------------------------------------------
+    # 5. Siempre conservar la categoría principal
+    # ---------------------------------------------------------
+
+    if strong_categories:
+        return strong_categories[:3]
+
+    # ---------------------------------------------------------
+    # 6. Si ninguna alcanzó el umbral, usar la mejor coincidencia
+    # ---------------------------------------------------------
+
+    best_categories = [
+        category
+        for category, score in ranked
+        if score > 0
+    ]
+
+    if best_categories:
+        return best_categories[:1]
+
+    # ---------------------------------------------------------
+    # 7. Fallback
+    # ---------------------------------------------------------
+
+    return ["cultura"]
 
     text = " ".join(
         [
