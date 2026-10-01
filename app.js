@@ -1,6 +1,5 @@
 const DATA_URL = "data/articles.json";
 
-
 const CATEGORY_LABELS = {
     literatura: "Literatura",
     cine: "Cine",
@@ -33,6 +32,10 @@ const CATEGORY_ORDER = [
 ];
 
 
+/*
+ * MEMORIA DE "DAME ALGO"
+ */
+
 const RANDOM_HISTORY_KEY =
     "deriva_random_history";
 
@@ -49,6 +52,14 @@ const RANDOM_SOURCE_LIMIT = 4;
 const RANDOM_CATEGORY_LIMIT = 5;
 
 
+/*
+ * MEMORIA DE GUARDADOS
+ */
+
+const SAVED_ARTICLES_KEY =
+    "deriva_saved_articles";
+
+
 let articles = [];
 
 let currentCategory = null;
@@ -62,9 +73,9 @@ async function loadArticles() {
 
     try {
 
-        const response = await fetch(
-            DATA_URL
-        );
+        const response =
+            await fetch(DATA_URL);
+
 
         if (!response.ok) {
 
@@ -73,6 +84,7 @@ async function loadArticles() {
             );
 
         }
+
 
         const data =
             await response.json();
@@ -114,6 +126,7 @@ async function loadArticles() {
 
         initializeApp();
 
+
     } catch (error) {
 
         console.error(
@@ -141,6 +154,8 @@ function initializeApp() {
     setupRandomButton();
 
     setupBackButton();
+
+    setupSavedButtons();
 
 }
 
@@ -228,6 +243,13 @@ function showView(viewName) {
 
         }
     );
+
+
+    if (viewName === "saved") {
+
+        renderSavedArticles();
+
+    }
 
 
     window.scrollTo({
@@ -357,13 +379,16 @@ function createCategoryButton(
 /*
  * DAME ALGO
  *
- * El objetivo no es recomendar "lo que te gusta".
- * El objetivo es producir una deriva variada.
+ * El objetivo no es recomendar
+ * "lo que te gusta".
+ *
+ * El objetivo es producir
+ * una deriva variada.
  */
 
 
 /*
- * Leer historial de artículos
+ * Historial de artículos
  */
 
 function getRandomHistory() {
@@ -391,6 +416,7 @@ function getRandomHistory() {
             ? parsed
             : [];
 
+
     } catch {
 
         return [];
@@ -408,7 +434,10 @@ function saveRandomHistory(
     article
 ) {
 
-    if (!article || !article.id) {
+    if (
+        !article ||
+        !article.id
+    ) {
 
         return;
 
@@ -482,6 +511,7 @@ function getRandomSources() {
         return Array.isArray(parsed)
             ? parsed
             : [];
+
 
     } catch {
 
@@ -578,6 +608,7 @@ function getRandomCategories() {
         return Array.isArray(parsed)
             ? parsed
             : [];
+
 
     } catch {
 
@@ -797,8 +828,8 @@ function scoreRandomArticle(
 
 
     /*
-     * 4. Favorecer artículos con buena
-     * información disponible.
+     * 4. Favorecer artículos con
+     * buena información disponible.
      */
 
     if (article.description) {
@@ -822,9 +853,7 @@ function scoreRandomArticle(
     }
 
 
-    if (
-        article.reading_time
-    ) {
+    if (article.reading_time) {
 
         score += 3;
 
@@ -833,14 +862,6 @@ function scoreRandomArticle(
 
     /*
      * 5. Edad del artículo.
-     *
-     * No queremos convertir Deriva en un
-     * lector de noticias de última hora.
-     *
-     * Tampoco queremos que todo sea arqueología.
-     *
-     * La antigüedad recibe una pequeña
-     * variación aleatoria.
      */
 
     const age =
@@ -874,10 +895,6 @@ function scoreRandomArticle(
 
     /*
      * 6. Aleatoriedad.
-     *
-     * Esto es fundamental.
-     *
-     * Si no existe azar, deja de ser Deriva.
      */
 
     score +=
@@ -960,12 +977,7 @@ function chooseRandomArticle() {
 
 
     /*
-     * No siempre tomamos el primero.
-     *
      * Elegimos entre los tres mejores.
-     *
-     * Así conservamos una pequeña dosis
-     * de imprevisibilidad.
      */
 
     const pool =
@@ -990,6 +1002,33 @@ function chooseRandomArticle() {
     return selected
         ? selected.article
         : candidates[0];
+
+}
+
+
+/*
+ * BOTÓN DAME ALGO
+ */
+
+function setupRandomButton() {
+
+    const button =
+        document.getElementById(
+            "random-button"
+        );
+
+
+    if (!button) {
+
+        return;
+
+    }
+
+
+    button.addEventListener(
+        "click",
+        showRandomArticle
+    );
 
 }
 
@@ -1032,6 +1071,13 @@ function showRandomArticle() {
         );
 
 
+    if (!container) {
+
+        return;
+
+    }
+
+
     container.innerHTML =
         createArticleCard(
             article
@@ -1047,6 +1093,363 @@ function showRandomArticle() {
         behavior: "smooth",
         block: "start"
     });
+
+}
+
+
+/*
+ * GUARDADOS
+ */
+
+
+/*
+ * Obtener IDs guardados
+ */
+
+function getSavedArticleIds() {
+
+    try {
+
+        const saved =
+            localStorage.getItem(
+                SAVED_ARTICLES_KEY
+            );
+
+
+        if (!saved) {
+
+            return [];
+
+        }
+
+
+        const parsed =
+            JSON.parse(saved);
+
+
+        return Array.isArray(parsed)
+            ? parsed
+            : [];
+
+
+    } catch {
+
+        return [];
+
+    }
+
+}
+
+
+/*
+ * Guardar IDs
+ */
+
+function saveArticleIds(
+    ids
+) {
+
+    try {
+
+        localStorage.setItem(
+            SAVED_ARTICLES_KEY,
+            JSON.stringify(ids)
+        );
+
+    } catch {
+
+        // Continuar aunque localStorage no esté disponible.
+
+    }
+
+}
+
+
+/*
+ * Comprobar si un artículo está guardado
+ */
+
+function isArticleSaved(
+    articleId
+) {
+
+    if (!articleId) {
+
+        return false;
+
+    }
+
+
+    return getSavedArticleIds()
+        .includes(
+            articleId
+        );
+
+}
+
+
+/*
+ * Guardar o quitar artículo
+ */
+
+function toggleSavedArticle(
+    articleId
+) {
+
+    if (!articleId) {
+
+        return;
+
+    }
+
+
+    const savedIds =
+        getSavedArticleIds();
+
+
+    const index =
+        savedIds.indexOf(
+            articleId
+        );
+
+
+    if (index === -1) {
+
+        savedIds.push(
+            articleId
+        );
+
+    } else {
+
+        savedIds.splice(
+            index,
+            1
+        );
+
+    }
+
+
+    saveArticleIds(
+        savedIds
+    );
+
+
+    updateSaveButtons(
+        articleId
+    );
+
+
+    const savedView =
+        document.getElementById(
+            "saved-view"
+        );
+
+
+    if (
+        savedView &&
+        savedView.classList.contains(
+            "active-view"
+        )
+    ) {
+
+        renderSavedArticles();
+
+    }
+
+}
+
+
+/*
+ * Actualizar botones visibles
+ */
+
+function updateSaveButtons(
+    articleId
+) {
+
+    const saved =
+        isArticleSaved(
+            articleId
+        );
+
+
+    const buttons =
+        document.querySelectorAll(
+            ".save-button"
+        );
+
+
+    buttons.forEach(
+        button => {
+
+            if (
+                button.dataset.articleId ===
+                String(articleId)
+            ) {
+
+                button.textContent =
+                    saved
+                        ? "♥ Guardado"
+                        : "♡ Guardar";
+
+
+                button.classList.toggle(
+                    "saved",
+                    saved
+                );
+
+            }
+
+        }
+    );
+
+}
+
+
+/*
+ * Activar botones de Guardar
+ */
+
+function setupSavedButtons() {
+
+    document.addEventListener(
+        "click",
+        event => {
+
+            const button =
+                event.target.closest(
+                    ".save-button"
+                );
+
+
+            if (!button) {
+
+                return;
+
+            }
+
+
+            const articleId =
+                button.dataset.articleId;
+
+
+            toggleSavedArticle(
+                articleId
+            );
+
+        }
+    );
+
+}
+
+
+/*
+ * Mostrar artículos guardados
+ */
+
+function renderSavedArticles() {
+
+    const grid =
+        document.getElementById(
+            "saved-grid"
+        );
+
+
+    const count =
+        document.getElementById(
+            "saved-count"
+        );
+
+
+    if (
+        !grid ||
+        !count
+    ) {
+
+        return;
+
+    }
+
+
+    const savedIds =
+        getSavedArticleIds();
+
+
+    const savedArticles =
+        savedIds
+            .map(
+                id =>
+                    articles.find(
+                        article =>
+                            String(article.id) ===
+                            String(id)
+                    )
+            )
+            .filter(Boolean);
+
+
+    /*
+     * Limpiar IDs de artículos que ya no
+     * existen en articles.json.
+     */
+
+    const validIds =
+        savedArticles.map(
+            article =>
+                article.id
+        );
+
+
+    if (
+        validIds.length !==
+        savedIds.length
+    ) {
+
+        saveArticleIds(
+            validIds
+        );
+
+    }
+
+
+    count.textContent =
+        `${savedArticles.length} ${
+            savedArticles.length === 1
+                ? "artículo"
+                : "artículos"
+        }`;
+
+
+    if (!savedArticles.length) {
+
+        grid.innerHTML = `
+            <p class="empty-state">
+                Todavía no has guardado nada.
+                Cuando encuentres algo que quieras volver a leer,
+                aparecerá aquí.
+            </p>
+        `;
+
+        return;
+
+    }
+
+
+    grid.innerHTML = "";
+
+
+    savedArticles.forEach(
+        article => {
+
+            grid.insertAdjacentHTML(
+                "beforeend",
+                createArticleCard(
+                    article
+                )
+            );
+
+        }
+    );
 
 }
 
@@ -1078,6 +1481,16 @@ function showCategory(
         document.getElementById(
             "category-results"
         );
+
+
+    if (
+        !categoryGrid ||
+        !results
+    ) {
+
+        return;
+
+    }
 
 
     categoryGrid.classList.add(
@@ -1112,8 +1525,8 @@ function showCategory(
         articles.filter(
             article =>
                 (
-                    article.categories
-                    || []
+                    article.categories ||
+                    []
                 ).includes(
                     category
                 )
@@ -1161,6 +1574,13 @@ function setupBackButton() {
         );
 
 
+    if (!button) {
+
+        return;
+
+    }
+
+
     button.addEventListener(
         "click",
         () => {
@@ -1206,23 +1626,23 @@ function createArticleCard(
 
     const title =
         escapeHtml(
-            article.title
-            || "Sin título"
+            article.title ||
+            "Sin título"
         );
 
 
     const description =
         cleanDescription(
-            article.description
-            || ""
+            article.description ||
+            ""
         );
 
 
     const source =
         escapeHtml(
             formatSource(
-                article.source
-                || ""
+                article.source ||
+                ""
             )
         );
 
@@ -1230,15 +1650,27 @@ function createArticleCard(
     const contentType =
         escapeHtml(
             formatContentType(
-                article.content_type
-                || ""
+                article.content_type ||
+                ""
             )
         );
 
 
     const url =
-        article.url
-        || "#";
+        article.url ||
+        "#";
+
+
+    const articleId =
+        article.id
+            ? String(article.id)
+            : "";
+
+
+    const saved =
+        isArticleSaved(
+            articleId
+        );
 
 
     return `
@@ -1248,9 +1680,11 @@ function createArticleCard(
                 ${source}
             </p>
 
+
             <h3>
                 ${title}
             </h3>
+
 
             ${
                 description
@@ -1262,20 +1696,47 @@ function createArticleCard(
                     : ""
             }
 
+
             <div class="article-footer">
 
                 <span class="article-type">
                     ${contentType}
                 </span>
 
-                <a
-                    class="article-link"
-                    href="${escapeAttribute(url)}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Leer →
-                </a>
+
+                <div class="article-actions">
+
+                    <button
+                        class="save-button ${
+                            saved
+                                ? "saved"
+                                : ""
+                        }"
+                        data-article-id="${escapeAttribute(
+                            articleId
+                        )}"
+                        type="button"
+                    >
+                        ${
+                            saved
+                                ? "♥ Guardado"
+                                : "♡ Guardar"
+                        }
+                    </button>
+
+
+                    <a
+                        class="article-link"
+                        href="${escapeAttribute(
+                            url
+                        )}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Leer →
+                    </a>
+
+                </div>
 
             </div>
 
@@ -1286,7 +1747,7 @@ function createArticleCard(
 
 
 /*
- * FORMATO
+ * FORMATO DE FUENTES
  */
 
 function formatSource(
@@ -1323,13 +1784,17 @@ function formatSource(
 
 
     return (
-        names[source]
-        || source
-        || "Fuente"
+        names[source] ||
+        source ||
+        "Fuente"
     );
 
 }
 
+
+/*
+ * FORMATO DE TIPO DE CONTENIDO
+ */
 
 function formatContentType(
     type
@@ -1386,9 +1851,9 @@ function formatContentType(
 
 
     return (
-        names[type]
-        || type
-        || "Artículo"
+        names[type] ||
+        type ||
+        "Artículo"
     );
 
 }
@@ -1413,9 +1878,9 @@ function cleanDescription(
 
 
     const text =
-        temp.textContent
-        || temp.innerText
-        || "";
+        temp.textContent ||
+        temp.innerText ||
+        "";
 
 
     const clean =
@@ -1442,8 +1907,7 @@ function cleanDescription(
         clean.slice(
             0,
             217
-        )
-        + "..."
+        ) + "..."
     );
 
 }
@@ -1505,6 +1969,13 @@ function showLoadError() {
         );
 
 
+    if (!main) {
+
+        return;
+
+    }
+
+
     main.innerHTML = `
 
         <section class="hero">
@@ -1513,9 +1984,11 @@ function showLoadError() {
                 DERIVA
             </p>
 
+
             <h1>
                 Algo salió mal.
             </h1>
+
 
             <p class="hero-text">
                 No pude cargar los artículos.
