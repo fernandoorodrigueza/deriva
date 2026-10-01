@@ -1,7 +1,30 @@
 {
-  "generated_at": "2026-10-01T00:00:33.753126+00:00",
-  "article_count": 205,
+  "generated_at": "2026-10-01T01:16:50.094435+00:00",
+  "article_count": 206,
   "articles": [
+    {
+      "id": "b31d43c29f78dfa5ca3c9e6a21e91f367253c7c5f4c170b717d03057d5339a53",
+      "source": "new_yorker",
+      "source_name": "The New Yorker",
+      "title": "Why Susan Collins Has Lasted So Long",
+      "author": "",
+      "url": "https://www.newyorker.com/podcast/political-scene/why-susan-collins-has-lasted-so-long",
+      "published_at": "2026-10-01T01:00:00+00:00",
+      "description": "Even if Maine’s longtime senator is finally defeated by a Democrat, her lengthy tenure speaks to the power of bringing federal money home—and asking voters to overlook other misgivings.",
+      "image_url": "https://media.newyorker.com/photos/637541f2b19ab8521b9fe1c2/master/pass/The%20Political%20Scene%20In%20Conversation.jpg",
+      "categories": [
+        "sociedad"
+      ],
+      "tags": [
+        "Podcast / The Political Scene Podcast"
+      ],
+      "reading_time": 8,
+      "reading_time_source": "estimated",
+      "reading_time_estimated": true,
+      "access": "unknown",
+      "content_type": "podcast",
+      "fetched_at": "2026-10-01T01:16:44.203156+00:00"
+    },
     {
       "id": "ac09da04fd0325eb7229eee5cf760763970ef6b06cc8e3467d72a9533ca35f73",
       "source": "new_yorker",
@@ -13,7 +36,7 @@
       "description": "The White House has quietly paused an order to end Temporary Protected Status for thousands of immigrants from El Salvador, a move that came after months of lobbying from the construction industry and other interest groups.",
       "image_url": "https://media.newyorker.com/photos/6abd530e769c5b9952fce5d2/master/pass/Blitzer_TPS_GettyImages-2290583797.jpg",
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [
         "News / The Lede",
@@ -24,7 +47,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:26.603136+00:00"
+      "fetched_at": "2026-10-01T01:16:44.209316+00:00"
     },
     {
       "id": "d371158b4ac4e532306b31bc4423445eb0fbc0a5c4733e351742d1fa10dfbc23",
@@ -37,7 +60,7 @@
       "description": "\"Parenting is a practice. You learn from your mistakes and then repeat them anyway.\"",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [
         "Editor's Pick",
@@ -54,7 +77,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.653610+00:00"
+      "fetched_at": "2026-10-01T01:16:45.034246+00:00"
     },
     {
       "id": "6ce6bc594f0b64e6069d2bd6996c9b9c3b56e10237b9988f8de75833e74165bf",
@@ -77,7 +100,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:26.608070+00:00"
+      "fetched_at": "2026-10-01T01:16:44.213919+00:00"
     },
     {
       "id": "7769f7938e2d32b66f151c4989c4095fbcf9db01670acaa34dc52518951a9413",
@@ -98,7 +121,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.288603+00:00"
+      "fetched_at": "2026-10-01T01:16:49.666512+00:00"
     },
     {
       "id": "621129be00679a7b29235eadfada20c2586e711b3ad7ba28e5600f6960cbd03b",
@@ -119,7 +142,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.293208+00:00"
+      "fetched_at": "2026-10-01T01:16:49.670761+00:00"
     },
     {
       "id": "0610916c1b8b7cd5937f312f5b7c9c73848966603b4fc4dda913a5e947567c64",
@@ -146,7 +169,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.657577+00:00"
+      "fetched_at": "2026-10-01T01:16:45.037927+00:00"
     },
     {
       "id": "d25f7678f2294004ce6225acbbd38ac855527d9334ceeb5b10fb2bfd2b26d9fe",
@@ -170,7 +193,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-10-01T00:00:26.611986+00:00"
+      "fetched_at": "2026-10-01T01:16:44.217619+00:00"
     },
     {
       "id": "065f3e95edf5cd70e5d6e3aa3aa38addc42fe289b4d74b92d396ad25e6b718bf",
@@ -214,7 +237,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:26.981029+00:00"
+      "fetched_at": "2026-10-01T01:16:44.592385+00:00"
     },
     {
       "id": "3b3c7da9726a9d6bdd3289dab2e3e85ef0f0873a31a6b79702648c2588f2e608",
@@ -237,7 +260,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:28.519804+00:00"
+      "fetched_at": "2026-10-01T01:16:45.578973+00:00"
     },
     {
       "id": "aac80be61e70a7d5c263d9ba728eff24dd2fd48c8d50641a20c055aadf85b9c2",
@@ -261,7 +284,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "cartoon",
-      "fetched_at": "2026-10-01T00:00:26.615789+00:00"
+      "fetched_at": "2026-10-01T01:16:44.221242+00:00"
     },
     {
       "id": "34ba89f2d33b15e3884f7b5c8868f77d012a274950ce2a879c6335cf81e3d6c8",
@@ -284,7 +307,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-10-01T00:00:26.620058+00:00"
+      "fetched_at": "2026-10-01T01:16:44.225446+00:00"
     },
     {
       "id": "e438da781b41aea93593e6eeaa50e67b5c7f54fc5c846cf2017a4fe8dbfbd986",
@@ -307,7 +330,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:26.624657+00:00"
+      "fetched_at": "2026-10-01T01:16:44.229771+00:00"
     },
     {
       "id": "292e49f1d3919e9f4288b6aa2eb202fc6cdf68ae589206c3eebe8c85d9cf0599",
@@ -330,7 +353,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:26.628588+00:00"
+      "fetched_at": "2026-10-01T01:16:44.233582+00:00"
     },
     {
       "id": "e35b2a4aa8bd1304fa864c372aa9d04538b704c98769c884cabf370c18f2bd80",
@@ -343,7 +366,7 @@
       "description": "\"The United States is deporting parents without their children, creating a whole new family-separation crisis.\"",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [
         "Editor's Pick",
@@ -360,7 +383,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.662532+00:00"
+      "fetched_at": "2026-10-01T01:16:45.042520+00:00"
     },
     {
       "id": "db98dfded23c33bf4770421be9e1f81630bd512e93e1d38326823aa9c935568c",
@@ -405,7 +428,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:26.990574+00:00"
+      "fetched_at": "2026-10-01T01:16:44.600781+00:00"
     },
     {
       "id": "016a362158b26434ef0a1c6254293ccce8559fee2d6a57abc85f846abe8b1cb3",
@@ -426,7 +449,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.880009+00:00"
+      "fetched_at": "2026-10-01T01:16:45.239900+00:00"
     },
     {
       "id": "ebda00577c415e93bc5eff83c906c416bc5607f0a3f55fcb3703d7d87d92f5c2",
@@ -439,7 +462,7 @@
       "description": "Leaders of cities around the world are standing up for democracy, even if the leaders of their countries are not.",
       "image_url": "https://media.newyorker.com/photos/6abbed47f2154569b0425ede/master/pass/Tharoor-Mayors.jpg",
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [
         "News / Global Notes"
@@ -449,7 +472,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:26.632666+00:00"
+      "fetched_at": "2026-10-01T01:16:44.237490+00:00"
     },
     {
       "id": "9007149883049ec30b3168f567eda72bf14bf1b0b222b717c097780a972b722e",
@@ -472,7 +495,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "game",
-      "fetched_at": "2026-10-01T00:00:26.636701+00:00"
+      "fetched_at": "2026-10-01T01:16:44.241271+00:00"
     },
     {
       "id": "3dca2c9fc195a8163ab98dd25460ab06ad3cdd99f2159d9ca7b09d4e57b09223",
@@ -541,7 +564,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:26.996688+00:00"
+      "fetched_at": "2026-10-01T01:16:44.606067+00:00"
     },
     {
       "id": "81c2bd3457dd63fe1f8006677afb03b6d58cb3695ab3ff306c8ddc79502ba586",
@@ -586,7 +609,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:27.005415+00:00"
+      "fetched_at": "2026-10-01T01:16:44.613708+00:00"
     },
     {
       "id": "4aff65372e4cb021ab2f338a8d42d15f4c84d5af229b055539e9ccbab80f7081",
@@ -631,7 +654,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "criticism",
-      "fetched_at": "2026-10-01T00:00:27.013980+00:00"
+      "fetched_at": "2026-10-01T01:16:44.621330+00:00"
     },
     {
       "id": "3a356b687ccae4bf0dc737be2994c3763c780afc770d46ce149ab9cde2147322",
@@ -655,7 +678,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.020919+00:00"
+      "fetched_at": "2026-10-01T01:16:44.627612+00:00"
     },
     {
       "id": "84c9ef563498debe987c3ff04460f5256fd144aa943c326457d89c3edc70f51b",
@@ -676,7 +699,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.297528+00:00"
+      "fetched_at": "2026-10-01T01:16:49.674803+00:00"
     },
     {
       "id": "8c1e612a90aca0adf0ddf833a3d4446be8445038bb63b0395e1977579438d13c",
@@ -708,7 +731,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:27.562308+00:00"
+      "fetched_at": "2026-10-01T01:16:44.924511+00:00"
     },
     {
       "id": "58ee424ac3ccdac8d67c8ba8b58f6f5d3ef70d3b44b4b312308cdf1759029168",
@@ -740,7 +763,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.668762+00:00"
+      "fetched_at": "2026-10-01T01:16:45.048258+00:00"
     },
     {
       "id": "fa64d21f65618ae1cc4e30eac18dd7fb7107a19b4cef647304e9e3228536eee1",
@@ -770,7 +793,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.672749+00:00"
+      "fetched_at": "2026-10-01T01:16:45.052039+00:00"
     },
     {
       "id": "8b3a4a03409c03cb2891c7f5aa304009064048ad97b3e2e8fddf83b60bb4f6b9",
@@ -811,7 +834,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-10-01T00:00:27.678647+00:00"
+      "fetched_at": "2026-10-01T01:16:45.057553+00:00"
     },
     {
       "id": "e8c597bd7b75e8549ba333d961c498e163bae99405beb559ebab21551bd2f31d",
@@ -832,7 +855,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.884606+00:00"
+      "fetched_at": "2026-10-01T01:16:45.244208+00:00"
     },
     {
       "id": "ea47eaaf3e690f282217b3a993d5da333a36597da29c4d55c1f0f619e05ca184",
@@ -854,7 +877,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:29.858549+00:00"
+      "fetched_at": "2026-10-01T01:16:46.464394+00:00"
     },
     {
       "id": "ebd8e1846611f59e6b8f74b94b03bba780e56248081a898fb5865ef799284f5a",
@@ -897,7 +920,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:27.030957+00:00"
+      "fetched_at": "2026-10-01T01:16:44.636444+00:00"
     },
     {
       "id": "be56b5d8d621b4affe3de763990e97fe0925e6d4ad54f9c4ffbddd514c29b30d",
@@ -944,7 +967,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "poetry",
-      "fetched_at": "2026-10-01T00:00:27.040203+00:00"
+      "fetched_at": "2026-10-01T01:16:44.644628+00:00"
     },
     {
       "id": "426d330ca54d86fb09a7ca0f9204055af62edd48a2bcac3e3b030d85ede0afc7",
@@ -973,7 +996,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.684026+00:00"
+      "fetched_at": "2026-10-01T01:16:45.062517+00:00"
     },
     {
       "id": "b853d7eac5757379d18f1790adca3b0fc940f1cf31f567532e2b69458d894cb3",
@@ -998,7 +1021,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "fiction",
-      "fetched_at": "2026-10-01T00:00:27.566665+00:00"
+      "fetched_at": "2026-10-01T01:16:44.928543+00:00"
     },
     {
       "id": "fbb70e1a4deeb229ca3a6c71974bcf8fdd0bbd6d785f19fa4eeb8bc9eeaf021c",
@@ -1021,7 +1044,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:28.525598+00:00"
+      "fetched_at": "2026-10-01T01:16:45.584192+00:00"
     },
     {
       "id": "a8f4f1d4831347efe967941797040096f5111bcfc31ff6a81af80876dadf88ce",
@@ -1034,7 +1057,7 @@
       "description": "\"Could apprentice undertakers solve youth unemployment?\"",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [
         "Editor's Pick",
@@ -1054,7 +1077,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.688630+00:00"
+      "fetched_at": "2026-10-01T01:16:45.066915+00:00"
     },
     {
       "id": "88e51ecf0b62abb4fea39a2f4b45f41391a30a9f5727677e9e8438c48ba44c84",
@@ -1097,7 +1120,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.048918+00:00"
+      "fetched_at": "2026-10-01T01:16:44.652229+00:00"
     },
     {
       "id": "0b975613653062449e661fde02522b093c11fff84f9ad6bbf3c2f45a00010681",
@@ -1118,7 +1141,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.888991+00:00"
+      "fetched_at": "2026-10-01T01:16:45.248328+00:00"
     },
     {
       "id": "4ad3635f05ee9edc9537aa0ba3af2d960f69fe00b9bb122284fec0757f7b90ec",
@@ -1139,7 +1162,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "poetry",
-      "fetched_at": "2026-10-01T00:00:27.893384+00:00"
+      "fetched_at": "2026-10-01T01:16:45.252409+00:00"
     },
     {
       "id": "8e235ec195a42db860a294a90ed3e7e49ab6fcae122f26c031671c3d425221ef",
@@ -1153,8 +1176,8 @@
       "image_url": null,
       "categories": [
         "cine",
-        "historia",
-        "sociedad"
+        "sociedad",
+        "historia"
       ],
       "tags": [],
       "reading_time": 179,
@@ -1162,7 +1185,7 @@
       "reading_time_estimated": false,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:30.044464+00:00"
+      "fetched_at": "2026-10-01T01:16:46.635863+00:00"
     },
     {
       "id": "7182257c8191aae07367a3c83700f000c0c803d802683e6e8483b1fc5c69afa2",
@@ -1185,7 +1208,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.055690+00:00"
+      "fetched_at": "2026-10-01T01:16:44.658221+00:00"
     },
     {
       "id": "e40bf0efe1654a92c230dae82961bf1631aa6b649855abe374dda09c2cbcb301",
@@ -1208,7 +1231,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:28.531524+00:00"
+      "fetched_at": "2026-10-01T01:16:45.589730+00:00"
     },
     {
       "id": "d3184ecfbaff8da0443a8824406869cc17e09036c271e239bd98bea30ce2b70b",
@@ -1238,7 +1261,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.572106+00:00"
+      "fetched_at": "2026-10-01T01:16:44.933524+00:00"
     },
     {
       "id": "bbc1eeefd2fb18c6deca2471651ba47061cdcc9bce988ba142fb4344191f928a",
@@ -1273,7 +1296,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-10-01T00:00:27.694125+00:00"
+      "fetched_at": "2026-10-01T01:16:45.072114+00:00"
     },
     {
       "id": "b11a0569a46c472b74da8d250c8778c4c63df79ee16c80685d35333a02c898e0",
@@ -1286,7 +1309,7 @@
       "description": "Jürgen Habermas, the great defender of deliberative democracy, lived up to its demands: he never feared changing his mind - by Emilie Prattico Read on Aeon",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -1294,7 +1317,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.897755+00:00"
+      "fetched_at": "2026-10-01T01:16:45.256526+00:00"
     },
     {
       "id": "e346bc9283cbf4944c801af0c3f623816fbfc49e65f6aba0dc6b58131050b7ab",
@@ -1315,7 +1338,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "profile",
-      "fetched_at": "2026-10-01T00:00:30.115387+00:00"
+      "fetched_at": "2026-10-01T01:16:46.702351+00:00"
     },
     {
       "id": "01321512e5ac647f619aaf2bd5d478af402587458d40828ad5b2210757ca9299",
@@ -1347,7 +1370,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.700691+00:00"
+      "fetched_at": "2026-10-01T01:16:45.078126+00:00"
     },
     {
       "id": "208d54760a26635745f54bd2d2c5b49064987347ed1348e3aeb72c5e498dfe62",
@@ -1381,7 +1404,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.705808+00:00"
+      "fetched_at": "2026-10-01T01:16:45.083063+00:00"
     },
     {
       "id": "c0922647b55ada9b02d9ecbaf20353dd2d1a754e82102eecc2f9cec667c781e4",
@@ -1411,7 +1434,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:27.577669+00:00"
+      "fetched_at": "2026-10-01T01:16:44.938597+00:00"
     },
     {
       "id": "772c013aea7e30c1022f8717d6bee102aaeefaacccc1a23a1144ec0e3a25c4a7",
@@ -1432,7 +1455,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.902084+00:00"
+      "fetched_at": "2026-10-01T01:16:45.260674+00:00"
     },
     {
       "id": "15d00f6de5b0a65d8b36af291feb5d21981579d9bbab49140270a5c5693be23e",
@@ -1462,7 +1485,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-10-01T00:00:27.711166+00:00"
+      "fetched_at": "2026-10-01T01:16:45.088074+00:00"
     },
     {
       "id": "92ae1667dd96b93f8257a4b10cd3e7f58c0bb506f031ae80950a80d06f37836c",
@@ -1483,7 +1506,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.906459+00:00"
+      "fetched_at": "2026-10-01T01:16:45.264905+00:00"
     },
     {
       "id": "b53fef504a64a30ecb2ea79fab06544ef1eb126cc688d86721178e0d546cafab",
@@ -1506,7 +1529,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:28.537185+00:00"
+      "fetched_at": "2026-10-01T01:16:45.595068+00:00"
     },
     {
       "id": "43a7ec920128e9c76adfd70cc2698f118811808cce070cadc283b9d134ac5a0e",
@@ -1527,7 +1550,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.302354+00:00"
+      "fetched_at": "2026-10-01T01:16:49.679197+00:00"
     },
     {
       "id": "6d4c99e458fa653893dd356cb324b43a04d1487e0e33fe340ee850bb745dade3",
@@ -1560,7 +1583,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.716399+00:00"
+      "fetched_at": "2026-10-01T01:16:45.093008+00:00"
     },
     {
       "id": "c0144b7ac28bbeb464d00b15d865e9cfe8c559e99848cced014f3deef033f180",
@@ -1593,7 +1616,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:27.720665+00:00"
+      "fetched_at": "2026-10-01T01:16:45.097083+00:00"
     },
     {
       "id": "539b5535d85bacdd2d3a8bc3988e5485198faaa294947269574ade84122ac875",
@@ -1614,7 +1637,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.910738+00:00"
+      "fetched_at": "2026-10-01T01:16:45.269021+00:00"
     },
     {
       "id": "6339d6e6c9f93449d36272cd327b7e05895584d1e585849259ab9f7c020aeb15",
@@ -1628,8 +1651,8 @@
       "image_url": null,
       "categories": [
         "cine",
-        "literatura",
-        "historia"
+        "sociedad",
+        "literatura"
       ],
       "tags": [],
       "reading_time": 5,
@@ -1637,7 +1660,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-10-01T00:00:30.262605+00:00"
+      "fetched_at": "2026-10-01T01:16:46.843781+00:00"
     },
     {
       "id": "4bdd2c7b670a59f3bf389c6ce93ad086de3a3274cd0cdd071b8816fffb439146",
@@ -1658,7 +1681,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-10-01T00:00:30.285172+00:00"
+      "fetched_at": "2026-10-01T01:16:46.864309+00:00"
     },
     {
       "id": "5ef315c69064e505a0fd14f7a338ec74655e49b395660eaa44919ff90f057846",
@@ -1689,7 +1712,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.725539+00:00"
+      "fetched_at": "2026-10-01T01:16:45.101667+00:00"
     },
     {
       "id": "b00cdf87b59c7dc8cd60868dfd1336ad836697a7c3ed043f9452cd4ffed2dfbc",
@@ -1722,7 +1745,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:27.730661+00:00"
+      "fetched_at": "2026-10-01T01:16:45.106414+00:00"
     },
     {
       "id": "e90d61af14e969178d1714999ce3413cadf53ce1b999cbd8633be9bf8e035ce1",
@@ -1756,7 +1779,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.583594+00:00"
+      "fetched_at": "2026-10-01T01:16:44.944142+00:00"
     },
     {
       "id": "0f9415fbfeeada4c1ceab8380a380edd1117c2754e289a9c526c9ec14ec5efb9",
@@ -1785,7 +1808,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.735837+00:00"
+      "fetched_at": "2026-10-01T01:16:45.111139+00:00"
     },
     {
       "id": "2d34d5a4f1bbb13f6b08031fc92afb389215a13c93406c423411b982f48b93ae",
@@ -1811,7 +1834,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-10-01T00:00:27.589250+00:00"
+      "fetched_at": "2026-10-01T01:16:44.949284+00:00"
     },
     {
       "id": "36aa1256d9fb69ebeb9a408aaa21b7bbd51c56d141dec9c211d6a67e3e57c841",
@@ -1841,7 +1864,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.740428+00:00"
+      "fetched_at": "2026-10-01T01:16:45.115440+00:00"
     },
     {
       "id": "59b092b3997526379ea868c8074dc50ccffdab66c0a73291c4f0e1c5505dea65",
@@ -1879,7 +1902,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-10-01T00:00:27.745379+00:00"
+      "fetched_at": "2026-10-01T01:16:45.120086+00:00"
     },
     {
       "id": "120e489fe1b2fba3aeb7d8d269a668ca6c21d0d652a35dad726ec4dcff045505",
@@ -1892,7 +1915,7 @@
       "description": "When I found the mushroom Amanita muscaria being sold in candy wrappers, I uncovered legal loopholes, dangerous dosages and more - by Eric Leas Read on Aeon",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -1900,7 +1923,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.915076+00:00"
+      "fetched_at": "2026-10-01T01:16:45.273132+00:00"
     },
     {
       "id": "2f21809272cb3bafdd93ecc7f97e4854a6476b2d0daffb3c1d51ff4c99824653",
@@ -1922,7 +1945,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-10-01T00:00:30.545572+00:00"
+      "fetched_at": "2026-10-01T01:16:47.113111+00:00"
     },
     {
       "id": "514b6e59c24a60ec5e1d9ca9fd3067d90fec6d8b0a7e31251b5bfebbdd72fb9f",
@@ -1953,7 +1976,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.750213+00:00"
+      "fetched_at": "2026-10-01T01:16:45.124505+00:00"
     },
     {
       "id": "7b8a70c4a4264b789be40d20d11ab0597ac2b1cb71f6f08a63c0d55810b39052",
@@ -1985,7 +2008,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.594176+00:00"
+      "fetched_at": "2026-10-01T01:16:44.953852+00:00"
     },
     {
       "id": "c76a1ec3b16dc0be9a07181b21b6111a3e82b8ce9eb815f9ed31b24da8eabc0a",
@@ -2008,7 +2031,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:28.543015+00:00"
+      "fetched_at": "2026-10-01T01:16:45.600496+00:00"
     },
     {
       "id": "42dfb44312fa1c070d2203dea7586198c1b2b19614b9a28f0cae5813c399be18",
@@ -2037,7 +2060,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.754252+00:00"
+      "fetched_at": "2026-10-01T01:16:45.128375+00:00"
     },
     {
       "id": "02b39eddfc5db405df65f1e41648303cbb2a12f51fba53dc7d160179825a02a1",
@@ -2058,7 +2081,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.919216+00:00"
+      "fetched_at": "2026-10-01T01:16:45.277182+00:00"
     },
     {
       "id": "0b86360dac772a72ef1434c0fae3f13820c86c42ff5981bd7145f76b3447f479",
@@ -2079,7 +2102,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.923735+00:00"
+      "fetched_at": "2026-10-01T01:16:45.281462+00:00"
     },
     {
       "id": "971dd944f95f6de52d4292ba046392976f19e8b4238cabfcf4f63c80c9635a17",
@@ -2093,8 +2116,8 @@
       "image_url": null,
       "categories": [
         "cine",
-        "historia",
-        "artes_visuales"
+        "sociedad",
+        "historia"
       ],
       "tags": [],
       "reading_time": 6,
@@ -2102,7 +2125,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "review",
-      "fetched_at": "2026-10-01T00:00:30.722962+00:00"
+      "fetched_at": "2026-10-01T01:16:47.281609+00:00"
     },
     {
       "id": "5bca8a5a37ef2f6b9c67fb8846ecf501fcbc93649bce8ef76119451e7a97b0a3",
@@ -2129,7 +2152,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.600482+00:00"
+      "fetched_at": "2026-10-01T01:16:44.957711+00:00"
     },
     {
       "id": "395e9e49def7f942a7b3c37b9e01d163e0cb365ba5853a8a4d4c7585df609a8e",
@@ -2158,7 +2181,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.757882+00:00"
+      "fetched_at": "2026-10-01T01:16:45.131884+00:00"
     },
     {
       "id": "c67a4cc1ee83f216834998dc6d3f6ced9fb9191512c962a4af5e8c43d6df380a",
@@ -2171,7 +2194,7 @@
       "description": "\"The twisted story of a domestic contract killing.\"",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [
         "Editor's Pick",
@@ -2188,7 +2211,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.761957+00:00"
+      "fetched_at": "2026-10-01T01:16:45.135747+00:00"
     },
     {
       "id": "ff6da44c01d33164c7909cac9822744b8b02d4d4ca9d373ea126d3e72c10d2ca",
@@ -2221,7 +2244,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-10-01T00:00:27.767158+00:00"
+      "fetched_at": "2026-10-01T01:16:45.140570+00:00"
     },
     {
       "id": "cf0f43360b1c1c36c275fae7a49e30d2bfc87fcca1e798d5a4a82d0f88dce0e0",
@@ -2242,7 +2265,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:27.927944+00:00"
+      "fetched_at": "2026-10-01T01:16:45.285458+00:00"
     },
     {
       "id": "9954e0cffbec8dc26b1f9f4d3e890615a3d447c4035a1d4e8a7fa48fa6a0ad01",
@@ -2263,7 +2286,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:30.880351+00:00"
+      "fetched_at": "2026-10-01T01:16:47.422639+00:00"
     },
     {
       "id": "1c7215a6a7bb206b1afa16ae461fc6f8bd3356fbd7f6febea403462a99ec38df",
@@ -2295,7 +2318,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.771590+00:00"
+      "fetched_at": "2026-10-01T01:16:45.144812+00:00"
     },
     {
       "id": "103e20b45cdd7f2bbc163ae168dd595818d566f0aad324d18210610a28c2f120",
@@ -2316,7 +2339,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.931976+00:00"
+      "fetched_at": "2026-10-01T01:16:45.289327+00:00"
     },
     {
       "id": "aa7e2750e89be56b41941de6c0f08a3e18f4f20602f065004ce7ea8e3dfb1ac3",
@@ -2337,7 +2360,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.936322+00:00"
+      "fetched_at": "2026-10-01T01:16:45.293505+00:00"
     },
     {
       "id": "991595c2606f8c6f1023e73257b59b32a0f51d8ec453c45558dc1646d3359b1d",
@@ -2358,7 +2381,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.308186+00:00"
+      "fetched_at": "2026-10-01T01:16:49.684541+00:00"
     },
     {
       "id": "a2b09d1211d58b9144af989e3c75026d5f35e869dff04bfd900d1c3e9c9e56ea",
@@ -2389,7 +2412,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.607782+00:00"
+      "fetched_at": "2026-10-01T01:16:44.962477+00:00"
     },
     {
       "id": "cb7e0b2db55a7b85cc4553b6321bf3fe1c3670cb9ef374616d410fd185df921e",
@@ -2410,7 +2433,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.940520+00:00"
+      "fetched_at": "2026-10-01T01:16:45.297531+00:00"
     },
     {
       "id": "7b7b3e57f42d1756734e543e82fbe8beb4242cbb8dedecae4e0bac8a9b76e9de",
@@ -2431,7 +2454,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.312077+00:00"
+      "fetched_at": "2026-10-01T01:16:49.688194+00:00"
     },
     {
       "id": "75fcf60b0bfcdfb4a6c3f8414c13b8e076d486f5208460318001f79935012963",
@@ -2452,7 +2475,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.944924+00:00"
+      "fetched_at": "2026-10-01T01:16:45.301733+00:00"
     },
     {
       "id": "1e2c15a2e95a1f70749f1d93b9e72217ee2b87193bf66b08203ea69327725261",
@@ -2473,7 +2496,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-10-01T00:00:30.966733+00:00"
+      "fetched_at": "2026-10-01T01:16:47.501187+00:00"
     },
     {
       "id": "e3d04b33abedee67e51ac1e77745fbfe11a7e786a0e47ac612b877e7c9e17d93",
@@ -2498,7 +2521,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.612010+00:00"
+      "fetched_at": "2026-10-01T01:16:44.966446+00:00"
     },
     {
       "id": "5899043fe8826f17f5b1809637c66e43726f6d976df5ce33a3290b82229ccd64",
@@ -2519,7 +2542,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.949338+00:00"
+      "fetched_at": "2026-10-01T01:16:45.306012+00:00"
     },
     {
       "id": "1814b5c831985c3318037c614a8e970d32b5013689943e5cffb76d3d8f76b0a7",
@@ -2532,7 +2555,7 @@
       "description": "It’s not just screen time: the problem with children’s media is that it has become relentlessly hectic, loud and bright - by Natalia Kucirkova Read on Aeon",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2540,7 +2563,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.953830+00:00"
+      "fetched_at": "2026-10-01T01:16:45.310284+00:00"
     },
     {
       "id": "b86a2f031e34bbe56d55d0dbd3eff39f48a04a1b85e99b60d870486b0c0e07d3",
@@ -2554,8 +2577,8 @@
       "image_url": null,
       "categories": [
         "cine",
-        "literatura",
-        "sociedad"
+        "sociedad",
+        "literatura"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2563,7 +2586,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:31.192612+00:00"
+      "fetched_at": "2026-10-01T01:16:47.703604+00:00"
     },
     {
       "id": "9c969f6407d8a633d1f599ffdb780fc338b47a76e2937e86afdbe22a191f0830",
@@ -2584,7 +2607,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:27.958247+00:00"
+      "fetched_at": "2026-10-01T01:16:45.314391+00:00"
     },
     {
       "id": "caa7451e38c3fe32a79a1f6520e3c3e0d394605065fbddb7c7c82209154771cc",
@@ -2606,7 +2629,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:31.332075+00:00"
+      "fetched_at": "2026-10-01T01:16:47.831403+00:00"
     },
     {
       "id": "249f3faff26f247b8f448bbd86b2b3d81a55a4275a32919bd6a1d8a2f9f4cc5b",
@@ -2627,7 +2650,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.317307+00:00"
+      "fetched_at": "2026-10-01T01:16:49.692982+00:00"
     },
     {
       "id": "306b0389633a8c41ed4dd390c66c7b4e502dc1672b6e14e8589aa47864a264b6",
@@ -2648,7 +2671,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "video",
-      "fetched_at": "2026-10-01T00:00:27.962514+00:00"
+      "fetched_at": "2026-10-01T01:16:45.318476+00:00"
     },
     {
       "id": "05dc4f1e698bec2adeeb3b1fc24bf09aefb6e4269c34539e14f7c90db511127d",
@@ -2670,7 +2693,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-10-01T00:00:31.531357+00:00"
+      "fetched_at": "2026-10-01T01:16:48.024679+00:00"
     },
     {
       "id": "df91032a3a0e67c8e5e4c84e823d0431ef51e6b4252f032bffc121852f859a31",
@@ -2693,7 +2716,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-10-01T00:00:31.666471+00:00"
+      "fetched_at": "2026-10-01T01:16:48.149068+00:00"
     },
     {
       "id": "801cad90ad5ae6d9409d0a3117a5638772e3b0460c3c207ff1240b8bdf3015a8",
@@ -2714,7 +2737,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.321284+00:00"
+      "fetched_at": "2026-10-01T01:16:49.696615+00:00"
     },
     {
       "id": "120a4719d80c9ac2033900b97f3a1b6b47ace360ac5e47e83ba5332a1ba4c755",
@@ -2736,7 +2759,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:31.857049+00:00"
+      "fetched_at": "2026-10-01T01:16:48.319768+00:00"
     },
     {
       "id": "663af67e72c4f8d58fd26df9d10855a80c534d1afdb21f1e6a16ab6978002bce",
@@ -2757,7 +2780,7 @@
       "reading_time_estimated": false,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:31.995920+00:00"
+      "fetched_at": "2026-10-01T01:16:48.447466+00:00"
     },
     {
       "id": "c9b725106ae230e154cee99741e6c5a3b1e85d44e23c2d9b11eaa9c8cee85e3f",
@@ -2770,8 +2793,8 @@
       "description": "Illustration by Danny Ische. The 1970s was a difficult decade for cinemas across Britain and Ireland as attendances continued their long postwar decline. Most of the glamorous art deco picture palaces built during the 1930s had either closed or fallen into disrepair and comparatively few new cinemas were opened after World War II until the arrival of the multiplexes in the 1980s. While these challenges were facing exhibitors in many other countries around the world, Northern Ireland’s experience of the downturn was unique. The outbreak of violent sectarian conflict in the late 1960s, euphemistically known as the Troubles, created an environment that actively discouraged cinema attendance. Queues still formed for blockbusters such as The Godfather (1972), The Exorcist (1973), and Jaws (1975), but ongoing violence and nightly curfews made it more difficult to justify a cinema trip for more run-of-the-mill fare, with many people retreating into private spaces. This meant that cinemagoing became less of a social habit and more of an occasional activity that carried a level of potential risk. In Belfast, bomb and fire damage in the early 1970s led to the permanent closure of the Classic and the Broadway cinemas, and in 1977, IRA firebombs damaged three venues: the ABC, the New Vic, and the Curzon. Cinemas were no longer safe spaces immune from what was happening in the outside world. The launch of Video Home System (VHS) in the mid-1970s therefore came at the perfect time for Northern Ireland’s cinema lovers, who desired entertainment and escapism but were less willing than ever to leave the comfort and relative safety of their own homes. JVC’s new VHS technology eventually beat the competition of Sony’s rival Betamax format and revolutionized the way in which people watched and consumed visual media. For the time, the power to control when audiences watched films began to shift from the exhibitors to the audience. Power shifted, too, from producers to consumers, and for the first time people could directly record films or television programs onto blank tapes and play, pause, or rewind at their own leisure. This power still had a barrier, which was the large expense of videocassette recorders (VCRs).Yet many people purchased them in spite of difficult economic circumstances and high levels of unemployment in Northern Ireland. In 1980, for instance, an electronics shop in the Country Antrim town of Ballymena advertised a Philips VCR for the hefty sum of £495, equivalent to £2,165 in today’s money. Renting a machine was a popular alternative for those who couldn’t afford to buy a VCR outright, with the shop hiring out the same device for £18.50 per month, still a considerable expense at a time when the average gross weekly household income was £119. By 1981, VCR ownership had spread so quickly across Northern Ireland that one newspaper report asked if home video was the “armchair answer to the Ulster Troubles,” providing an easy means of accessing the latest films without having to leave the house. 1 To compete, cinemas that were already struggling financially were forced to lower prices, improve their offer to patrons, and in some cases convert a single auditorium into a multiscreen cinema. Television channels responded by programming a broader range of films to compete with the appeal of home video. By 1983, reports suggested that Northern Ireland had a higher concentration of VCRs than in any other part of the UK. The video boom provided an extra source of income for the corner shops, newsagents, and electronic stores who rented videos to consumers. And soon after, specialist independent video shops sprung up on streets across Northern Ireland. For around £1.50 a night, film lovers could rent and take home one of the latest video releases from around the world, some of which had not previously been shown in local cinemas. American films generally dominated the rental market, but a 1982 list of the most popular rented videos in Northern Ireland also included British crime drama McVicar (1980)and the Israeli sex-comedy Hot Bubblegum (1981). Long before the streaming age, some video shops even offered subscription services, where people could pay a monthly or annual fee to rent multiple videos. Until later in the 1980s, very few people purchased videos outright, and a single VHS retailed for as much as £60. The distributors wanted to protect their product and were largely reluctant to “sell through” to the market. For a small investment, the video boom provided local entrepreneurs with the opportunity to earn a living by investing in a video rental library. But the same technology that allowed people to record films directly from the television also meant there were money-making opportunities for those willing to flout the law by copying and selling pirate or counterfeit videos. Why spend thousands investing in a legitimate video library when you could just as easily buy a bank of video recorders and flood the market with easily copied pirate or counterfeit videos? Before John Badham’s Saturday Night Fever (1977) was first shown at Belfast’s Avenue Cinema in 1978, pirated VHS copies of the film were shown in hotels, pubs, and clubs across Northern Ireland. In some parts of the province there was still a strong appetite for public entertainment, especially for those unable to purchase an expensive VCR. Kelly’s Golf Links Hotel in the north coast town of Portrush brazenly advertised the “first time showing in Northern Ireland” on a 10 ft screen. 2 For £1.50, the same price as renting a video, people could watch the film followed by a disco. This incident led a High Court judge to ban further screenings until the film’s official release and order that all pirate copies be returned to the distributor. 3 By 1981, the Royal Ulster Constabulary (RUC), Northern Ireland’s then police force, was starting to crack down on what they called “illegal video shows.” The police wanted to counter the public perception that pirating videos was a permissible and victimless crime, and the force’s anti-racketeering squad confiscated over four thousand illegal video tapes, including pornographic material, during a four-day operation. A police spokesperson said that “video piracy is not only a means whereby paramilitary organizations and criminal opportunists are able to make money, but members of the public are being conned into accepting and paying for something that is not the genuine article.” 4 By 1982, the UK video black market was reportedly worth £100 million. In Northern Ireland, legitimate distributors responded to piracy by grouping together to form the Northern Ireland Video Library and Trades Association. But if the RUC were able to stop illegal public screenings of Saturday Night Fever , they found it even more difficult to counter the spread of pirate and counterfeit videos on the streets and in people’s homes. The pirate hit of 1982 was Steven Spielberg’s E.T. the Extra-Terrestrial (with an estimated ten thousand illegal copies available in the UK in mid-August, four months before the film was released in Belfast cinemas in December 1982. In September, one reporter found copies easily available in the town of Ballymena for £5, with a source saying, “I can get you any film you want—from the class like E.T. down to the blue movies.” 5 But the premature release did not dampen people’s enthusiasm to see Spielberg’s film on the big screen. It was still a massive success when it screened at Belfast’s ABC, which had reopened in 1980 as a four-screen cinema. The film then played at venues across Northern Ireland, at a time when overall cinema attendance continued to decline. Shortly after its cinema release, a magazine poll revealed E.T. as one of the top ten videos of 1982, despite not being legally available to rent or buy until 1988. The potent impact of piracy led the RUC in February 1983 to seize up to 35,000 videos from 25 suspected pirate and counterfeit dealers across Northern Ireland in the biggest raid of its type in the UK. Prosecutions were reported from 1985 onwards, and even though this took a few dealers out of the market, it didn’t seem to act as a widespread deterrent given the high demand and relative ease of copying video cassettes. Soon after the raid, Ulster Television’s Counterpoint program dedicated an episode to video pirates , showing how they were easily able to set up backstreet factories with multiple VCRs and make thousands of duplicate copies. It claimed that the market was flooded with illegal copies, and even legitimate dealers were unable to tell if they were selling counterfeit copies. In the episode, one video dealer, who denies stocking pirates videos, dons an E.T. hat, picks up an acoustic guitar and sings the following words: “ I’m a video pirate in the true Ulster way, and I make my living legitimately. I copy the soft porn on Sundays and leave all the hard stuff till Mondays. I’m good at the Disneys, the First Bloods, the E.T.s and I’ve copied the Rockys as well. I’ve closed 20 cinemas but now I’m on the Valium. Warner Bros. they scare me like hell. My machines are well hidden in a mountain in the bracken where fraud squads can’t dwell. And if anyone copies this ballad, sure they’ll be an old pirate as well, they’ll be an old pirate as well. ” Given the ease and profitability of video piracy, it’s not surprising that in Northern Ireland paramilitaries also got into the business. In 1990, one newspaper report alleged that video piracy earned the IRA almost £1 million a year, one third of its racketeering income alongside earnings from construction and cross-border smuggling. 6 Democratic Unionist Party Alderman Jack McKee warned that paramilitary organizations may be profiting from video piracy and said that “unwittingly, people could be buying tapes and helping to fill the coffers of organizations like the IRA. The money they’re paying could be used to buy bullets and explosives to kill soldiers and policemen.” 7 By the 1990s, attempts to clamp down on video piracy reportedly led the paramilitaries to seek funds from elsewhere. A 1993 newspaper article claimed that the RUC Anti-Racketeering Squad’s success in cutting off funding from video piracy had led to a recent increase in armed robberies. 8 The first video shops were independents with unique names, such as Toppers Video Shack in Lurgan or Zodys in Comber. In the mid-1980s these were joined by small local chains such as Star Video and Valley Video Co. Irish chain Xtra-vision first opened shops in Northern Ireland in 1989 and quickly became the largest video retailer in the region. In 1990, there were 248 “video libraries” in Northern Ireland, 72 of which were branches of Xtra-vision. Paramilitaries of all persuasions, having been clearly attracted to the money that could be made from the black market, began to target these shops. In 1990, one newspaper article claimed that “Loyalist paramilitary groups were responsible for three recent bomb attacks on Northern shops owned by the Dublin-based Xtra-Vision video chain,” with a hand grenade thrown into a Belfast shop, followed by bomb damage at branches in Belfast and Portadown. The violence that had turned some people away from the cinema was now encroaching on this alternative space. Loyalist sources were concerned that “addresses of loyalists and security force members may be in the firm’s computerised subscriber system.” A spokesman for Xtra-vision responded by blaming “loyalist racketeers irked at the loss of their lucrative illegal video copying scam because of the new competition.” 9 Later reports stated that after the fall of the USSR, Loyalist paramilitaries were using funds from video piracy to import arms from former eastern bloc countries. The arrival of purpose-built multiplexes in Northern Ireland from 1990 led to increased cinema attendance, with admissions rising from 2.3 million in 1991 to 4 million in 1998. But piracy continued throughout the decade, with films such as Terminator 2: Judgment Day (1991), Jurassic Park (1993), and The Lion King (1994)reported as big pirate hits, copies being easily obtained from open-air markets. During this time, buying videos outright became a more affordable option. Distributors dropped prices for the “sell through” market, sales increased, and video purchases started to generate more revenue than rentals. Local independent video dealers also faced increased competition from new high street chains such as Virgin Megastore, whose prominence and high visibility made them less likely to deal counterfeit videos in the same fashion as the less scrupulous independent dealers. DVD entered the UK market in 1998, the same year as the signing of the Good Friday Agreement in Northern Ireland. For several years, video shops fared well by adapting to the rise of this new format. But so did the pirates, who shifted from videotapes to counterfeit discs. By the 2010s, the legitimate dealers eventually succumbed to the ease and popularity of streaming. Northern Ireland’s last remaining Xtra-vision store closed its doors for the final time in 2016. As piracy shifted from physical copies to downloads and torrents, there was less of a direct connection between the pirates and their consumers. In the 1980s, physical copies needed to be bought from someone and somewhere, but by the 2000s a file could easily be downloaded from many places in the world. More recently, however, the rise of the so-called “dodgy box,” a colloquial term for an illegal or “rogue” streaming device, has reconnected the consumer with the people who install and distribute these devices. In its 2022/23 Annual Report, the Police Service of Northern Ireland’s Organised Crime Task force said that these and similar devices are now “one of the main intellectual property crime concerns in Northern Ireland.” 10 Though VHS and the video shop are things of the past, the home video boom which swept the province from the mid-1970s forever changed the way people paid for and watched movies, as well as redefining what cinemagoing meant in Northern Ireland. Home video was a global phenomenon, as was the rise of video piracy. But in Northern Ireland, the Troubles created both extra demand for home entertainment and led to cash-hungry paramilitaries who found that piracy was an easy way to partly fund their organizations. In preparation for the latest season of The Wonder Cinema podcast , which explores the history of VHS in Northern Ireland, I scoured the second-hand shops of Belfast looking for old VHS tapes. After one trip, I returned home to notice that something was a little off with my newly purchased copy of Crocodile Dundee (1986) . The front looked normal, but when I turned it over, there was no barcode, and when I opened the box, a shoddy silver label on the spine of the tape simply stated the title of the film. Thirty years after the film was first released, the pirate videos that had flooded the market in the 1980s were still available on the streets of Belfast. 1. Belfast News-Letter , September 1, 1981. 2. Belfast Telegraph , August 4, 1978. 3. Belfast Telegraph , August 9, 1978. 4. Belfast News-Letter , 16 November 1981. 5. Ballymena Observer , 29 September 1982. 6. Belfast News-Letter , November 28, 1990. 7. Larne Times , March 21, 1991. 8. Sunday Life , November 14, 1993. 9. Sunday Tribune , July 6, 1990. 10. https://www.octf.gov.uk/publications/octf-annual-report-and-threat-assessment-2022-2023",
       "image_url": null,
       "categories": [
-        "cine",
-        "sociedad"
+        "sociedad",
+        "cine"
       ],
       "tags": [],
       "reading_time": 6,
@@ -2779,7 +2802,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-10-01T00:00:32.146044+00:00"
+      "fetched_at": "2026-10-01T01:16:48.584388+00:00"
     },
     {
       "id": "c1742dec2a613d3f9bd99a7a853a9cf0d3e6f3c98f60a3a2c743cf779de28f63",
@@ -2801,7 +2824,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "interview",
-      "fetched_at": "2026-10-01T00:00:32.334429+00:00"
+      "fetched_at": "2026-10-01T01:16:48.766135+00:00"
     },
     {
       "id": "d8d3a407c525509bd12ffeac3b135fc2ee66cf6620716ad0edc7285627c887e3",
@@ -2822,7 +2845,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-10-01T00:00:32.354823+00:00"
+      "fetched_at": "2026-10-01T01:16:48.785271+00:00"
     },
     {
       "id": "927f895125350a488a17bcb6ee93128813fed84911526fbf86cf6217b97bf217",
@@ -2843,7 +2866,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-10-01T00:00:32.377772+00:00"
+      "fetched_at": "2026-10-01T01:16:48.806015+00:00"
     },
     {
       "id": "53572b52df2812a8be43a8bd6cdceb5e59c32b53a5c5a8c36568c9a2953bd5ce",
@@ -2866,7 +2889,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:32.518616+00:00"
+      "fetched_at": "2026-10-01T01:16:48.943419+00:00"
     },
     {
       "id": "c323f99cb95f3c8d3ac18fef4c1d266d7043bc92684ae92edf820eabbb115a79",
@@ -2889,7 +2912,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "collection",
-      "fetched_at": "2026-10-01T00:00:32.648414+00:00"
+      "fetched_at": "2026-10-01T01:16:49.067576+00:00"
     },
     {
       "id": "5dae9e9c5bc9ff17ca7639a3cd512487904a538e18e15d42c11af77a99357a0b",
@@ -2911,7 +2934,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:32.750607+00:00"
+      "fetched_at": "2026-10-01T01:16:49.161629+00:00"
     },
     {
       "id": "6327cb98159853e9fa2a6af7a13b616907038a8e5b99930b9ce5b6bb3e857d37",
@@ -2924,7 +2947,8 @@
       "description": "1977 poster by David Lance Goines for Nosferatu: A Symphony of Horror (F. W. Murnau, Germany, 1922) for the Pacific Film Archive. I recently came across two unusual film posters up for sale at Heritage Auctions, one featuring a winged beetle for F.W. Murnau’s Nosferatu: A Symphony of Horror (1922) and the other featuring a woman at a table with a red rose for Max Ophüls’s Letter from an Unknown Woman (1948). Both are illustrated in what resembles the Arts and Crafts style of late nineteenth-century Britain and, while neither really capture the essence of either film (for example, the woman in the Ophüls poster looks nothing like Joan Fontaine nor does the rather austere poster reflect the florid style of that film), both are very distinctive and the Nosferatu in particular is a thing of beauty. The two posters are the work of David Lance Goines, an artist best known for being the graphic face of the celebrated farm-to-table restaurant Chez Panisse in Berkeley, California, run by chef Alice Waters, who passed away in 2023 at the age of 77. Digging a little deeper, I discovered that between 1972 and 1983 Goines designed and printed 24 film posters for screenings at the Pacific Film Archive (PFA), at the University of California, Berkeley. The posters were commissioned by his friend Tom Luddy ,who was programming films at the PFA and who went on to co-found the Telluride Film Festival in 1974. (Luddy died in 2023, just six days before Goines). Goines wrote on his website in 1995, on the occasion of his poster celebrating the 25th anniversary of the University Art Museum and the Pacific Film Archive: My first poster for PFA was in 1972, on a handshake deal with Tom Luddy that continued through 1983. He never saw the designs until the posters were delivered. I'd tack up new ones upstairs at Chez Panisse, and at night we'd all of us sit around and drink wine and be pals. I’ve been a printer and graphic designer now for thirty years last April. Alice is looking at the restaurant's 25th anniversary next year in August. Tom's dream is alive and well after a quarter-century, and the Art Museum's roof still leaks in the rain. Born in Grants Pass, Oregon, in 1945, Goines’s father was an engineer and his mother was an artist and calligrapher whom he often named as his biggest creative influence. He studied classics at UC Berkeley but after being expelled for his involvement in the Free Speech Movement he apprenticed at the Berkeley Free Press, which was printing flyers and posters for the radical anti-war and civil rights groups that were springing up all over the city. It was through the print shop that he met Alice Waters, who was having flyers printed for a political campaign. They became a couple and, while living together, co-wrote a cooking column for the San Francisco Express Times . In 1970 he and Waters published a portfolio of prints titled “Thirty Recipes Suitable for Framing” for which Goines illustrated and hand-lettered Waters’s recipes. With the proceeds from the book, Goines bought the Berkeley Free Press and renamed it the Saint Hieronymus Press. When Chez Panisse opened in 1971, Goines and Waters were no longer a couple but they remained close friends and he illustrated the distinctive cookbooks, menus, and matchbooks for the restaurant for the next 50 years, and most notably made an annual poster for each anniversary. 1977 poster by Goines for Letter from an Unknown Woman (Max Ophüls, USA, 1948) for the Pacific Film Archive; 1980 poster by Goines for Café Chez Panisse. His 1980 poster for Chez Panisse is a self-portrait, though in later years Goines, who cut a distinctive figure in Berkeley with his bowler hats and three-piece suits, favored a large handlebar moustache. He made over 250 posters over the course of his life (255 to be exact, as assiduously catalogued on his website), many for Bay Area stores and organizations, or for exhibitions of his own work. His style remained very much indebted to the Arts and Crafts movement, and to the work and ideas of William Morris, though on his website he detailed a wide variety of influences for each individual poster, ranging from Albrecht Dürer to René Magritte, and from H. R. Giger to art deco cigarette lighters. His style was also quite indebted to the more sinuous and organic work of art nouveau, but it differed somewhat from the art nouveau-influenced look of the psychedelic music posters that defined San Francisco in the late 1960s. Goines pinpoints the origin of that style on his website: The old University Art Museum, now a fire station, was the site of one of the most important graphic events of the 1960s: a show of Jugendstil posters, organized and curated by Herschel Chipp. I can't quite remember the exact date: it was in 1965 or 1966. This exhibition was seen by all of the people in San Francisco and Berkeley who were doing posters for the rock ’n’ roll events of the time, and their very next posters were all but direct imitations of those of the Jugendstil, particularly reflecting the lettering of Ferdinand Andrei (President of the Vienna Secession in 1905), and Leopold Forstner of the Wiener Werkstätte, which were letters all made to fit into a square, or some other shape, and almost illegible. As a pressman, I printed some of the San Francisco artist’s psychedelic posters, and later became a poster designer myself. While in the same vein, Goines’s posters were less dense and more symmetrical and eschewed the swirly, cramped, nearly illegible lettering of his peers like Wes Wilson and Rick Griffin. Goines was a more traditional typographer whose 1982 book A Constructed Roman Alphabet: A Geometric Analysis of the Roman Alphabet Including the Greek Characters and the Arabic Numerals won the American Book Award for typography. Goines’s first film poster, made in 1972, was for Josef von Sternberg’s The Blue Angel (1930). 1972 posters for The Blue Angel (Josef von Sternberg, Germany, 1930) and Olympia (Leni Riefenstahl, Germany, 1938) for the Pacific Film Archive. I don’t know whether Goines chose which films he wanted to make posters for or whether the PFA or Luddy chose them for him, but his output would suggest that his taste in movies skewed toward European and American classics of the 1920s and ’30s. Letter from an Unknown Woman feels unusually modern for Goines (though a film steeped in the romanticism of the past) and the only contemporary film I can see in his oeuvre is Hans-Jürgen Syberberg’s Parsifal (1982). 1973 posters for Marcel Pagnol’s Marseilles Trilogy (1931–36) for the Pacific Film Archive. Three of my favorite film posters by Goines are his triptych for Marcel Pagnol’s Marseille Trilogy. (Alice Waters named her famed restaurant after one of the trilogy’s characters, Monsieur Panisse.) 1972 posters for The General (Buster Keaton, USA, 1926) and Ruggles of Red Gap (Leo McCarey, USA, 1935) for the Pacific Film Archive. Goines’s website includes a paragraph or two, written by the artist, about each film, some autobiographical and some quite abstract and philosophical. His poster for the horror film series Unpleasant Surprises leads to a reverie about collecting eggs as a boy growing up on a farm, while his poster for Buster Keaton’s The General (1926) inspires these thoughts: If you’re going to steal, steal big. If you're going to lie, tell a lie so big that, often enough repeated, it will come to be the truth. Do not pilfer, or tell fibs. You'll just get caught and you’ll be sorry afterwards. About the biggest thing you can steal is a man’s life. That takes everything he has. It doesn’t leave you with much, of course, except his dead flesh. Slavery steals his life also, except that the use of his days becomes the possession, for so long as he hangs on, of another person. The fratricidal war this film celebrates was about stealing, both big and small, and changing the rules about what was stealing and what wasn’t. Compared to stealing lives, and stealing days, stealing a locomotive scarcely seems worth discussion. While for Ruggles of Red Gap (1935) he wrote about signing his work: I’d done nineteen posters and a lot of other design work and I hadn’t signed any of it because I felt that my work was so derivative of the work of others that it would be presumptuous to claim any of it as my own. One day I walked past the gallery Dow and Frosini and there was a poster in the window that I really liked. It obviously had been done recently, but it wasn’t signed, so I couldn’t find out who had done it. This annoyed me greatly, and as I stood there being annoyed I realized that I was doing the exact same thing myself, and that there were probably plenty of people out there who were annoyed because I wasn’t signing my posters. So I started signing them. I liked the pattern of four squares arranged into a larger square, and had used that as a sort of signature before, so when I designed a signature I kept that basic idea and made it a square. This movie always makes me cry. Sometimes his descriptions about his thought process are more specific, as in this for his poster for Fritz Lang’s M : My six-year-old niece was given a camera to play with at a garden party. She spent a happy afternoon taking pictures of guests, most of whom were grown-ups. When the prints came back, the photographs were of people’s legs and feet. It seems obvious in retrospect that a small child sees the world of adults as a forest of trousers and stockings, but at the time it came to us as a surprise. People see the whole world from their own point of view, and are generally amazed that others see it differently. This film is about a murderer of children, and the poster presents a child’s-eye view. Below is the rest of Goines’s film oeuvre in roughly chronological order. 1972 poster for the film series Treasures from the Eastman House and 1975 poster for a series of films from the 1975 Cannes Film Festival, for the Pacific Film Archive. 1974 poster for Die Nibelungen (Fritz Lang, Germany, 1924) and 1975 poster for the series Music and the Movies . Both for the Pacific Film Archive. 1975 poster for Pandora's Box (G.W. Pabst, Germany, 1929) and 1978 poster for the horror film series Unpleasant Surprises for the Pacific Film Archive. 1977 poster for Faust (F.W. Murnau, Germany, 1926) and 1978 poster for The King of Kings (Cecil B. DeMille, USA, 1927) for the Pacific Film Archive. 1980 poster for Wings (William A. Wellmann, USA, 1927) for the Pacific Film Archive. 1982 poster for Double Suicide (Masahiro Shinoda, Japan, 1969) for the Pacific Film Archive. 1983 posters for Parsifal (Hans-Jürgen Syberberg, West Germany, 1982) and Frankenstein (James Whale, USA, 1931) for the Pacific Film Archive. 1995 poster for the 25th Anniversary of the University Art Museum and Pacific Film Archive. Goines’s final film poster, made some 21 years after his last poster for the PFA, was this typically eccentric and non-representational design for Ingmar Bergman’s The Seventh Seal (1957), which Goines lists as a piece of self-promotion, possibly anticipating the fan art poster phenomenon that began in the late 2000s. 2004 poster for The Seventh Seal (Ingmar Bergman, Sweden, 1957). On September 22, 2021, less than two years before his death, Goines wrote on the occasion of his Jubilee poster for Chez Panisse’s 50th anniversary: My mother called me on my birthday in 1995 and remarked, “I have no trouble being seventy-two years old, but I cannot believe that I have a son who is fifty.” That’s exactly how I feel about the Chez Panisse jubilee. The years have slipped past like water. Every one of those fifty years was jam-packed full of life, and growth and adventure and heartbreak and joy. Every day was one of living, work, eating, sleeping. Life went on at the steady pace of one second into the future per second, same as always. But when it’s past and over, it all seems to have happened at once. I am catapulted from the exciting, chaotic opening night fifty years ago to a muted celebration marred by pandemic with nothing, it seems, in the middle. Goines’s archive—consisting of over five thousand items—is now housed at UC Berkeley’s Bancroft Library .",
       "image_url": null,
       "categories": [
-        "cine"
+        "cine",
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -2932,7 +2956,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:32.875308+00:00"
+      "fetched_at": "2026-10-01T01:16:49.270828+00:00"
     },
     {
       "id": "818ede178c120fff6c2d0a36c6e9de3b54636bd74c03be29d1c016e81562bdf9",
@@ -2953,7 +2977,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "podcast",
-      "fetched_at": "2026-10-01T00:00:32.884440+00:00"
+      "fetched_at": "2026-10-01T01:16:49.278472+00:00"
     },
     {
       "id": "7ce191c9b5cfdd57025d865049e48ce8da19bc15f8d6127dce38eee101adaf2e",
@@ -2975,7 +2999,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.327798+00:00"
+      "fetched_at": "2026-10-01T01:16:49.702210+00:00"
     },
     {
       "id": "962cb18ec4cbe8f87b7143edecc3a791f8d9d10e82e2521117729f5f0a33ed36",
@@ -2996,7 +3020,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.332015+00:00"
+      "fetched_at": "2026-10-01T01:16:49.706009+00:00"
     },
     {
       "id": "cab95acf4e7a039fe64475465ffd68a2824a52c54d999d5c162641ede901831d",
@@ -3009,7 +3033,8 @@
       "description": "A Zoroastrian text about serpents translated by the President of the Bombay Anthropological Society.",
       "image_url": null,
       "categories": [
-        "literatura"
+        "literatura",
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3017,7 +3042,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.336472+00:00"
+      "fetched_at": "2026-10-01T01:16:49.710079+00:00"
     },
     {
       "id": "26ab16ecc45f8774308dab550d35892d7706820cc0c7d80806b9eb156eba1150",
@@ -3038,7 +3063,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.340588+00:00"
+      "fetched_at": "2026-10-01T01:16:49.713987+00:00"
     },
     {
       "id": "9ab83b6ac9007d53958f519d6f6e883f7119baad0790afee08a0b9c31787ae94",
@@ -3060,7 +3085,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.347226+00:00"
+      "fetched_at": "2026-10-01T01:16:49.720069+00:00"
     },
     {
       "id": "17642c9230c2562c786e5486ec02e28643b22ba63a4a48e46c32f2bad1d5bd80",
@@ -3081,7 +3106,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.351244+00:00"
+      "fetched_at": "2026-10-01T01:16:49.723842+00:00"
     },
     {
       "id": "5b18c759513c2fe93b3836ba7efe9f8b0dca869aad41479544d082059da77d18",
@@ -3102,7 +3127,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:33.356319+00:00"
+      "fetched_at": "2026-10-01T01:16:49.728463+00:00"
     },
     {
       "id": "025bf41c03096f9929f03ef24d4380310fa1f8974d4ea9403eb7012bfc49ddf8",
@@ -3123,7 +3148,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.360515+00:00"
+      "fetched_at": "2026-10-01T01:16:49.732308+00:00"
     },
     {
       "id": "01dc9dfb64eaf9d55ddd16c49322a057081fbf17a84a6e07ca49fa180942c48a",
@@ -3144,7 +3169,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "reportage",
-      "fetched_at": "2026-10-01T00:00:33.367043+00:00"
+      "fetched_at": "2026-10-01T01:16:49.738154+00:00"
     },
     {
       "id": "5906cc569be645066ee7ecddf766b85ed32edd6cce7b1f0ab4d8e26a321c0983",
@@ -3165,7 +3190,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.370901+00:00"
+      "fetched_at": "2026-10-01T01:16:49.741741+00:00"
     },
     {
       "id": "2a9d9d2dddadc13206d47b5f71ffd753a0798efdca1e25c784438e418154c031",
@@ -3186,7 +3211,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.374635+00:00"
+      "fetched_at": "2026-10-01T01:16:49.745258+00:00"
     },
     {
       "id": "8e7d629efc48647f95f61f6965efbd92db74559e99f044d12d9515597c3b767c",
@@ -3207,7 +3232,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.378910+00:00"
+      "fetched_at": "2026-10-01T01:16:49.749159+00:00"
     },
     {
       "id": "5f185e48a2115217cdd1caf5b5ff42c162f78087d0ff8d8945e5769c693d3e75",
@@ -3228,7 +3253,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.382776+00:00"
+      "fetched_at": "2026-10-01T01:16:49.752753+00:00"
     },
     {
       "id": "308f6f86d26823705941070fe01e0574f58be9336a3e8117212c6719c576a332",
@@ -3241,7 +3266,7 @@
       "description": "Legal infographics that reflect a Turkish nation in flux.",
       "image_url": null,
       "categories": [
-        "cultura"
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -3249,7 +3274,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.386684+00:00"
+      "fetched_at": "2026-10-01T01:16:49.756396+00:00"
     },
     {
       "id": "baa57f2ea57ef2b5081b9e580d83eaf0fac3acd26ef332e12c842d2f0a355474",
@@ -3270,7 +3295,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.392924+00:00"
+      "fetched_at": "2026-10-01T01:16:49.762057+00:00"
     },
     {
       "id": "da2c8816e344ef4a6e1c64a32d0872e356ab6646fab7fc32acedcc0706265703",
@@ -3291,7 +3316,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.397012+00:00"
+      "fetched_at": "2026-10-01T01:16:49.765840+00:00"
     },
     {
       "id": "07c20d387d56b8c5919dfb1c7609d6ecf2c575190602a46a18c69e0d2a199653",
@@ -3312,7 +3337,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:33.400583+00:00"
+      "fetched_at": "2026-10-01T01:16:49.769297+00:00"
     },
     {
       "id": "439175eb0ccbd2043575dd49b0090e15670696038605c816049825c12545b9ec",
@@ -3333,7 +3358,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.404389+00:00"
+      "fetched_at": "2026-10-01T01:16:49.772882+00:00"
     },
     {
       "id": "bf2ad1e3141cea2eeb89473f0544a86480912eb17b61120326df660e2df5f1f7",
@@ -3354,7 +3379,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.410712+00:00"
+      "fetched_at": "2026-10-01T01:16:49.778533+00:00"
     },
     {
       "id": "9b0aff4b86dc52d6cc6a90669a12dde1498c254ed33b54274ee0a78b31ce6520",
@@ -3375,7 +3400,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.414476+00:00"
+      "fetched_at": "2026-10-01T01:16:49.782031+00:00"
     },
     {
       "id": "0a8b2517cd65e699ce9a51dccb248d7322021e87eefc35a0e347f14d284bf4d1",
@@ -3396,7 +3421,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.418603+00:00"
+      "fetched_at": "2026-10-01T01:16:49.785879+00:00"
     },
     {
       "id": "43e83d1e94013c3451e8709aa1040358a7305cf0389b67d9062505aab4bd4eb2",
@@ -3417,7 +3442,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.422392+00:00"
+      "fetched_at": "2026-10-01T01:16:49.789436+00:00"
     },
     {
       "id": "61b7e3ee22e02043d7480ea6f39c153f61aeaf35b467e4c3321d60d03eb6364c",
@@ -3438,7 +3463,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.427954+00:00"
+      "fetched_at": "2026-10-01T01:16:49.794683+00:00"
     },
     {
       "id": "75325cfcf90a0ea48b3f46ffb80c4a6fb4cb3754902bf806b3bab1c968dfea7d",
@@ -3459,7 +3484,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.431441+00:00"
+      "fetched_at": "2026-10-01T01:16:49.797989+00:00"
     },
     {
       "id": "3eb93dd506b38baf1528d221b7b45663afc56d885be5055d1e95a26e9194898b",
@@ -3480,7 +3505,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.436051+00:00"
+      "fetched_at": "2026-10-01T01:16:49.802183+00:00"
     },
     {
       "id": "95b1a21f1b6c553d358edfaf8780e61f98cd1c7db9e0e31309d29072f2184d3d",
@@ -3501,7 +3526,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.439418+00:00"
+      "fetched_at": "2026-10-01T01:16:49.805333+00:00"
     },
     {
       "id": "939bd6883a666a4943466ffd0083123fe3bc973bcae7eb4ca7c9ec2fd4f09964",
@@ -3522,7 +3547,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.443504+00:00"
+      "fetched_at": "2026-10-01T01:16:49.809139+00:00"
     },
     {
       "id": "1abb4b03b9fea38bce6014c93e6156110f64d4342a59e09f7409a8b329e8c691",
@@ -3543,7 +3568,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.447834+00:00"
+      "fetched_at": "2026-10-01T01:16:49.813296+00:00"
     },
     {
       "id": "df7b12dbd6355178df85d7595b02e7be42f42146edb44e2f952eb8f33a7c62f0",
@@ -3564,7 +3589,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.454398+00:00"
+      "fetched_at": "2026-10-01T01:16:49.819220+00:00"
     },
     {
       "id": "64c624d86b0dec6505a954016a29614d1c989028ce2b98c20c063ef827d43326",
@@ -3586,7 +3611,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.458990+00:00"
+      "fetched_at": "2026-10-01T01:16:49.823511+00:00"
     },
     {
       "id": "8eb3870ce61b61beb12ede36334c3f48e2f5cb2d4a59c1d00b0d19164241a2d3",
@@ -3607,7 +3632,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.463092+00:00"
+      "fetched_at": "2026-10-01T01:16:49.827329+00:00"
     },
     {
       "id": "68c54a11364b00d1cc6d5f01f7312f65a05090e948c20b59d50f16d9e1b670a0",
@@ -3628,7 +3653,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.467132+00:00"
+      "fetched_at": "2026-10-01T01:16:49.831168+00:00"
     },
     {
       "id": "56e86f3e346ffcae02b0e73bd7344dea126513b3d5b4dbf31f7b21edce4b5c9b",
@@ -3649,7 +3674,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.473689+00:00"
+      "fetched_at": "2026-10-01T01:16:49.837499+00:00"
     },
     {
       "id": "410a8a8d44d4e51a8a820ab0904fc1557f8614d6bba5d0c5069e005167ec001b",
@@ -3670,7 +3695,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.477542+00:00"
+      "fetched_at": "2026-10-01T01:16:49.841249+00:00"
     },
     {
       "id": "d3ba30ae2528d187629403d40de08fb0116516b6c8743ead19d2a6bc0c652480",
@@ -3691,7 +3716,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.481239+00:00"
+      "fetched_at": "2026-10-01T01:16:49.844689+00:00"
     },
     {
       "id": "7e17e9aab19e982fbb4340e0fcf495a6d77c6734bfd60c1a6f2d99744a1b424a",
@@ -3712,7 +3737,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.485407+00:00"
+      "fetched_at": "2026-10-01T01:16:49.848560+00:00"
     },
     {
       "id": "b29e6209b704916c46825e2fa11b280b5b76c7833ad2557602966ba57f171ce2",
@@ -3733,7 +3758,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.492498+00:00"
+      "fetched_at": "2026-10-01T01:16:49.854924+00:00"
     },
     {
       "id": "c02f8218e196fd36804ae6ef86f5973f710a651aa7755e2bb14aa9108e5edd53",
@@ -3754,7 +3779,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.496824+00:00"
+      "fetched_at": "2026-10-01T01:16:49.858767+00:00"
     },
     {
       "id": "60def559ea05506429d1de2d5c01bebeeb16a133be68a2207ab529ec780c28b9",
@@ -3775,7 +3800,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.501111+00:00"
+      "fetched_at": "2026-10-01T01:16:49.862701+00:00"
     },
     {
       "id": "1eb20412ad1ef874778313f3b86a42985cb1ad1c86a04272ea0e3de595f95051",
@@ -3796,7 +3821,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.506188+00:00"
+      "fetched_at": "2026-10-01T01:16:49.867195+00:00"
     },
     {
       "id": "ea73d3dcc5a2fa7842a1c42bab0ac56ebce51c9567aa80d3f4ef0f22577a777c",
@@ -3817,7 +3842,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.510044+00:00"
+      "fetched_at": "2026-10-01T01:16:49.870738+00:00"
     },
     {
       "id": "8083327c284510ecac717eb6f298d955b704f15b09af4dbc869db84cfaf2a132",
@@ -3839,7 +3864,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.517142+00:00"
+      "fetched_at": "2026-10-01T01:16:49.876978+00:00"
     },
     {
       "id": "a138019f16305347c7e1ac2281daf8b9090d658e9510475dc44ad0726e1d86a6",
@@ -3860,7 +3885,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.520991+00:00"
+      "fetched_at": "2026-10-01T01:16:49.880471+00:00"
     },
     {
       "id": "435f2eca439b8c97b0c44baf34b2a456cf16705deb7710c2b615bbf6134ae841",
@@ -3881,7 +3906,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.524593+00:00"
+      "fetched_at": "2026-10-01T01:16:49.883835+00:00"
     },
     {
       "id": "ef58563826dc5a80849ac99e2d975cbdbc3cb58dface1700ed3114e3cb7b66df",
@@ -3902,7 +3927,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.531376+00:00"
+      "fetched_at": "2026-10-01T01:16:49.889959+00:00"
     },
     {
       "id": "c0bfde5e952c985fb6c6be362dace40eb42ec1e546ed4d59e16bb1f3823aba4f",
@@ -3923,7 +3948,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.535193+00:00"
+      "fetched_at": "2026-10-01T01:16:49.893506+00:00"
     },
     {
       "id": "a967c6196209fbe501738537273227b8fc347ec07f430b59d777ca878a0f4e4f",
@@ -3944,7 +3969,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.539671+00:00"
+      "fetched_at": "2026-10-01T01:16:49.897589+00:00"
     },
     {
       "id": "e8b302271c1a5f8df68d1825b706aff0397a4a53de8ff7ef44442ffe8648847f",
@@ -3965,7 +3990,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.543695+00:00"
+      "fetched_at": "2026-10-01T01:16:49.901256+00:00"
     },
     {
       "id": "2c21f81594e38ae1ebb073dea7a5f775af7552933b2bca8b0e41948d1b94f020",
@@ -3986,7 +4011,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.548270+00:00"
+      "fetched_at": "2026-10-01T01:16:49.905591+00:00"
     },
     {
       "id": "e7812e50d641e6649f39b263868b0192ee96b6c74cb9cd163971eebaed14e0e6",
@@ -4007,7 +4032,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "list",
-      "fetched_at": "2026-10-01T00:00:33.552280+00:00"
+      "fetched_at": "2026-10-01T01:16:49.909380+00:00"
     },
     {
       "id": "bc317b71a44a7c9dd2aa3598e71877e61375e8209ba92e955166c47c6832ddc3",
@@ -4028,7 +4053,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.558858+00:00"
+      "fetched_at": "2026-10-01T01:16:49.915429+00:00"
     },
     {
       "id": "167fb1db2fbe4c5f6c5f316ea89277184e806c89d42291ecb74fe0d7faf3ca60",
@@ -4049,7 +4074,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.562903+00:00"
+      "fetched_at": "2026-10-01T01:16:49.919175+00:00"
     },
     {
       "id": "6751789583c9f3f9dd48258ed09c75983f0da500f244cb563469e7af583a591f",
@@ -4070,7 +4095,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.566984+00:00"
+      "fetched_at": "2026-10-01T01:16:49.922988+00:00"
     },
     {
       "id": "b80098f97c2bedcd0bb4f2aa4e635d9ef893d528e1b27893bdd840f0b9e3b805",
@@ -4091,7 +4116,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.570680+00:00"
+      "fetched_at": "2026-10-01T01:16:49.926496+00:00"
     },
     {
       "id": "3cb544bcd7024a2d7ebe9a1c09b1d6f1a05fbf59e722471b62d9ee96cf45c4fb",
@@ -4112,7 +4137,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.574650+00:00"
+      "fetched_at": "2026-10-01T01:16:49.930216+00:00"
     },
     {
       "id": "95c1dbf9151dfcdb1aae7725763d336754b9a6808f8901b6640c998a762ce819",
@@ -4133,7 +4158,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.578489+00:00"
+      "fetched_at": "2026-10-01T01:16:49.933835+00:00"
     },
     {
       "id": "ce62438393e2ed9f50124efa58df66413b687958a3ae3933a8b350dfe5afe864",
@@ -4154,7 +4179,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.582878+00:00"
+      "fetched_at": "2026-10-01T01:16:49.937873+00:00"
     },
     {
       "id": "154e015d255835b118c274ffbfbb4025d886cabf578a66721f2175c348d0a742",
@@ -4175,7 +4200,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.589434+00:00"
+      "fetched_at": "2026-10-01T01:16:49.943940+00:00"
     },
     {
       "id": "70cd2d8d3654220e885e84ff90748ca4dbdd5c9e6e3435753d46f058f06219c5",
@@ -4196,7 +4221,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.593223+00:00"
+      "fetched_at": "2026-10-01T01:16:49.947491+00:00"
     },
     {
       "id": "5314c26875e9eef6db48d75760102ea3815c9bfa02a5579dba09ec081b5b07d2",
@@ -4217,7 +4242,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.597697+00:00"
+      "fetched_at": "2026-10-01T01:16:49.951699+00:00"
     },
     {
       "id": "dbf1f517fe3f29b2cef643e544fca3dab9139e782d172816a4b839e99638b6e4",
@@ -4238,7 +4263,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.605443+00:00"
+      "fetched_at": "2026-10-01T01:16:49.958526+00:00"
     },
     {
       "id": "7a5f908f837de957920f1e26ceab45320422e743c382136ca827f0902c25c8d5",
@@ -4259,7 +4284,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.609624+00:00"
+      "fetched_at": "2026-10-01T01:16:49.962437+00:00"
     },
     {
       "id": "1107638e5fd8f5d183b00dd0a5e4f79c6ea3f170d1a0b4be5a3d0127153ccb17",
@@ -4280,7 +4305,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.613794+00:00"
+      "fetched_at": "2026-10-01T01:16:49.966297+00:00"
     },
     {
       "id": "1dd44ab6ee1a6f05ebcce4d3751d5eccee7df4c25d4bb1874281a0410277b232",
@@ -4301,7 +4326,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.617936+00:00"
+      "fetched_at": "2026-10-01T01:16:49.970124+00:00"
     },
     {
       "id": "27e5f1028e9d0fe2769cde4906088b63628d164e7b6a7fc8016354166f39c369",
@@ -4322,7 +4347,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.621702+00:00"
+      "fetched_at": "2026-10-01T01:16:49.973731+00:00"
     },
     {
       "id": "d43f2d21f090782fa52254dc76d624869da6ead7916db1a10c08c837e2b8adc2",
@@ -4343,7 +4368,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.625906+00:00"
+      "fetched_at": "2026-10-01T01:16:49.977696+00:00"
     },
     {
       "id": "2a56522d6df3768cc57301c7690b85d1cf8ef7ea1358789ab0d2cb1ceddfb7ae",
@@ -4356,7 +4381,8 @@
       "description": "Of all the senses cultivated throughout the 19th century, it was the sense of hearing that experienced the most dramatic transformation, as the science of sound underwent rapid advancement. Lucas Thompson delves into a particular genre of popular acoustics primers aimed at children and amateurs alike, which reveal the pedagogical, ludic, and transcendental strivings of Victorian society.",
       "image_url": null,
       "categories": [
-        "ciencia"
+        "ciencia",
+        "sociedad"
       ],
       "tags": [],
       "reading_time": 8,
@@ -4364,7 +4390,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.632793+00:00"
+      "fetched_at": "2026-10-01T01:16:49.984104+00:00"
     },
     {
       "id": "01d2bd7f4cf46610b6385481180a4b22857f0bf423ec06fcb6a992e09721f595",
@@ -4385,7 +4411,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.636783+00:00"
+      "fetched_at": "2026-10-01T01:16:49.987816+00:00"
     },
     {
       "id": "75595828bca26a2077a875c7d5e3f1048ecb007a17d44fd17bbfe84d40ac75c8",
@@ -4406,7 +4432,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.640907+00:00"
+      "fetched_at": "2026-10-01T01:16:49.991596+00:00"
     },
     {
       "id": "d51f0560d18003c85b86e42da6e345c9ae1428dd318239ac3c0756aab74fae3d",
@@ -4427,7 +4453,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.645035+00:00"
+      "fetched_at": "2026-10-01T01:16:49.995444+00:00"
     },
     {
       "id": "526e82cc9dc9cb79a75d19f6da5406f600bfaa7aee3b2f9dacd9cc8e7b83cbbf",
@@ -4448,7 +4474,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.653021+00:00"
+      "fetched_at": "2026-10-01T01:16:50.002572+00:00"
     },
     {
       "id": "5f9bde79ef63d5e66ded45211090aac7a294111475827b3674b84db3537955b6",
@@ -4469,7 +4495,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.657143+00:00"
+      "fetched_at": "2026-10-01T01:16:50.006342+00:00"
     },
     {
       "id": "3562c7f4cb1f2babf22c423754dd104093bce55170c802843e3dfb1781fddce0",
@@ -4490,7 +4516,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.660929+00:00"
+      "fetched_at": "2026-10-01T01:16:50.009895+00:00"
     },
     {
       "id": "0f5e88da428bda5cfb5dcbdfe35853a265ba0b727e93b2033c0d0067eddc0d2d",
@@ -4511,7 +4537,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.664751+00:00"
+      "fetched_at": "2026-10-01T01:16:50.013489+00:00"
     },
     {
       "id": "ed81f7a899a96df9d229a682c666859d535b9d863215472fe0aed4da5385b52f",
@@ -4532,7 +4558,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.668861+00:00"
+      "fetched_at": "2026-10-01T01:16:50.017358+00:00"
     },
     {
       "id": "f55e927bb2eeadb25e43b99ce099798dc4517e40e29a25a74af925dcebaa4070",
@@ -4553,7 +4579,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.676990+00:00"
+      "fetched_at": "2026-10-01T01:16:50.024539+00:00"
     },
     {
       "id": "af3eddce32d68684fb765f98e66e9a01e0c6ef12043ddab43ade5e36f769833b",
@@ -4574,7 +4600,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:33.681244+00:00"
+      "fetched_at": "2026-10-01T01:16:50.028554+00:00"
     },
     {
       "id": "904d45624bb595b90527b6949b27d52f6be26f2958d548074d00618ce2b56bf6",
@@ -4595,7 +4621,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.685365+00:00"
+      "fetched_at": "2026-10-01T01:16:50.032339+00:00"
     },
     {
       "id": "b1b26fdf346381310ac596ac4bbee96b103c4b1647dc674ced22c0531fc1a0a3",
@@ -4616,7 +4642,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.690090+00:00"
+      "fetched_at": "2026-10-01T01:16:50.036677+00:00"
     },
     {
       "id": "f8b3f5c42e679370dded97e05f7bda7a121db18fc243243df65ec946eb572123",
@@ -4637,7 +4663,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.696394+00:00"
+      "fetched_at": "2026-10-01T01:16:50.042595+00:00"
     },
     {
       "id": "d6256f8e76133695e129cdb8c4e1d487f429f13991a3ec990f515f670d71fd59",
@@ -4658,7 +4684,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.700533+00:00"
+      "fetched_at": "2026-10-01T01:16:50.046451+00:00"
     },
     {
       "id": "3b178cb8aa038b6ec93bdedb52e7c7ae2d19a486c71e4fb30850f743a7111c1d",
@@ -4679,7 +4705,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.705633+00:00"
+      "fetched_at": "2026-10-01T01:16:50.051016+00:00"
     },
     {
       "id": "eddddc760c8b8c863c108f72f2e364e0b8deedc5173df86817b115de221b6bd7",
@@ -4700,7 +4726,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.709258+00:00"
+      "fetched_at": "2026-10-01T01:16:50.054362+00:00"
     },
     {
       "id": "9881de489b0570cdb6d5f5c58d048b7a93b38f80117f0270174755a5d0c853c4",
@@ -4721,7 +4747,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.713388+00:00"
+      "fetched_at": "2026-10-01T01:16:50.058033+00:00"
     },
     {
       "id": "7f45401c7e6a59a271252256a42e2aaf034141103d3c5f8d6ea5a8a30c579f5f",
@@ -4742,7 +4768,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.720789+00:00"
+      "fetched_at": "2026-10-01T01:16:50.064549+00:00"
     },
     {
       "id": "3ad50c10f19fe289805944bbb0372e4da1839941d4d6804e0fdae2822358202a",
@@ -4763,7 +4789,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.724700+00:00"
+      "fetched_at": "2026-10-01T01:16:50.068165+00:00"
     },
     {
       "id": "e77e98f8ed0d05d07fd1fb63c795a8f1b3927d5314af1815957131547915cc51",
@@ -4784,7 +4810,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.728579+00:00"
+      "fetched_at": "2026-10-01T01:16:50.071756+00:00"
     },
     {
       "id": "b7bea2b5fb58a8f245285835673dcec80a19695e7464efb494cf853347517b36",
@@ -4805,7 +4831,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.733338+00:00"
+      "fetched_at": "2026-10-01T01:16:50.076099+00:00"
     },
     {
       "id": "173b1742be3696ff9799842ddf98f1909f4667300590ff682f3235d139c52fdb",
@@ -4826,7 +4852,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.739026+00:00"
+      "fetched_at": "2026-10-01T01:16:50.081218+00:00"
     },
     {
       "id": "a8096db6682d5c8bdba13864b4f48538dce661fee04633e43887761e0f8e93e5",
@@ -4847,7 +4873,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "analysis",
-      "fetched_at": "2026-10-01T00:00:33.743068+00:00"
+      "fetched_at": "2026-10-01T01:16:50.085036+00:00"
     },
     {
       "id": "dfdec71b7a4b2b592107e9e941d1a3a63a39265537080c05ee458503ae559caf",
@@ -4868,7 +4894,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "essay",
-      "fetched_at": "2026-10-01T00:00:33.747576+00:00"
+      "fetched_at": "2026-10-01T01:16:50.089250+00:00"
     },
     {
       "id": "47084df498c955436f05372051ab26ded611603011b87797f838573aabe0b718",
@@ -4889,7 +4915,7 @@
       "reading_time_estimated": true,
       "access": "unknown",
       "content_type": "history",
-      "fetched_at": "2026-10-01T00:00:33.751612+00:00"
+      "fetched_at": "2026-10-01T01:16:50.093070+00:00"
     }
   ]
 }
