@@ -1163,20 +1163,144 @@ def classify_categories(
     description,
     source_id,
     feed_categories,
+    tags=None,
+    url="",
 ):
+    tags = tags or []
+    feed_categories = feed_categories or []
+
     title_text = (title or "").lower()
-
     description_text = (description or "").lower()
-
-    feed_text = " ".join(
-        feed_categories or []
+    metadata_text = " ".join(
+        [
+            " ".join(feed_categories),
+            " ".join(tags),
+        ]
     ).lower()
+    url_text = (url or "").lower()
 
     scores = {
         category: 0
         for category in MASTER_CATEGORIES
     }
 
+    # ---------------------------------------------------------
+    # 1. Palabras clave
+    # ---------------------------------------------------------
+    # El título pesa más porque suele describir mejor el tema.
+    # Los tags/metadatos tienen un peso intermedio.
+    # La descripción tiene el menor peso porque suele mencionar
+    # temas secundarios que no necesariamente son el tema central.
+    # ---------------------------------------------------------
+
+    for category, keywords in CATEGORY_KEYWORDS.items():
+        for keyword in keywords:
+            if keyword_matches(title_text, keyword):
+                scores[category] += 3
+
+            if keyword_matches(metadata_text, keyword):
+                scores[category] += 2
+
+            if keyword_matches(description_text, keyword):
+                scores[category] += 1
+
+    # ---------------------------------------------------------
+    # 2. Señales fuertes por fuente
+    # ---------------------------------------------------------
+
+    # MUBI Notebook es una publicación especializada en cine.
+    if source_id == "mubi_notebook":
+        scores["cine"] += 3
+
+    # Quanta Magazine es una publicación especializada
+    # en ciencia y matemáticas.
+    if source_id == "quanta":
+        scores["ciencia"] += 3
+
+    # ---------------------------------------------------------
+    # 3. Señales de sección / URL
+    # ---------------------------------------------------------
+
+    if source_id == "new_yorker":
+
+        if "/the-front-row/" in url_text:
+            scores["cine"] += 5
+
+        if "/books/" in url_text:
+            scores["literatura"] += 5
+
+        if "/cartoons/" in url_text:
+            scores["artes_visuales"] += 5
+
+        if "/podcast/poetry/" in url_text:
+            scores["literatura"] += 5
+
+    # Aeon tiene videos sobre muchos temas, así que no basta
+    # con que sea un video para convertirlo automáticamente
+    # en cine. Pero si la URL habla explícitamente de un
+    # filmmaker/film, sí tenemos una señal bastante fuerte.
+    if source_id == "aeon":
+        if "/videos/" in url_text and (
+            "filmmaker" in url_text
+            or "film" in url_text
+            or "cinema" in url_text
+        ):
+            scores["cine"] += 5
+
+    # ---------------------------------------------------------
+    # 4. Señales específicas de contenido
+    # ---------------------------------------------------------
+
+    # Una página del New Yorker identificada como juego debe
+    # seguir siendo cultura, no "videojuegos". Son juegos del
+    # sitio, no necesariamente videojuegos.
+    # Por eso aquí no añadimos ninguna puntuación.
+    
+    # ---------------------------------------------------------
+    # 5. Ordenar resultados
+    # ---------------------------------------------------------
+
+    ranked = sorted(
+        scores.items(),
+        key=lambda item: item[1],
+        reverse=True,
+    )
+
+    positive = [
+        (category, score)
+        for category, score in ranked
+        if score > 0
+    ]
+
+    # Si no encontramos ninguna señal clara.
+    if not positive:
+        return ["cultura"]
+
+    primary_category, primary_score = positive[0]
+
+    # Si la mejor categoría apenas tiene una señal débil,
+    # preferimos cultura antes que inventarnos una clasificación.
+    if primary_score < 2:
+        return ["cultura"]
+
+    result = [primary_category]
+
+    # Las categorías secundarias necesitan evidencia razonable.
+    # Esto evita cosas como:
+    #
+    # cine + literatura
+    #
+    # simplemente porque una crítica cinematográfica mencionó
+    # una novela o a un escritor.
+    for category, score in positive[1:]:
+
+        if score >= 3 and score >= primary_score * 0.40:
+            result.append(category)
+
+        if len(result) == 3:
+            break
+
+    return result
     # ---------------------------------------------------------
     # 1. Las coincidencias en el título pesan más.
     #
@@ -1575,12 +1699,14 @@ def parse_item(
         feed_categories=feed_categories,
     )
 
-    categories = classify_categories(
-        title=title,
-        description=description,
-        source_id=source_id,
-        feed_categories=feed_categories,
-    )
+categories = classify_categories(
+    title,
+    description,
+    source_id,
+    feed_categories,
+    tags=tags,
+    url=url,
+)
 
     (
         reading_time,
