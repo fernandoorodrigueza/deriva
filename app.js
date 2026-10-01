@@ -1,5 +1,10 @@
 const DATA_URL = "data/articles.json";
 
+
+/*
+ * CATEGORÍAS
+ */
+
 const CATEGORY_LABELS = {
     literatura: "Literatura",
     cine: "Cine",
@@ -66,7 +71,7 @@ let currentCategory = null;
 
 
 /*
- * CARGAR DATOS
+ * CARGAR ARTÍCULOS
  */
 
 async function loadArticles() {
@@ -80,7 +85,7 @@ async function loadArticles() {
         if (!response.ok) {
 
             throw new Error(
-                `HTTP ${response.status}`
+                `No se pudo cargar ${DATA_URL}. HTTP ${response.status}`
             );
 
         }
@@ -118,10 +123,24 @@ async function loadArticles() {
         } else {
 
             throw new Error(
-                "No se encontró la lista de artículos."
+                "articles.json no contiene una lista de artículos reconocible."
             );
 
         }
+
+
+        if (!articles.length) {
+
+            throw new Error(
+                "articles.json se cargó correctamente, pero no contiene artículos."
+            );
+
+        }
+
+
+        console.log(
+            `Deriva: ${articles.length} artículos cargados.`
+        );
 
 
         initializeApp();
@@ -130,11 +149,14 @@ async function loadArticles() {
     } catch (error) {
 
         console.error(
-            "Error cargando artículos:",
+            "ERROR REAL DE DERIVA:",
             error
         );
 
-        showLoadError();
+
+        showLoadError(
+            error
+        );
 
     }
 
@@ -147,15 +169,36 @@ async function loadArticles() {
 
 function initializeApp() {
 
-    renderCategoryGrids();
+    try {
 
-    setupNavigation();
+        renderCategoryGrids();
 
-    setupRandomButton();
+        setupNavigation();
 
-    setupBackButton();
+        setupRandomButton();
 
-    setupSavedButtons();
+        setupBackButton();
+
+        setupSavedButtons();
+
+        console.log(
+            "Deriva inicializado correctamente."
+        );
+
+
+    } catch (error) {
+
+        console.error(
+            "ERROR DURANTE LA INICIALIZACIÓN:",
+            error
+        );
+
+
+        showInitializationError(
+            error
+        );
+
+    }
 
 }
 
@@ -182,7 +225,14 @@ function setupNavigation() {
                     const view =
                         button.dataset.view;
 
-                    showView(view);
+
+                    if (view) {
+
+                        showView(
+                            view
+                        );
+
+                    }
 
                 }
             );
@@ -193,7 +243,9 @@ function setupNavigation() {
 }
 
 
-function showView(viewName) {
+function showView(
+    viewName
+) {
 
     const views =
         document.querySelectorAll(
@@ -245,7 +297,9 @@ function showView(viewName) {
     );
 
 
-    if (viewName === "saved") {
+    if (
+        viewName === "saved"
+    ) {
 
         renderSavedArticles();
 
@@ -274,7 +328,11 @@ function getAvailableCategories() {
         article => {
 
             const categories =
-                article.categories || [];
+                Array.isArray(
+                    article.categories
+                )
+                    ? article.categories
+                    : [];
 
 
             categories.forEach(
@@ -293,7 +351,9 @@ function getAvailableCategories() {
 
     return CATEGORY_ORDER.filter(
         category =>
-            available.has(category)
+            available.has(
+                category
+            )
     );
 
 }
@@ -353,6 +413,10 @@ function createCategoryButton(
         "category-button";
 
 
+    button.type =
+        "button";
+
+
     button.textContent =
         CATEGORY_LABELS[
             category
@@ -377,18 +441,14 @@ function createCategoryButton(
 
 
 /*
+ * ==========================
  * DAME ALGO
- *
- * El objetivo no es recomendar
- * "lo que te gusta".
- *
- * El objetivo es producir
- * una deriva variada.
+ * ==========================
  */
 
 
 /*
- * Historial de artículos
+ * HISTORIAL DE ARTÍCULOS
  */
 
 function getRandomHistory() {
@@ -409,10 +469,14 @@ function getRandomHistory() {
 
 
         const parsed =
-            JSON.parse(value);
+            JSON.parse(
+                value
+            );
 
 
-        return Array.isArray(parsed)
+        return Array.isArray(
+            parsed
+        )
             ? parsed
             : [];
 
@@ -425,10 +489,6 @@ function getRandomHistory() {
 
 }
 
-
-/*
- * Guardar historial de artículos
- */
 
 function saveRandomHistory(
     article
@@ -451,7 +511,8 @@ function saveRandomHistory(
     history =
         history.filter(
             id =>
-                id !== article.id
+                String(id) !==
+                String(article.id)
         );
 
 
@@ -471,12 +532,14 @@ function saveRandomHistory(
 
         localStorage.setItem(
             RANDOM_HISTORY_KEY,
-            JSON.stringify(history)
+            JSON.stringify(
+                history
+            )
         );
 
     } catch {
 
-        // Continuar aunque localStorage no esté disponible.
+        // No pasa nada si localStorage está bloqueado.
 
     }
 
@@ -484,7 +547,7 @@ function saveRandomHistory(
 
 
 /*
- * Historial de fuentes
+ * HISTORIAL DE FUENTES
  */
 
 function getRandomSources() {
@@ -505,10 +568,14 @@ function getRandomSources() {
 
 
         const parsed =
-            JSON.parse(value);
+            JSON.parse(
+                value
+            );
 
 
-        return Array.isArray(parsed)
+        return Array.isArray(
+            parsed
+        )
             ? parsed
             : [];
 
@@ -522,19 +589,14 @@ function getRandomSources() {
 }
 
 
-/*
- * Guardar fuente reciente
- */
-
 function saveRandomSource(
     article
 ) {
 
-    const source =
-        article.source;
-
-
-    if (!source) {
+    if (
+        !article ||
+        !article.source
+    ) {
 
         return;
 
@@ -547,13 +609,14 @@ function saveRandomSource(
 
     sources =
         sources.filter(
-            item =>
-                item !== source
+            source =>
+                source !==
+                article.source
         );
 
 
     sources.unshift(
-        source
+        article.source
     );
 
 
@@ -568,7 +631,9 @@ function saveRandomSource(
 
         localStorage.setItem(
             RANDOM_SOURCE_KEY,
-            JSON.stringify(sources)
+            JSON.stringify(
+                sources
+            )
         );
 
     } catch {
@@ -581,7 +646,7 @@ function saveRandomSource(
 
 
 /*
- * Historial de categorías
+ * HISTORIAL DE CATEGORÍAS
  */
 
 function getRandomCategories() {
@@ -602,10 +667,14 @@ function getRandomCategories() {
 
 
         const parsed =
-            JSON.parse(value);
+            JSON.parse(
+                value
+            );
 
 
-        return Array.isArray(parsed)
+        return Array.isArray(
+            parsed
+        )
             ? parsed
             : [];
 
@@ -619,16 +688,16 @@ function getRandomCategories() {
 }
 
 
-/*
- * Guardar categoría reciente
- */
-
 function saveRandomCategories(
     article
 ) {
 
     const categories =
-        article.categories || [];
+        Array.isArray(
+            article.categories
+        )
+            ? article.categories
+            : [];
 
 
     if (!categories.length) {
@@ -671,7 +740,9 @@ function saveRandomCategories(
 
         localStorage.setItem(
             RANDOM_CATEGORY_KEY,
-            JSON.stringify(history)
+            JSON.stringify(
+                history
+            )
         );
 
     } catch {
@@ -684,14 +755,20 @@ function saveRandomCategories(
 
 
 /*
- * Días desde publicación
+ * ANTIGÜEDAD DEL ARTÍCULO
  */
 
 function getArticleAgeDays(
     article
 ) {
 
-    if (!article.published_at) {
+    const dateValue =
+        article.published_at ||
+        article.publication_date ||
+        article.date;
+
+
+    if (!dateValue) {
 
         return 365;
 
@@ -700,7 +777,7 @@ function getArticleAgeDays(
 
     const published =
         new Date(
-            article.published_at
+            dateValue
         );
 
 
@@ -721,12 +798,14 @@ function getArticleAgeDays(
 
     const difference =
         now.getTime()
-        - published.getTime();
+        -
+        published.getTime();
 
 
     return Math.max(
         0,
-        difference / (
+        difference /
+        (
             1000 *
             60 *
             60 *
@@ -738,7 +817,7 @@ function getArticleAgeDays(
 
 
 /*
- * Puntuación para "Dame algo"
+ * PUNTUAR ARTÍCULO
  */
 
 function scoreRandomArticle(
@@ -761,12 +840,14 @@ function scoreRandomArticle(
 
 
     /*
-     * 1. No repetir artículos recientes.
+     * Evitar artículos recientes.
      */
 
     if (
-        history.includes(
-            article.id
+        history.some(
+            id =>
+                String(id) ===
+                String(article.id)
         )
     ) {
 
@@ -776,10 +857,7 @@ function scoreRandomArticle(
 
 
     /*
-     * 2. Evitar repetir fuente.
-     *
-     * No la prohibimos.
-     * Solo la hacemos menos probable.
+     * Evitar repetir fuente.
      */
 
     if (
@@ -804,11 +882,15 @@ function scoreRandomArticle(
 
 
     /*
-     * 3. Evitar repetir categoría.
+     * Evitar repetir categoría.
      */
 
     const categories =
-        article.categories || [];
+        Array.isArray(
+            article.categories
+        )
+            ? article.categories
+            : [];
 
 
     const repeatedCategory =
@@ -820,7 +902,9 @@ function scoreRandomArticle(
         );
 
 
-    if (repeatedCategory) {
+    if (
+        repeatedCategory
+    ) {
 
         score -= 35;
 
@@ -828,32 +912,39 @@ function scoreRandomArticle(
 
 
     /*
-     * 4. Favorecer artículos con
-     * buena información disponible.
+     * Premiar artículos con información completa.
      */
 
-    if (article.description) {
+    if (
+        article.description
+    ) {
 
         score += 12;
 
     }
 
 
-    if (article.image_url) {
+    if (
+        article.image_url
+    ) {
 
         score += 8;
 
     }
 
 
-    if (article.author) {
+    if (
+        article.author
+    ) {
 
         score += 4;
 
     }
 
 
-    if (article.reading_time) {
+    if (
+        article.reading_time
+    ) {
 
         score += 3;
 
@@ -861,7 +952,7 @@ function scoreRandomArticle(
 
 
     /*
-     * 5. Edad del artículo.
+     * Antigüedad.
      */
 
     const age =
@@ -870,19 +961,27 @@ function scoreRandomArticle(
         );
 
 
-    if (age <= 2) {
+    if (
+        age <= 2
+    ) {
 
         score += 10;
 
-    } else if (age <= 7) {
+    } else if (
+        age <= 7
+    ) {
 
         score += 7;
 
-    } else if (age <= 30) {
+    } else if (
+        age <= 30
+    ) {
 
         score += 4;
 
-    } else if (age <= 180) {
+    } else if (
+        age <= 180
+    ) {
 
         score += 2;
 
@@ -894,7 +993,11 @@ function scoreRandomArticle(
 
 
     /*
-     * 6. Aleatoriedad.
+     * Azar.
+     *
+     * Fundamental para que Deriva
+     * no se convierta en una lista
+     * de recomendaciones predecible.
      */
 
     score +=
@@ -907,7 +1010,7 @@ function scoreRandomArticle(
 
 
 /*
- * Elegir artículo
+ * ELEGIR ARTÍCULO
  */
 
 function chooseRandomArticle() {
@@ -919,11 +1022,6 @@ function chooseRandomArticle() {
     }
 
 
-    /*
-     * Primero intentamos excluir
-     * los artículos vistos recientemente.
-     */
-
     const history =
         getRandomHistory();
 
@@ -931,16 +1029,17 @@ function chooseRandomArticle() {
     let candidates =
         articles.filter(
             article =>
-                !history.includes(
-                    article.id
+                !history.some(
+                    id =>
+                        String(id) ===
+                        String(article.id)
                 )
         );
 
 
     /*
-     * Si ya hemos recorrido prácticamente
-     * todo el catálogo, permitimos volver
-     * a usar artículos.
+     * Si eventualmente hemos recorrido
+     * todo el catálogo, permitimos repetir.
      */
 
     if (!candidates.length) {
@@ -950,10 +1049,6 @@ function chooseRandomArticle() {
 
     }
 
-
-    /*
-     * Puntuar candidatos.
-     */
 
     const ranked =
         candidates
@@ -977,7 +1072,7 @@ function chooseRandomArticle() {
 
 
     /*
-     * Elegimos entre los tres mejores.
+     * Elegir entre los tres mejores.
      */
 
     const pool =
@@ -988,6 +1083,13 @@ function chooseRandomArticle() {
                 ranked.length
             )
         );
+
+
+    if (!pool.length) {
+
+        return null;
+
+    }
 
 
     const selected =
@@ -1032,10 +1134,6 @@ function setupRandomButton() {
 
 }
 
-
-/*
- * Mostrar artículo aleatorio
- */
 
 function showRandomArticle() {
 
@@ -1098,7 +1196,9 @@ function showRandomArticle() {
 
 
 /*
+ * ==========================
  * GUARDADOS
+ * ==========================
  */
 
 
@@ -1110,13 +1210,13 @@ function getSavedArticleIds() {
 
     try {
 
-        const saved =
+        const value =
             localStorage.getItem(
                 SAVED_ARTICLES_KEY
             );
 
 
-        if (!saved) {
+        if (!value) {
 
             return [];
 
@@ -1124,10 +1224,14 @@ function getSavedArticleIds() {
 
 
         const parsed =
-            JSON.parse(saved);
+            JSON.parse(
+                value
+            );
 
 
-        return Array.isArray(parsed)
+        return Array.isArray(
+            parsed
+        )
             ? parsed
             : [];
 
@@ -1153,7 +1257,9 @@ function saveArticleIds(
 
         localStorage.setItem(
             SAVED_ARTICLES_KEY,
-            JSON.stringify(ids)
+            JSON.stringify(
+                ids
+            )
         );
 
     } catch {
@@ -1166,7 +1272,7 @@ function saveArticleIds(
 
 
 /*
- * Comprobar si un artículo está guardado
+ * Comprobar si está guardado
  */
 
 function isArticleSaved(
@@ -1181,15 +1287,17 @@ function isArticleSaved(
 
 
     return getSavedArticleIds()
-        .includes(
-            articleId
+        .some(
+            id =>
+                String(id) ===
+                String(articleId)
         );
 
 }
 
 
 /*
- * Guardar o quitar artículo
+ * Guardar / quitar
  */
 
 function toggleSavedArticle(
@@ -1203,17 +1311,21 @@ function toggleSavedArticle(
     }
 
 
-    const savedIds =
+    let savedIds =
         getSavedArticleIds();
 
 
     const index =
-        savedIds.indexOf(
-            articleId
+        savedIds.findIndex(
+            id =>
+                String(id) ===
+                String(articleId)
         );
 
 
-    if (index === -1) {
+    if (
+        index === -1
+    ) {
 
         savedIds.push(
             articleId
@@ -1260,7 +1372,7 @@ function toggleSavedArticle(
 
 
 /*
- * Actualizar botones visibles
+ * Actualizar botones
  */
 
 function updateSaveButtons(
@@ -1283,7 +1395,9 @@ function updateSaveButtons(
         button => {
 
             if (
-                button.dataset.articleId ===
+                String(
+                    button.dataset.articleId
+                ) ===
                 String(articleId)
             ) {
 
@@ -1329,12 +1443,11 @@ function setupSavedButtons() {
             }
 
 
-            const articleId =
-                button.dataset.articleId;
+            event.preventDefault();
 
 
             toggleSavedArticle(
-                articleId
+                button.dataset.articleId
             );
 
         }
@@ -1344,7 +1457,7 @@ function setupSavedButtons() {
 
 
 /*
- * Mostrar artículos guardados
+ * RENDERIZAR GUARDADOS
  */
 
 function renderSavedArticles() {
@@ -1360,6 +1473,11 @@ function renderSavedArticles() {
             "saved-count"
         );
 
+
+    /*
+     * Si todavía no está la vista
+     * de Guardados, simplemente no hacemos nada.
+     */
 
     if (
         !grid ||
@@ -1381,16 +1499,20 @@ function renderSavedArticles() {
                 id =>
                     articles.find(
                         article =>
-                            String(article.id) ===
+                            String(
+                                article.id
+                            ) ===
                             String(id)
                     )
             )
-            .filter(Boolean);
+            .filter(
+                Boolean
+            );
 
 
     /*
-     * Limpiar IDs de artículos que ya no
-     * existen en articles.json.
+     * Eliminar de localStorage IDs
+     * de artículos que ya no existen.
      */
 
     const validIds =
@@ -1420,7 +1542,9 @@ function renderSavedArticles() {
         }`;
 
 
-    if (!savedArticles.length) {
+    if (
+        !savedArticles.length
+    ) {
 
         grid.innerHTML = `
             <p class="empty-state">
@@ -1455,7 +1579,9 @@ function renderSavedArticles() {
 
 
 /*
- * MOSTRAR CATEGORÍA
+ * ==========================
+ * EXPLORAR CATEGORÍA
+ * ==========================
  */
 
 function showCategory(
@@ -1515,32 +1641,47 @@ function showCategory(
         );
 
 
-    title.textContent =
-        CATEGORY_LABELS[
-            category
-        ] || category;
+    if (title) {
+
+        title.textContent =
+            CATEGORY_LABELS[
+                category
+            ] || category;
+
+    }
 
 
     const categoryArticles =
         articles.filter(
             article =>
-                (
-                    article.categories ||
-                    []
-                ).includes(
+                Array.isArray(
+                    article.categories
+                ) &&
+                article.categories.includes(
                     category
                 )
         );
 
 
-    count.textContent =
-        `${categoryArticles.length} artículos`;
+    if (count) {
+
+        count.textContent =
+            `${categoryArticles.length} artículos`;
+
+    }
 
 
     const grid =
         document.getElementById(
             "articles-grid"
         );
+
+
+    if (!grid) {
+
+        return;
+
+    }
 
 
     grid.innerHTML = "";
@@ -1597,14 +1738,22 @@ function setupBackButton() {
                 );
 
 
-            grid.classList.remove(
-                "hidden"
-            );
+            if (grid) {
+
+                grid.classList.remove(
+                    "hidden"
+                );
+
+            }
 
 
-            results.classList.add(
-                "hidden"
-            );
+            if (results) {
+
+                results.classList.add(
+                    "hidden"
+                );
+
+            }
 
 
             currentCategory =
@@ -1617,7 +1766,9 @@ function setupBackButton() {
 
 
 /*
- * TARJETA DE ARTÍCULO
+ * ==========================
+ * TARJETAS
+ * ==========================
  */
 
 function createArticleCard(
@@ -1663,7 +1814,9 @@ function createArticleCard(
 
     const articleId =
         article.id
-            ? String(article.id)
+            ? String(
+                article.id
+            )
             : "";
 
 
@@ -1747,7 +1900,9 @@ function createArticleCard(
 
 
 /*
- * FORMATO DE FUENTES
+ * ==========================
+ * FORMATO
+ * ==========================
  */
 
 function formatSource(
@@ -1791,10 +1946,6 @@ function formatSource(
 
 }
 
-
-/*
- * FORMATO DE TIPO DE CONTENIDO
- */
 
 function formatContentType(
     type
@@ -1914,14 +2065,16 @@ function cleanDescription(
 
 
 /*
- * SEGURIDAD BÁSICA
+ * SEGURIDAD
  */
 
 function escapeHtml(
     value
 ) {
 
-    return String(value)
+    return String(
+        value
+    )
         .replace(
             /&/g,
             "&amp;"
@@ -1958,10 +2111,12 @@ function escapeAttribute(
 
 
 /*
- * ERROR
+ * ERRORES
  */
 
-function showLoadError() {
+function showLoadError(
+    error
+) {
 
     const main =
         document.querySelector(
@@ -1992,9 +2147,58 @@ function showLoadError() {
 
             <p class="hero-text">
                 No pude cargar los artículos.
-                Revisa que data/articles.json
-                exista y que estés abriendo
-                Deriva desde un servidor.
+            </p>
+
+
+            <p class="hero-text">
+                ${escapeHtml(
+                    error.message
+                )}
+            </p>
+
+        </section>
+
+    `;
+
+}
+
+
+function showInitializationError(
+    error
+) {
+
+    const main =
+        document.querySelector(
+            "main"
+        );
+
+
+    if (!main) {
+
+        return;
+
+    }
+
+
+    main.innerHTML = `
+
+        <section class="hero">
+
+            <p class="eyebrow">
+                DERIVA
+            </p>
+
+
+            <h1>
+                Los artículos cargaron,
+                pero algo falló al iniciar.
+            </h1>
+
+
+            <p class="hero-text">
+                ${escapeHtml(
+                    error.message
+                )}
             </p>
 
         </section>
