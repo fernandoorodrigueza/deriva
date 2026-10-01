@@ -1699,14 +1699,14 @@ def parse_item(
         feed_categories=feed_categories,
     )
 
-categories = classify_categories(
-    title,
-    description,
-    source_id,
-    feed_categories,
-    tags=tags,
-    url=url,
-)
+    categories = classify_categories(
+        title,
+        description,
+        source_id,
+        feed_categories,
+        tags=tags,
+        url=url,
+    )
 
     (
         reading_time,
