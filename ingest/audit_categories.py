@@ -51,13 +51,17 @@ def audit_basic_stats(articles):
     print(f"Artículos: {len(articles)}")
 
     sources = Counter(
-        article.get("source", "unknown")
+        article.get(
+            "source",
+            "unknown",
+        )
         for article in articles
     )
 
     categories = Counter()
 
     for article in articles:
+
         for category in article.get(
             "categories",
             [],
@@ -75,6 +79,7 @@ def audit_basic_stats(articles):
     print("\nPor fuente:")
 
     for source, count in sources.most_common():
+
         print(
             f"  {source}: {count}"
         )
@@ -82,8 +87,11 @@ def audit_basic_stats(articles):
     print("\nPor categoría:")
 
     for category, count in categories.most_common():
+
         percentage = (
-            count / len(articles) * 100
+            count
+            / len(articles)
+            * 100
         )
 
         print(
@@ -95,63 +103,233 @@ def audit_basic_stats(articles):
     print("\nPor tipo de contenido:")
 
     for content_type, count in content_types.most_common():
+
         print(
             f"  {content_type}: {count}"
         )
 
 
 def audit_cultura(articles):
-    print_header(
-        "ARTÍCULOS CLASIFICADOS SOLO COMO CULTURA"
-    )
+    """
+    Analiza los artículos clasificados únicamente
+    como 'cultura'.
 
-    articles_cultura = []
+    No intenta reclasificarlos.
+    Solo busca señales que indiquen que podrían
+    pertenecer también a una categoría específica.
+    """
 
-    for article in articles:
-
-        categories = article.get(
+    culture_only = [
+        article
+        for article in articles
+        if article.get(
             "categories",
             [],
-        )
+        ) == ["cultura"]
+    ]
 
-        if categories == ["cultura"]:
-            articles_cultura.append(
-                article
-            )
-
-    print(
-        f"Total: {len(articles_cultura)}"
+    print_header(
+        "CULTURA: ANÁLISIS AUTOMÁTICO"
     )
 
-    for article in articles_cultura:
+    print(
+        "Artículos clasificados únicamente "
+        f"como 'cultura': {len(culture_only)}"
+    )
 
-        print()
+    if not culture_only:
+
         print(
-            f"[{article.get('source')}] "
-            f"{article.get('title')}"
+            "No hay artículos para analizar."
+        )
+
+        return
+
+    # --------------------------------------------------
+    # 1. Cultura por fuente
+    # --------------------------------------------------
+
+    by_source = Counter(
+        article.get(
+            "source",
+            "unknown",
+        )
+        for article in culture_only
+    )
+
+    print("\nPOR FUENTE")
+
+    for source, count in by_source.most_common():
+
+        percentage = (
+            count
+            / len(culture_only)
+            * 100
         )
 
         print(
-            f"  URL: {article.get('url')}"
+            f"  {source}: "
+            f"{count} "
+            f"({percentage:.1f}%)"
         )
 
-        description = (
-            article.get(
-                "description",
-                "",
-            )
-            .replace("\n", " ")
-            .strip()
+    # --------------------------------------------------
+    # 2. Palabras que pueden indicar otra categoría
+    # --------------------------------------------------
+
+    category_signal_words = {
+
+        "cine": [
+            "film",
+            "films",
+            "filmmaker",
+            "filmmaking",
+            "cinema",
+            "movie",
+            "movies",
+            "director",
+            "screenplay",
+            "actor",
+            "actress",
+            "documentary",
+        ],
+
+        "literatura": [
+            "book",
+            "books",
+            "novel",
+            "novels",
+            "poetry",
+            "poem",
+            "poems",
+            "poet",
+            "author",
+            "authors",
+            "literary",
+            "literature",
+            "manuscript",
+        ],
+
+        "ciencia": [
+            "science",
+            "scientist",
+            "physics",
+            "physicist",
+            "biology",
+            "biologist",
+            "chemistry",
+            "chemical",
+            "astronomy",
+            "astronomer",
+            "medicine",
+            "medical",
+            "cancer",
+            "oncology",
+            "diagnosis",
+            "diagnostic",
+            "cell",
+            "cells",
+            "cellular",
+            "disease",
+            "diseases",
+            "clinical",
+        ],
+
+        "musica": [
+            "music",
+            "musician",
+            "musicians",
+            "song",
+            "songs",
+            "album",
+            "albums",
+            "composer",
+            "singer",
+            "concert",
+        ],
+
+        "artes_visuales": [
+            "painting",
+            "paintings",
+            "painter",
+            "photograph",
+            "photography",
+            "photographer",
+            "sculpture",
+            "sculptor",
+            "drawing",
+            "drawings",
+            "illustration",
+            "illustrator",
+            "diagram",
+            "diagrams",
+            "anatomy",
+            "anatomical",
+        ],
+
+        "historia": [
+            "history",
+            "historical",
+            "ancient",
+            "medieval",
+            "empire",
+            "war",
+            "century",
+            "archaeology",
+            "archaeological",
+        ],
+
+        "tecnologia": [
+            "technology",
+            "technological",
+            "computer",
+            "computing",
+            "software",
+            "internet",
+            "algorithm",
+            "artificial intelligence",
+            "ai",
+        ],
+
+        "sociedad": [
+            "society",
+            "social",
+            "politics",
+            "political",
+            "migration",
+            "migrant",
+            "immigration",
+            "inequality",
+            "gender",
+            "race",
+        ],
+    }
+
+    candidate_counts = Counter()
+
+    candidate_examples = defaultdict(
+        list
+    )
+
+    # --------------------------------------------------
+    # 3. Analizar cada artículo cultura
+    # --------------------------------------------------
+
+    for article in culture_only:
+
+        title = article.get(
+            "title",
+            "",
         )
 
-        if len(description) > 180:
-            description = (
-                description[:180]
-                + "..."
-            )
+        description = article.get(
+            "description",
+            "",
+        )
 
-        print(
-            f"  Descripción: {description}"
+        url = article.get(
+            "url",
+            "",
         )
 
         tags = article.get(
@@ -159,15 +337,259 @@ def audit_cultura(articles):
             [],
         )
 
-        if tags:
-            print(
-                f"  Tags: {', '.join(tags)}"
+        text = " ".join(
+            [
+                title,
+                description,
+                url,
+                " ".join(tags),
+            ]
+        ).lower()
+
+        article_signals = []
+
+        for category, keywords in (
+            category_signal_words.items()
+        ):
+
+            matches = []
+
+            for keyword in keywords:
+
+                if keyword.lower() in text:
+                    matches.append(
+                        keyword
+                    )
+
+            if matches:
+
+                article_signals.append(
+                    (
+                        category,
+                        matches,
+                    )
+                )
+
+        if not article_signals:
+            continue
+
+        # La categoría con más señales
+        # se considera la candidata principal.
+        article_signals.sort(
+            key=lambda item: len(
+                item[1]
+            ),
+            reverse=True,
+        )
+
+        category, matches = (
+            article_signals[0]
+        )
+
+        candidate_counts[
+            category
+        ] += 1
+
+        # Solo guardamos hasta cinco ejemplos
+        # por categoría para no llenar el log.
+        if (
+            len(
+                candidate_examples[
+                    category
+                ]
+            )
+            < 5
+        ):
+
+            candidate_examples[
+                category
+            ].append(
+                {
+                    "title": title,
+                    "source": article.get(
+                        "source",
+                        "unknown",
+                    ),
+                    "matches": matches,
+                }
             )
 
+    # --------------------------------------------------
+    # 4. Resumen de posibles problemas
+    # --------------------------------------------------
+
+    print(
+        "\nPOSIBLES SEÑALES "
+        "DE OTRA CATEGORÍA"
+    )
+
+    if not candidate_counts:
+
         print(
-            f"  Tipo: "
-            f"{article.get('content_type')}"
+            "  No se encontraron señales claras."
         )
+
+    else:
+
+        for category, count in (
+            candidate_counts.most_common()
+        ):
+
+            percentage = (
+                count
+                / len(culture_only)
+                * 100
+            )
+
+            print(
+                f"  {category}: "
+                f"{count} "
+                f"({percentage:.1f}%)"
+            )
+
+            for example in (
+                candidate_examples[
+                    category
+                ]
+            ):
+
+                print(
+                    f"    - "
+                    f"[{example['source']}] "
+                    f"{example['title']}"
+                )
+
+                print(
+                    "      señales: "
+                    + ", ".join(
+                        example[
+                            "matches"
+                        ]
+                    )
+                )
+
+
+def audit_cultura_sin_senales(articles):
+    """
+    Identifica artículos clasificados únicamente
+    como cultura que no muestran señales fuertes
+    de ninguna categoría específica.
+
+    Estos son los candidatos más razonables
+    para permanecer como 'cultura'.
+    """
+
+    culture_only = [
+        article
+        for article in articles
+        if article.get(
+            "categories",
+            [],
+        ) == ["cultura"]
+    ]
+
+    print_header(
+        "CULTURA SIN SEÑALES ESPECÍFICAS"
+    )
+
+    strong_signals = [
+        "film",
+        "cinema",
+        "movie",
+        "filmmaker",
+        "book",
+        "novel",
+        "poetry",
+        "poem",
+        "author",
+        "literature",
+        "science",
+        "scientist",
+        "physics",
+        "biology",
+        "medicine",
+        "medical",
+        "cancer",
+        "cell",
+        "disease",
+        "music",
+        "musician",
+        "song",
+        "album",
+        "painting",
+        "photography",
+        "sculpture",
+        "drawing",
+        "illustration",
+        "history",
+        "historical",
+        "archaeology",
+        "technology",
+        "computer",
+        "software",
+    ]
+
+    without_signals = []
+
+    for article in culture_only:
+
+        text = " ".join(
+            [
+                article.get(
+                    "title",
+                    "",
+                ),
+                article.get(
+                    "description",
+                    "",
+                ),
+                article.get(
+                    "url",
+                    "",
+                ),
+                " ".join(
+                    article.get(
+                        "tags",
+                        [],
+                    )
+                ),
+            ]
+        ).lower()
+
+        found = any(
+            keyword in text
+            for keyword in strong_signals
+        )
+
+        if not found:
+
+            without_signals.append(
+                article
+            )
+
+    print(
+        "Artículos sin señales temáticas "
+        f"fuertes: {len(without_signals)}"
+    )
+
+    if culture_only:
+
+        percentage = (
+            len(without_signals)
+            / len(culture_only)
+            * 100
+        )
+
+        print(
+            f"Proporción: {percentage:.1f}%"
+        )
+
+    print()
+    print(
+        "Estos artículos son los candidatos "
+        "más razonables para permanecer "
+        "como 'cultura'."
+    )
 
 
 def audit_category_combinations(articles):
@@ -188,9 +610,13 @@ def audit_category_combinations(articles):
             )
         )
 
-        combinations[categories] += 1
+        combinations[
+            categories
+        ] += 1
 
-    for combination, count in combinations.most_common():
+    for combination, count in (
+        combinations.most_common()
+    ):
 
         label = " + ".join(
             combination
@@ -221,6 +647,7 @@ def audit_source_categories(articles):
             "categories",
             [],
         ):
+
             source_categories[
                 source
             ][category] += 1
@@ -245,7 +672,9 @@ def audit_source_categories(articles):
         ):
 
             percentage = (
-                count / total * 100
+                count
+                / total
+                * 100
             )
 
             print(
@@ -291,8 +720,10 @@ def audit_suspicious_combinations(
         if (
             source == "new_yorker"
             and "/the-front-row/" in url
-            and "cine" not in categories
+            and "cine"
+            not in categories
         ):
+
             suspicious.append(
                 (
                     "New Yorker Front Row "
@@ -309,6 +740,7 @@ def audit_suspicious_combinations(
             and "literatura"
             not in categories
         ):
+
             suspicious.append(
                 (
                     "New Yorker Books "
@@ -325,6 +757,7 @@ def audit_suspicious_combinations(
             and "artes_visuales"
             not in categories
         ):
+
             suspicious.append(
                 (
                     "New Yorker Cartoon "
@@ -336,8 +769,10 @@ def audit_suspicious_combinations(
         # Quanta debería tener ciencia.
         if (
             source == "quanta"
-            and "ciencia" not in categories
+            and "ciencia"
+            not in categories
         ):
+
             suspicious.append(
                 (
                     "Quanta sin ciencia",
@@ -348,8 +783,10 @@ def audit_suspicious_combinations(
         # MUBI Notebook debería tener cine.
         if (
             source == "mubi_notebook"
-            and "cine" not in categories
+            and "cine"
+            not in categories
         ):
+
             suspicious.append(
                 (
                     "MUBI sin cine",
@@ -402,6 +839,10 @@ def main():
     )
 
     audit_cultura(
+        articles
+    )
+
+    audit_cultura_sin_senales(
         articles
     )
 
