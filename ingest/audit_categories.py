@@ -1,4 +1,5 @@
 import json
+import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -45,10 +46,45 @@ def print_header(title):
     print("=" * 70)
 
 
-def audit_basic_stats(articles):
-    print_header("ESTADÍSTICAS GENERALES")
+def keyword_matches(text, keyword):
+    """
+    Comprueba si una palabra o expresión aparece
+    como palabra completa.
 
-    print(f"Artículos: {len(articles)}")
+    Evita falsos positivos como:
+    'ai' dentro de otra palabra.
+    """
+
+    keyword = keyword.lower().strip()
+
+    if not keyword:
+        return False
+
+    escaped = re.escape(keyword)
+
+    pattern = (
+        r"(?<!\w)"
+        + escaped
+        + r"(?!\w)"
+    )
+
+    return bool(
+        re.search(
+            pattern,
+            text,
+            flags=re.IGNORECASE,
+        )
+    )
+
+
+def audit_basic_stats(articles):
+    print_header(
+        "ESTADÍSTICAS GENERALES"
+    )
+
+    print(
+        f"Artículos: {len(articles)}"
+    )
 
     sources = Counter(
         article.get(
@@ -356,7 +392,10 @@ def audit_cultura(articles):
 
             for keyword in keywords:
 
-                if keyword.lower() in text:
+                if keyword_matches(
+                    text,
+                    keyword,
+                ):
                     matches.append(
                         keyword
                     )
@@ -556,10 +595,16 @@ def audit_cultura_sin_senales(articles):
             ]
         ).lower()
 
-        found = any(
-            keyword in text
-            for keyword in strong_signals
-        )
+        found = False
+
+        for keyword in strong_signals:
+
+            if keyword_matches(
+                text,
+                keyword,
+            ):
+                found = True
+                break
 
         if not found:
 
@@ -802,6 +847,7 @@ def audit_suspicious_combinations(
     for reason, article in suspicious:
 
         print()
+
         print(
             f"  {reason}"
         )
