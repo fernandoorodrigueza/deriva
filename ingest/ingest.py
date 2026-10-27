@@ -29,6 +29,9 @@ USER_AGENT = (
 
 REQUEST_TIMEOUT = 30
 
+# Máximo de artículos recientes que se conservan por fuente.
+MAX_ARTICLES_PER_SOURCE = 20
+
 MASTER_CATEGORIES = [
     "literatura",
     "cine",
@@ -1846,6 +1849,12 @@ def parse_feed(
 # ============================================================
 
 def fetch_source(source):
+    """Descarga una fuente y reporta si todos sus feeds respondieron bien.
+
+    `success` solo será True si todos los endpoints configurados se pudieron
+    descargar y analizar. Si uno falla, conservamos los artículos previos de
+    esa fuente para evitar una purga basada en datos incompletos.
+    """
 
     name = source["name"]
     source_id = source["id"]
@@ -1856,24 +1865,25 @@ def fetch_source(source):
     )
 
     if not endpoints:
-
         print(
             f"[{source_id}] "
             "No tiene endpoints."
         )
 
-        return []
+        return {
+            "articles": [],
+            "success": False,
+        }
 
     print(
         f"\nProcesando: {name}"
     )
 
     all_articles = []
+    all_endpoints_succeeded = True
 
     headers = {
-
         "User-Agent": USER_AGENT,
-
         "Accept": (
             "application/rss+xml, "
             "application/atom+xml, "
@@ -1884,12 +1894,9 @@ def fetch_source(source):
     }
 
     for endpoint in endpoints:
-
         try:
-
             print(
-                f"  Descargando: "
-                f"{endpoint}"
+                f"  Descargando: {endpoint}"
             )
 
             response = requests.get(
@@ -1906,46 +1913,43 @@ def fetch_source(source):
             )
 
             print(
-                f"  Encontrados: "
-                f"{len(articles)}"
+                f"  Encontrados: {len(articles)}"
             )
 
-            all_articles.extend(
-                articles
-            )
+            all_articles.extend(articles)
 
         except requests.RequestException as exc:
-
+            all_endpoints_succeeded = False
             print(
                 f"  ERROR HTTP: {exc}"
             )
 
         except ET.ParseError as exc:
-
+            all_endpoints_succeeded = False
             print(
                 f"  ERROR XML: {exc}"
             )
 
         except Exception as exc:
-
+            all_endpoints_succeeded = False
             print(
                 "  ERROR procesando feed: "
-                f"{type(exc).__name__}: "
-                f"{exc}"
+                f"{type(exc).__name__}: {exc}"
             )
 
-    # Deduplicar dentro de la fuente
+    # Deduplicar dentro de la fuente.
     unique = {}
 
     for article in all_articles:
+        article_id = article.get("id")
 
-        unique[
-            article["id"]
-        ] = article
+        if article_id:
+            unique[article_id] = article
 
-    return list(
-        unique.values()
-    )
+    return {
+        "articles": list(unique.values()),
+        "success": all_endpoints_succeeded,
+    }
 
 
 # ============================================================
@@ -2008,6 +2012,52 @@ def sort_articles(
         key=sort_key,
         reverse=True,
     )
+
+
+# ============================================================
+# RETENCIÓN POR FUENTE
+# ============================================================
+
+def retain_latest_articles(
+    articles,
+    successful_sources,
+):
+    """Conserva los 20 más recientes de fuentes actualizadas correctamente.
+
+    Si una fuente falló, estaba deshabilitada o no se procesó, mantiene todos
+    sus artículos existentes. Esto evita borrar contenido por fallos de RSS.
+    """
+
+    grouped = {}
+
+    for article in articles:
+        source_id = article.get("source", "unknown")
+        grouped.setdefault(source_id, []).append(article)
+
+    retained = []
+
+    for source_id, source_articles in grouped.items():
+        source_articles = sort_articles(source_articles)
+
+        if source_id in successful_sources:
+            before = len(source_articles)
+            source_articles = source_articles[:MAX_ARTICLES_PER_SOURCE]
+            removed = before - len(source_articles)
+
+            print(
+                f"Retención [{source_id}]: "
+                f"{len(source_articles)} conservados"
+                + (f", {removed} antiguos descartados" if removed else "")
+            )
+        else:
+            print(
+                f"Retención [{source_id}]: fuente sin actualización completa; "
+                f"se conservan los {len(source_articles)} artículos existentes."
+            )
+
+        retained.extend(source_articles)
+
+    return sort_articles(retained)
 
 
 # ============================================================
@@ -2230,9 +2280,9 @@ def main():
     )
 
     all_new_articles = []
+    successful_sources = set()
 
     for source in sources:
-
         enabled = source.get(
             "enabled",
             defaults.get(
@@ -2242,28 +2292,28 @@ def main():
         )
 
         if not enabled:
-
             print(
-                f"\nOmitiendo "
-                f"{source['name']}: "
-                "deshabilitada."
+                f"\nOmitiendo {source['name']}: deshabilitada."
             )
-
             continue
 
-        articles = fetch_source(
-            source
-        )
+        result = fetch_source(source)
+        articles = result.get("articles", [])
+        success = result.get("success", False)
 
-        # Limitar cantidad por fuente
+        if success:
+            successful_sources.add(source["id"])
+        else:
+            print(
+                f"Advertencia: {source['id']} no se actualizó por completo; "
+                "sus artículos anteriores no se eliminarán por retención."
+            )
+
+        # Limitar la cantidad procesada por fuente en esta ejecución.
         if max_items:
-            articles = articles[
-                :max_items
-            ]
+            articles = articles[:max_items]
 
-        all_new_articles.extend(
-            articles
-        )
+        all_new_articles.extend(articles)
 
     print(
         f"\nArtículos nuevos "
@@ -2295,15 +2345,24 @@ def main():
         combined
     )
     
-    # Ordenar
+    # Ordenar antes de aplicar la retención.
     combined = sort_articles(
         combined
     )
 
     print(
-        f"Artículos después de "
-        f"deduplicar: "
-        f"{len(combined)}"
+        f"Artículos después de deduplicar: {len(combined)}"
+    )
+
+    # Retener 20 artículos por fuente solo cuando todos sus feeds
+    # se procesaron correctamente. Las fuentes con errores se preservan.
+    combined = retain_latest_articles(
+        combined,
+        successful_sources,
+    )
+
+    print(
+        f"Artículos después de retención: {len(combined)}"
     )
 
     save_articles(
