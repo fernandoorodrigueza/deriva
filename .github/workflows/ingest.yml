@@ -1,7 +1,12 @@
+
 name: Ingest Deriva
 
 on:
   workflow_dispatch:
+
+  schedule:
+    - cron: "17 6 */3 * *"
+
   push:
     paths:
       - "config/sources.json"
@@ -29,6 +34,7 @@ jobs:
 
       - name: Probar los feeds
         run: python ingest/test_feeds.py
+        continue-on-error: true
 
       - name: Ingestar artículos
         run: python ingest/ingest.py
